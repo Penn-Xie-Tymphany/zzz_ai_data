@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.uv/
+uv.lock
+
+# 环境变量与密钥（绝不入库）
+.env
+.env.*
+!.env.example
+
+# 官方比赛资料：starter kit 是外部仓库、数据集是大文件，均不入库（保留说明 README）
+code/competitions/kddcup2026-data-agents-starter-kit/
+code/competitions/datasets/*
+!code/competitions/datasets/README.md
+
+# 运行产物
+runs/
+outputs/
+logs/
+*.sqlite-journal
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

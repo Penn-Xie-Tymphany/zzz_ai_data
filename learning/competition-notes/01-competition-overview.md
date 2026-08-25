@@ -1,0 +1,77 @@
+# 01 · 比赛总览：KDD Cup 2026 Data Agents for Complex Data Analysis
+
+> 来源：<https://dataagent.top/> ｜ 整理日期：2026-08-25
+
+## 是什么 / 为什么重要 / 和我的关联
+
+- **是什么**：KDD Cup 2026 核心赛道，由港科大（广州）DIAL 实验室 + 清华大学数据库组承办，主题是构建自主数据分析智能体（Data Agent）。
+- **为什么重要**：Data Agent = LLM 规划能力 × 数据工程 × 异构数据推理，是当前 Agent 落地最实的方向之一；官方提供 benchmark（DataAgent-Bench）+ ReAct baseline，非常适合系统学习。
+- **和我的关联**：本地复跑 baseline → 精读源码 → 自研 agent，完整走一遍"比赛驱动学习"。
+
+## 任务定义
+
+每个 task 给一个自包含的数据包 `task_xxx/data/`，典型构成：
+
+```
+database.sqlite          # 结构化数据库
+regional_report.pdf      # PDF 分析报告
+product_catalog.json     # 结构化产品数据
+quarterly_targets.png    # 图表
+business_handbook.docx   # 业务规则与口径定义
+```
+
+Agent 收到一个高层自然语言问题后，需**自主**完成：
+
+1. **任务分解与规划**：把大问题拆成多步可执行计划；
+2. **工具选择与调用**：Python 脚本 / SQL 查询 / API 调用；
+3. **异构数据推理**：跨结构化表格、非结构化文档、图表联合推理；
+4. **结果综合**：汇总多步中间结果，产出最终答案表格。
+
+输出为 `prediction.csv`。
+
+## 评分规则
+
+```
+Score = Recall − λ · (Extra Columns / Predicted Columns)     λ = 0.5
+```
+
+- 列按 **multiset 比较**：忽略列名与行序；
+- 多预测列会被罚分 → 宁缺勿滥，答案列要精准；
+- 排行榜一般同时报 micro / macro 分数与完美题数（sub rate）。
+
+## 非线性推理拓扑（与普通 QA 的核心差异）
+
+| 模式 | 说明 |
+| --- | --- |
+| Sequential Chain | A→B→C→D 逐步依赖，误差向下游传播 |
+| Branching & Merging | 并行子查询（SQL 一路、PDF 一路），再 merge 综合 |
+| Iterative Loop | 迭代修正：发现中间结果不对就回溯重来 |
+
+真实数据分析是 **DAG**，不是单线 ReAct 循环 —— 这是自研方案最大的发力点。
+
+## 难度分级（Phase 1）
+
+| Level | 模态 | 核心挑战 | 文档规模 |
+| --- | --- | --- | --- |
+| Easy | JSON/CSV + 知识文档 | Python 执行类代码生成 | 短上下文 |
+| Medium | JSON/CSV + SQLite + 文档 | Text-to-SQL 与多源分析 | 中等上下文 |
+| Hard | JSON/CSV + SQLite + 数据文档 + 知识文档 | 非结构化文档推理 | ~10K–128K tokens |
+
+## 赛制与时间线（AoE）
+
+- Phase 1（4/24–5/23）：单一主赛道公共榜单；
+- Phase 2（5/28–6/30）：Leaderboard Subtrack（含图像/视频新模态）+ Creative Subtrack（系统设计与交互）；
+- 7/15 公布 Phase-2 结果，8/9 KDD 2026（济州）正式颁奖。
+- 提交形式：**Docker 镜像提交**。
+
+## 官方资源索引
+
+- Starter Kit：<https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit>（ReAct baseline + dataset loader + CLI）
+- Phase 1 demo 数据集：官网 DataAgent-Bench 区块，Google Drive / 百度网盘双镜像
+- 社区：Discord「KDD Cup 2026 | DataAgents」；微信公众号「数据智能与分析实验室 DIAL」（回复 KDD进群）
+
+## 待研究问题
+
+- [ ] Docker 提交的镜像规格、运行时长限制？
+- [ ] 允许调用哪些外部 LLM API？是否允许联网检索？
+- [ ] Extreme 难度与 Phase 2 新模态（数据图像/视频）具体形态？
