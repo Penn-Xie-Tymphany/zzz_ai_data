@@ -28,3 +28,7 @@ logs/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ÁÙÊ±ËÑË÷½á¹û
+*_tree.json
+*search*.json
