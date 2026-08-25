@@ -70,6 +70,16 @@ Score = Recall − λ · (Extra Columns / Predicted Columns)     λ = 0.5
 - Phase 1 demo 数据集：官网 DataAgent-Bench 区块，Google Drive / 百度网盘双镜像
 - 社区：Discord「KDD Cup 2026 | DataAgents」；微信公众号「数据智能与分析实验室 DIAL」（回复 KDD进群）
 
+## Demo 数据集实测（2026-08-25 落地）
+
+Phase 1 demo（`demo_samples_0417.zip`，436MB）已解压至 starter kit `PHASE_1/data/public/`，`dabench status` 识别 50 题：
+
+- 难度分布：**easy=15、medium=23、hard=11、extreme=1**
+- input 结构：`task_<id>/task.json`（task_id / difficulty / question）+ `context/`
+- context 子目录按类型组织：`csv/`、`json/`、`db/`(SQLite)、`doc/`(Markdown) + 根级 `knowledge.md`（业务口径定义，常是解题钥匙）
+- demo 附带 `output/task_<id>/gold.csv` 标准答案 → 本地可自建评测闭环；正式 hidden test 只有 input
+- 例：task_11（easy）"严重血栓患者列 ID/性别/疾病"，答案表仅 3 行 —— 答案是小表格，多预测列会被罚分
+
 ## 待研究问题
 
 - [ ] Docker 提交的镜像规格、运行时长限制？

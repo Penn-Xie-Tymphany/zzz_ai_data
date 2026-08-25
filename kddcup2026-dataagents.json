@@ -1,0 +1,2300 @@
+{
+  "sha": "085f62ec29bcaca1217b833ef4937d14a38e2f2a",
+  "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/085f62ec29bcaca1217b833ef4937d14a38e2f2a",
+  "tree": [
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7658be804852a4ebb14ac58e1601ff1408bdf076",
+      "size": 851,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7658be804852a4ebb14ac58e1601ff1408bdf076"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdd13fcda32993b06acdff3ed538b051f6622460",
+      "size": 66,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/fdd13fcda32993b06acdff3ed538b051f6622460"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a177e9333aa8eba96d1b21ebf9fb83d87a78439f",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/a177e9333aa8eba96d1b21ebf9fb83d87a78439f"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52a2a88cc339f0e454a1462a5b514fe75f5d68a2",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/52a2a88cc339f0e454a1462a5b514fe75f5d68a2"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9057465a70b02a4187d57939e70118cc3f3f831d",
+      "size": 3782,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9057465a70b02a4187d57939e70118cc3f3f831d"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd32456406fd96acf223d323ce1e165585b90f23",
+      "size": 2463,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/dd32456406fd96acf223d323ce1e165585b90f23"
+    },
+    {
+      "path": ".gitleaks.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "575d7163f4dbdfd4b8e91f517a3e2564719c3577",
+      "size": 1032,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/575d7163f4dbdfd4b8e91f517a3e2564719c3577"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f5fa361789126c52d006f18821e91455fc01ec",
+      "size": 579,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/50f5fa361789126c52d006f18821e91455fc01ec"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "size": 9,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/681311eb9cf453d0faddf3aacaec7357e97ba8e9"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b8bb4c5f8083720451f6f293d972d5be9c14c8",
+      "size": 53105,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a8b8bb4c5f8083720451f6f293d972d5be9c14c8"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7cf53cda6d4fd10d416437c71688e9e431e6c6f",
+      "size": 3554,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b7cf53cda6d4fd10d416437c71688e9e431e6c6f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72beabe8f7b427b2b2cf3cae9516f1436b7c7cda",
+      "size": 4615,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/72beabe8f7b427b2b2cf3cae9516f1436b7c7cda"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26878ea555b46ad1cb755a79ff6d8ac3bf9f6495",
+      "size": 4248,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/26878ea555b46ad1cb755a79ff6d8ac3bf9f6495"
+    },
+    {
+      "path": "artifacts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5bfad2b3f8e483b6b173d8aaff19597e84626f15",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/5bfad2b3f8e483b6b173d8aaff19597e84626f15"
+    },
+    {
+      "path": "artifacts/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "276ab3ad0ada718c9c4bd02e46390f9d51c40667",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/276ab3ad0ada718c9c4bd02e46390f9d51c40667"
+    },
+    {
+      "path": "configs/react.example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "664f5b703531c7d3d85f8ec5b01fc915bf880f87",
+      "size": 4144,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/664f5b703531c7d3d85f8ec5b01fc915bf880f87"
+    },
+    {
+      "path": "dashboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba36071a0291ed69ec5ae7c93a1e44c3d38e8565",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/ba36071a0291ed69ec5ae7c93a1e44c3d38e8565"
+    },
+    {
+      "path": "dashboard/frontend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93a82689057001686d3821e7a65372ea301199c9",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/93a82689057001686d3821e7a65372ea301199c9"
+    },
+    {
+      "path": "dashboard/frontend/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3595c5158d5796f501a69e69c48b12926e72f8f8",
+      "size": 623,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3595c5158d5796f501a69e69c48b12926e72f8f8"
+    },
+    {
+      "path": "dashboard/frontend/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46d929de1f9738e5bc4dab2da1455bc24d19e862",
+      "size": 82328,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/46d929de1f9738e5bc4dab2da1455bc24d19e862"
+    },
+    {
+      "path": "dashboard/frontend/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e88b242eb201cc32292224c8a1ffb07fe0c81a7",
+      "size": 573,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4e88b242eb201cc32292224c8a1ffb07fe0c81a7"
+    },
+    {
+      "path": "dashboard/frontend/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "973b10beb2a2c7f59e229ca1738abdf8355d2456",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/973b10beb2a2c7f59e229ca1738abdf8355d2456"
+    },
+    {
+      "path": "dashboard/frontend/src/App.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d11e452720c060bb21668f2d3e5d011456885f0f",
+      "size": 6544,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d11e452720c060bb21668f2d3e5d011456885f0f"
+    },
+    {
+      "path": "dashboard/frontend/src/api.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "478e8ebec67b2da2d084d4b6895af514b9030550",
+      "size": 1421,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/478e8ebec67b2da2d084d4b6895af514b9030550"
+    },
+    {
+      "path": "dashboard/frontend/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfedeb7cf6585046e7bdc47b5c5705f7a56f7f44",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/cfedeb7cf6585046e7bdc47b5c5705f7a56f7f44"
+    },
+    {
+      "path": "dashboard/frontend/src/components/Inspector.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0396cae712b2f92e1bdd3a3992746b340a7ccf2",
+      "size": 23295,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f0396cae712b2f92e1bdd3a3992746b340a7ccf2"
+    },
+    {
+      "path": "dashboard/frontend/src/components/StatsBar.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ef95d224b99825a3f1ab3d883a24b70686de7f4",
+      "size": 2390,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2ef95d224b99825a3f1ab3d883a24b70686de7f4"
+    },
+    {
+      "path": "dashboard/frontend/src/components/StatusBadge.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e1976f453691d7ab376eabdf152e8559b83a74",
+      "size": 1324,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e9e1976f453691d7ab376eabdf152e8559b83a74"
+    },
+    {
+      "path": "dashboard/frontend/src/components/Timeline.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1680d15a596a7b97d7ce69b3e43af2aad163c875",
+      "size": 3442,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1680d15a596a7b97d7ce69b3e43af2aad163c875"
+    },
+    {
+      "path": "dashboard/frontend/src/components/TopBar.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4456fd7909e726642b3f6982d3e6bf33d796776",
+      "size": 2083,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a4456fd7909e726642b3f6982d3e6bf33d796776"
+    },
+    {
+      "path": "dashboard/frontend/src/components/TraceDetail.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c107710d09ffc12977596ca4a447b4aa978dbd62",
+      "size": 4056,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c107710d09ffc12977596ca4a447b4aa978dbd62"
+    },
+    {
+      "path": "dashboard/frontend/src/components/TraceList.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de3efc1cb787f081cd7e2b2de6bb03669d963b49",
+      "size": 6709,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/de3efc1cb787f081cd7e2b2de6bb03669d963b49"
+    },
+    {
+      "path": "dashboard/frontend/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa3368c2b81e3aef676aabce34c5f1890655b1b",
+      "size": 6111,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/aaa3368c2b81e3aef676aabce34c5f1890655b1b"
+    },
+    {
+      "path": "dashboard/frontend/src/main.jsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0276d4684edfab1d187bfbb7d3143564120e0eae",
+      "size": 230,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0276d4684edfab1d187bfbb7d3143564120e0eae"
+    },
+    {
+      "path": "dashboard/frontend/src/utils.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59f1ee6e72343816179da5d937b28836c0bb677",
+      "size": 2022,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d59f1ee6e72343816179da5d937b28836c0bb677"
+    },
+    {
+      "path": "dashboard/frontend/vite.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40a7b0062a86271d3b778ab897980e84050352e4",
+      "size": 380,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/40a7b0062a86271d3b778ab897980e84050352e4"
+    },
+    {
+      "path": "docker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec5fb58a7ee0776d910c1b39e353a4ebb6f6247a",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/ec5fb58a7ee0776d910c1b39e353a4ebb6f6247a"
+    },
+    {
+      "path": "docker/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17c111a15a495f2fb8f477d1822de7f90a5e8ec5",
+      "size": 3390,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/17c111a15a495f2fb8f477d1822de7f90a5e8ec5"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "653fb7fa0fcdbe22d01b17eb3cb5d302725edce7",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/653fb7fa0fcdbe22d01b17eb3cb5d302725edce7"
+    },
+    {
+      "path": "docs/agent-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c0993ec1f7b63b312f7a9a894b2abc499df5e0e",
+      "size": 3875,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4c0993ec1f7b63b312f7a9a894b2abc499df5e0e"
+    },
+    {
+      "path": "docs/architecture.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f62b051c110c6483dd13920efa463d28c58af6f0",
+      "size": 6219,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f62b051c110c6483dd13920efa463d28c58af6f0"
+    },
+    {
+      "path": "docs/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "774305b78708b2bfa909ff99c1efc2d15839f2ac",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/774305b78708b2bfa909ff99c1efc2d15839f2ac"
+    },
+    {
+      "path": "docs/assets/mamba-agent.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cd087ffbbd670b7fe3190b483c0d63e02c466ac",
+      "size": 53120,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2cd087ffbbd670b7fe3190b483c0d63e02c466ac"
+    },
+    {
+      "path": "docs/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d314e6fd4c8bc8f4d2119f93068f66529e198693",
+      "size": 4798,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d314e6fd4c8bc8f4d2119f93068f66529e198693"
+    },
+    {
+      "path": "docs/development.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c85eeb38b91d04774c229801d6e556460e9d2a0",
+      "size": 4390,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1c85eeb38b91d04774c229801d6e556460e9d2a0"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "512ead1fb40c1993a00c599370b8b0a425bd024e",
+      "size": 2779,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/512ead1fb40c1993a00c599370b8b0a425bd024e"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6b55921a913e973dcf90323df0386d888fb48a1",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/d6b55921a913e973dcf90323df0386d888fb48a1"
+    },
+    {
+      "path": "scripts/dump_all_schemas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7bd61c73a5041cbf5b43243e3a0d5ca378bc53e",
+      "size": 8245,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f7bd61c73a5041cbf5b43243e3a0d5ca378bc53e"
+    },
+    {
+      "path": "scripts/eval_etl_routing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5e8d9b44d818d878e3581ffa62ff9f01f6f0871",
+      "size": 11985,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c5e8d9b44d818d878e3581ffa62ff9f01f6f0871"
+    },
+    {
+      "path": "scripts/eval_local.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c45657cd1848d9561f1484523542c2def01c8e9f",
+      "size": 3221,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c45657cd1848d9561f1484523542c2def01c8e9f"
+    },
+    {
+      "path": "scripts/pre_submit_check.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "46e2036951fa3432fbb384b42d060271c68b88a6",
+      "size": 3561,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/46e2036951fa3432fbb384b42d060271c68b88a6"
+    },
+    {
+      "path": "scripts/score_predictions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62fadbb50a4ab757d3c93f6f2629e594e97c5d4a",
+      "size": 14450,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/62fadbb50a4ab757d3c93f6f2629e594e97c5d4a"
+    },
+    {
+      "path": "scripts/smoke_video_tool_choice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5911eb47ce998413a34a69dcea8e27d755ca5eb5",
+      "size": 2106,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/5911eb47ce998413a34a69dcea8e27d755ca5eb5"
+    },
+    {
+      "path": "scripts/submit.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2a6ee643256077281dfe23e330189f0ad87ace25",
+      "size": 2508,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2a6ee643256077281dfe23e330189f0ad87ace25"
+    },
+    {
+      "path": "scripts/validate_llm_grouping.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd1908a307fba5c4c142930d52b783c379aa6353",
+      "size": 11251,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/dd1908a307fba5c4c142930d52b783c379aa6353"
+    },
+    {
+      "path": "scripts/view_etl_trace.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "257e21b401257e266c08f53e2cfeacddb27a7e7b",
+      "size": 7446,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/257e21b401257e266c08f53e2cfeacddb27a7e7b"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5debee480ffdbd1cdd08b82f66d547ea175bac8d",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/5debee480ffdbd1cdd08b82f66d547ea175bac8d"
+    },
+    {
+      "path": "src/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eda254b5335537bc508196336a911b403238d178",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/eda254b5335537bc508196336a911b403238d178"
+    },
+    {
+      "path": "src/agents/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d65e7641d277431d030f90474ad8d19f0c02f3dd",
+      "size": 765,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d65e7641d277431d030f90474ad8d19f0c02f3dd"
+    },
+    {
+      "path": "src/agents/agent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12eedcf1ad9b892816d3675ed9f2843cb0ca2113",
+      "size": 22471,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/12eedcf1ad9b892816d3675ed9f2843cb0ca2113"
+    },
+    {
+      "path": "src/agents/application.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa5e8d8d2fa8cc695c8903501cc5fbc7103ed095",
+      "size": 15286,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/fa5e8d8d2fa8cc695c8903501cc5fbc7103ed095"
+    },
+    {
+      "path": "src/agents/benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e83b92a05eab1ec81e4f6faf31707b5349e86557",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/e83b92a05eab1ec81e4f6faf31707b5349e86557"
+    },
+    {
+      "path": "src/agents/benchmark/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1b71a1b553164a3f3722ae4f650dd9aa15ddd27",
+      "size": 478,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f1b71a1b553164a3f3722ae4f650dd9aa15ddd27"
+    },
+    {
+      "path": "src/agents/benchmark/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d788e0a021667c05dd35a4d35d3fecefbdeac606",
+      "size": 5081,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d788e0a021667c05dd35a4d35d3fecefbdeac606"
+    },
+    {
+      "path": "src/agents/benchmark/schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20c15807f549c35e64424bad5725a629efdcaeac",
+      "size": 2785,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/20c15807f549c35e64424bad5725a629efdcaeac"
+    },
+    {
+      "path": "src/agents/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30b97023817d6eb3e40a4a02600534282abbdaa5",
+      "size": 18214,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/30b97023817d6eb3e40a4a02600534282abbdaa5"
+    },
+    {
+      "path": "src/agents/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b025c6f501fad64dfd4f7499fdd64b17ab88954",
+      "size": 26061,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3b025c6f501fad64dfd4f7499fdd64b17ab88954"
+    },
+    {
+      "path": "src/agents/dashboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22c622d32220625f87edcf957bf8d3ab18beae70",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/22c622d32220625f87edcf957bf8d3ab18beae70"
+    },
+    {
+      "path": "src/agents/dashboard/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/agents/dashboard/api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625e62630cd4bd721a76ba9dcfed87c2ed446fa8",
+      "size": 3746,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/625e62630cd4bd721a76ba9dcfed87c2ed446fa8"
+    },
+    {
+      "path": "src/agents/dashboard/app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d181099992069ffd882ac37de0928a70c697192a",
+      "size": 1165,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d181099992069ffd882ac37de0928a70c697192a"
+    },
+    {
+      "path": "src/agents/etl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8ef0cab4a68acc47ecb695f6ed08fec9cabcc26",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/d8ef0cab4a68acc47ecb695f6ed08fec9cabcc26"
+    },
+    {
+      "path": "src/agents/etl/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61848b5fb9123cbd4494800cec747835c53b7891",
+      "size": 375,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/61848b5fb9123cbd4494800cec747835c53b7891"
+    },
+    {
+      "path": "src/agents/etl/_anchors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "206e8511eeda03fc604098141d64b1cc33a43dce",
+      "size": 11518,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/206e8511eeda03fc604098141d64b1cc33a43dce"
+    },
+    {
+      "path": "src/agents/etl/_columns.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43d4ad496b16dcd3894dd208dbe27710cf00c854",
+      "size": 806,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/43d4ad496b16dcd3894dd208dbe27710cf00c854"
+    },
+    {
+      "path": "src/agents/etl/_compress.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2338c9c8f8c695d293b357b7e7c362ad5a28f865",
+      "size": 47169,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2338c9c8f8c695d293b357b7e7c362ad5a28f865"
+    },
+    {
+      "path": "src/agents/etl/_constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ab4b84d594709d5d52e742ff892a90eea83dde1",
+      "size": 14374,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4ab4b84d594709d5d52e742ff892a90eea83dde1"
+    },
+    {
+      "path": "src/agents/etl/_detect.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "630c16ad763286c7c0e552ed3817423a011076eb",
+      "size": 2498,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/630c16ad763286c7c0e552ed3817423a011076eb"
+    },
+    {
+      "path": "src/agents/etl/_grouping.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f36dca8e04696137a726f05a47747624ec68167e",
+      "size": 15219,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f36dca8e04696137a726f05a47747624ec68167e"
+    },
+    {
+      "path": "src/agents/etl/_identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02eaadee38e13922c2a660852f770feef2dc9994",
+      "size": 14796,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/02eaadee38e13922c2a660852f770feef2dc9994"
+    },
+    {
+      "path": "src/agents/etl/_merge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b5825063aef95b526ae2bb273e789ef5f116ce7",
+      "size": 23298,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9b5825063aef95b526ae2bb273e789ef5f116ce7"
+    },
+    {
+      "path": "src/agents/etl/_pdf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9954dfe43430153d34b9e4e366d14ce776572f2",
+      "size": 6092,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a9954dfe43430153d34b9e4e366d14ce776572f2"
+    },
+    {
+      "path": "src/agents/etl/_reconcile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a201eb52a1929af18bf7544ee6729e9294fd6661",
+      "size": 24030,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a201eb52a1929af18bf7544ee6729e9294fd6661"
+    },
+    {
+      "path": "src/agents/etl/_record.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b31e17579cd5380b5f137dc55b23e0efa9da28c9",
+      "size": 13677,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b31e17579cd5380b5f137dc55b23e0efa9da28c9"
+    },
+    {
+      "path": "src/agents/etl/_router.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d266f78ccd5c38daf5bebc867d8cfe9c45d9c13",
+      "size": 15357,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/6d266f78ccd5c38daf5bebc867d8cfe9c45d9c13"
+    },
+    {
+      "path": "src/agents/etl/_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2df2f05e33a740350c8e89924d17b9ffe9f8fe71",
+      "size": 52194,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2df2f05e33a740350c8e89924d17b9ffe9f8fe71"
+    },
+    {
+      "path": "src/agents/etl/_schema_kb.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b8a1f90d23d33f08965a53f6f559ae7ff38c9e",
+      "size": 2378,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/67b8a1f90d23d33f08965a53f6f559ae7ff38c9e"
+    },
+    {
+      "path": "src/agents/etl/_threading.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f02c067e5acbefe37a6cb122c1350131462e313",
+      "size": 443,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9f02c067e5acbefe37a6cb122c1350131462e313"
+    },
+    {
+      "path": "src/agents/etl/_trace.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de3c3917895fa5c50365fb449ec8046ec17c9c6d",
+      "size": 5730,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/de3c3917895fa5c50365fb449ec8046ec17c9c6d"
+    },
+    {
+      "path": "src/agents/etl/_types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4260aa4d88543804b1bbb1903657788779f7a0b4",
+      "size": 3095,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4260aa4d88543804b1bbb1903657788779f7a0b4"
+    },
+    {
+      "path": "src/agents/etl/_units.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ae7d81c5e60b53065f87bdf7affcb624ba4c7d",
+      "size": 12409,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/34ae7d81c5e60b53065f87bdf7affcb624ba4c7d"
+    },
+    {
+      "path": "src/agents/etl/_verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5bffbe0a33c757dd008d600df922d3e2e4f9976",
+      "size": 25278,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e5bffbe0a33c757dd008d600df922d3e2e4f9976"
+    },
+    {
+      "path": "src/agents/etl/extractor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94aac9475e5ef0d0158483c5427a7e3b3327f597",
+      "size": 23102,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/94aac9475e5ef0d0158483c5427a7e3b3327f597"
+    },
+    {
+      "path": "src/agents/etl/knowledge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aa0cf0571c527e050d2d374497c8e06ef16e9a1",
+      "size": 3619,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1aa0cf0571c527e050d2d374497c8e06ef16e9a1"
+    },
+    {
+      "path": "src/agents/etl/schema_kb.db",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcb7bb488e7a4d21ec83770ea8d894fab1ff21ec",
+      "size": 2023424,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/bcb7bb488e7a4d21ec83770ea8d894fab1ff21ec"
+    },
+    {
+      "path": "src/agents/explorer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9082f762bc108e0c4290677c85cbb3b6e35acc62",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/9082f762bc108e0c4290677c85cbb3b6e35acc62"
+    },
+    {
+      "path": "src/agents/explorer/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ee89e6cc9d7aaccf6ac1bd7813211ac2dfa8a2a",
+      "size": 147,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7ee89e6cc9d7aaccf6ac1bd7813211ac2dfa8a2a"
+    },
+    {
+      "path": "src/agents/explorer/etl_sources.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89ae27cdaa6cd157316d9d06d15feafd14c973f1",
+      "size": 6178,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/89ae27cdaa6cd157316d9d06d15feafd14c973f1"
+    },
+    {
+      "path": "src/agents/explorer/prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af60f73f0b945d02cb9d80ac68de3153ac2eee7c",
+      "size": 11616,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/af60f73f0b945d02cb9d80ac68de3153ac2eee7c"
+    },
+    {
+      "path": "src/agents/explorer/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfdfb8304dbaa623956f24506e11e4a8a3f37c18",
+      "size": 10251,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/dfdfb8304dbaa623956f24506e11e4a8a3f37c18"
+    },
+    {
+      "path": "src/agents/explorer/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c348de5cbbb0b0b74b6922de27bad5d4cc5b48c",
+      "size": 10451,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4c348de5cbbb0b0b74b6922de27bad5d4cc5b48c"
+    },
+    {
+      "path": "src/agents/llm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "acafd7c8b45b9f9be78aa05351b45e2f30faaab8",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/acafd7c8b45b9f9be78aa05351b45e2f30faaab8"
+    },
+    {
+      "path": "src/agents/llm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "838462a07e413f0e20c44290491e9bb92a9746df",
+      "size": 941,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/838462a07e413f0e20c44290491e9bb92a9746df"
+    },
+    {
+      "path": "src/agents/llm/openai.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76e60d4302772235c78aa3899c1d14020ba3672d",
+      "size": 23757,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/76e60d4302772235c78aa3899c1d14020ba3672d"
+    },
+    {
+      "path": "src/agents/llm/protocol.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0c5f12562f42b51c77077c4f53ac8b03f3b1a7e",
+      "size": 6910,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e0c5f12562f42b51c77077c4f53ac8b03f3b1a7e"
+    },
+    {
+      "path": "src/agents/llm/rate_limit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "565b4c5d431fc2d6c082f685306f7ff5773f9741",
+      "size": 12767,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/565b4c5d431fc2d6c082f685306f7ff5773f9741"
+    },
+    {
+      "path": "src/agents/llm/token_bucket.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf5edfd027376315e5d2ba09a6f97a56c5e80831",
+      "size": 6270,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/cf5edfd027376315e5d2ba09a6f97a56c5e80831"
+    },
+    {
+      "path": "src/agents/llm/tokenizer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a73a846725794819aa6e1c9e97d8dc9671c2006d",
+      "size": 133,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a73a846725794819aa6e1c9e97d8dc9671c2006d"
+    },
+    {
+      "path": "src/agents/llm/tokenizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b389871d800ba06dde1a1390a842347374acfd0c",
+      "size": 1431,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b389871d800ba06dde1a1390a842347374acfd0c"
+    },
+    {
+      "path": "src/agents/llm/types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0af3efdaecc378718a814d8f4cce7a25448bb6e",
+      "size": 2423,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f0af3efdaecc378718a814d8f4cce7a25448bb6e"
+    },
+    {
+      "path": "src/agents/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86a131bce12344e2542c3d399323895696fe9177",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/86a131bce12344e2542c3d399323895696fe9177"
+    },
+    {
+      "path": "src/agents/prompts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d5418ea2e5aba4829592cd05e26385e32e7ca3a",
+      "size": 582,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8d5418ea2e5aba4829592cd05e26385e32e7ca3a"
+    },
+    {
+      "path": "src/agents/prompts/recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d035134eedf39730e7af16b37ac6f18df35c3c51",
+      "size": 2851,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d035134eedf39730e7af16b37ac6f18df35c3c51"
+    },
+    {
+      "path": "src/agents/prompts/rules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8ce6aa30a657d89fc891b01efb08831fae74cc1",
+      "size": 14230,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d8ce6aa30a657d89fc891b01efb08831fae74cc1"
+    },
+    {
+      "path": "src/agents/prompts/system.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c98e4b38880816ecaa1150040bef685cac2ca5",
+      "size": 15458,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/26c98e4b38880816ecaa1150040bef685cac2ca5"
+    },
+    {
+      "path": "src/agents/prompts/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b060c24ac8f38ff06b413a20466cdd0b6a19004",
+      "size": 674,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2b060c24ac8f38ff06b413a20466cdd0b6a19004"
+    },
+    {
+      "path": "src/agents/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f46b84b9d1c3797a445d4608327de3d060f6cd4f",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/f46b84b9d1c3797a445d4608327de3d060f6cd4f"
+    },
+    {
+      "path": "src/agents/runs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aacae6475370366d74a5738568b0cc49ea1fda8",
+      "size": 445,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3aacae6475370366d74a5738568b0cc49ea1fda8"
+    },
+    {
+      "path": "src/agents/runs/artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1bd3f6e951e9489b81d4963f0318e1ec00cd052",
+      "size": 12060,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b1bd3f6e951e9489b81d4963f0318e1ec00cd052"
+    },
+    {
+      "path": "src/agents/runs/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5a0356f2de89b091ab3ba433f3f353c16f846bc",
+      "size": 12181,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f5a0356f2de89b091ab3ba433f3f353c16f846bc"
+    },
+    {
+      "path": "src/agents/runs/subprocess.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "732970e2aeae1f2f34c3adfcd37efcbcf533dcec",
+      "size": 10977,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/732970e2aeae1f2f34c3adfcd37efcbcf533dcec"
+    },
+    {
+      "path": "src/agents/runtime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d5b77500af1671cf86ec6a3d7e043d95547647b",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/8d5b77500af1671cf86ec6a3d7e043d95547647b"
+    },
+    {
+      "path": "src/agents/runtime/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06e961e8487da832ee1e59f7c2edfa912c878fb1",
+      "size": 1286,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/06e961e8487da832ee1e59f7c2edfa912c878fb1"
+    },
+    {
+      "path": "src/agents/runtime/budget.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f241a20f12b8b29df7bc3b90e8637537f86a2593",
+      "size": 5297,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f241a20f12b8b29df7bc3b90e8637537f86a2593"
+    },
+    {
+      "path": "src/agents/runtime/media.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff8401e2773ea6b3f800c843b9e2790c40a0ea70",
+      "size": 2823,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ff8401e2773ea6b3f800c843b9e2790c40a0ea70"
+    },
+    {
+      "path": "src/agents/runtime/messages.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0274e92647f47f6f50171e5b6fcd248e1b4d9130",
+      "size": 4617,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0274e92647f47f6f50171e5b6fcd248e1b4d9130"
+    },
+    {
+      "path": "src/agents/runtime/recorder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95884e90acc6447c7649291372bd6d7088d295c3",
+      "size": 9813,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/95884e90acc6447c7649291372bd6d7088d295c3"
+    },
+    {
+      "path": "src/agents/runtime/state.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d79e04a25330a400f4bebe114529c1d0e0094bc",
+      "size": 5731,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8d79e04a25330a400f4bebe114529c1d0e0094bc"
+    },
+    {
+      "path": "src/agents/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07ea905365ab4cd0728ddbe92c8a46edec824840",
+      "size": 11318,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/07ea905365ab4cd0728ddbe92c8a46edec824840"
+    },
+    {
+      "path": "src/agents/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "edd5b23762ff16fe61d0a450944695f92689736e",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/edd5b23762ff16fe61d0a450944695f92689736e"
+    },
+    {
+      "path": "src/agents/tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a628b366dc4e70ca491e6e4d6589d098372e3436",
+      "size": 1621,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a628b366dc4e70ca491e6e4d6589d098372e3436"
+    },
+    {
+      "path": "src/agents/tools/_fields.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b238325b6ab6f7f28054a2a88c41b9db02801cb",
+      "size": 697,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7b238325b6ab6f7f28054a2a88c41b9db02801cb"
+    },
+    {
+      "path": "src/agents/tools/_sqlite_common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8f349d84484487bda022011a58690bcac5d4a74",
+      "size": 7275,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f8f349d84484487bda022011a58690bcac5d4a74"
+    },
+    {
+      "path": "src/agents/tools/answer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "360048dacbca13775134a7276c8140b9663d1e98",
+      "size": 16273,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/360048dacbca13775134a7276c8140b9663d1e98"
+    },
+    {
+      "path": "src/agents/tools/constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a926c07a905f459a53fcda0f772469f8cafcb41",
+      "size": 3287,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7a926c07a905f459a53fcda0f772469f8cafcb41"
+    },
+    {
+      "path": "src/agents/tools/context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "291a06c7d7e1989f88832d3eec2479f267cd3d20",
+      "size": 5047,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/291a06c7d7e1989f88832d3eec2479f267cd3d20"
+    },
+    {
+      "path": "src/agents/tools/contracts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a05bc620ee1d934796319fb0aa31cbb1dd8d22b",
+      "size": 1620,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7a05bc620ee1d934796319fb0aa31cbb1dd8d22b"
+    },
+    {
+      "path": "src/agents/tools/decorator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2612457597db8dd2bd9c9c0f157e46ee19cda40a",
+      "size": 2851,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2612457597db8dd2bd9c9c0f157e46ee19cda40a"
+    },
+    {
+      "path": "src/agents/tools/dispatcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b0701f1367bf1cd07b35ea7f319ff2a641fe36f",
+      "size": 614,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9b0701f1367bf1cd07b35ea7f319ff2a641fe36f"
+    },
+    {
+      "path": "src/agents/tools/execute_python.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e693a0ae5d95d1844eaa4127e01882787aae9de5",
+      "size": 9935,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e693a0ae5d95d1844eaa4127e01882787aae9de5"
+    },
+    {
+      "path": "src/agents/tools/execute_sql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e55a0e8db3b04c14e854edc293f22a918a0ab3ed",
+      "size": 7872,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e55a0e8db3b04c14e854edc293f22a918a0ab3ed"
+    },
+    {
+      "path": "src/agents/tools/explore.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "905b73c15e273d8d4940a2fd18b81f5c6730d58b",
+      "size": 7704,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/905b73c15e273d8d4940a2fd18b81f5c6730d58b"
+    },
+    {
+      "path": "src/agents/tools/explore_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e61e86b7de916ae8beb6b70978b7ea8c07f067cc",
+      "size": 5483,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e61e86b7de916ae8beb6b70978b7ea8c07f067cc"
+    },
+    {
+      "path": "src/agents/tools/grep_context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c74713700f4a011b2a18176e9e252fa084fb0d49",
+      "size": 7920,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c74713700f4a011b2a18176e9e252fa084fb0d49"
+    },
+    {
+      "path": "src/agents/tools/inspect_files.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ed679b7a29cd116110afc6b223ae9afd83f3dac",
+      "size": 7573,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9ed679b7a29cd116110afc6b223ae9afd83f3dac"
+    },
+    {
+      "path": "src/agents/tools/inspect_sqlite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30daa51abf1b84e040f48022b3229caf9a08bf4c",
+      "size": 2479,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/30daa51abf1b84e040f48022b3229caf9a08bf4c"
+    },
+    {
+      "path": "src/agents/tools/preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81d31b9c445dbd65947aeda4b18e0f8d22a53e3a",
+      "size": 8768,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/81d31b9c445dbd65947aeda4b18e0f8d22a53e3a"
+    },
+    {
+      "path": "src/agents/tools/read_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa2de3aebf9248ab7a87b548c97ed5388838e4c0",
+      "size": 6509,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/aa2de3aebf9248ab7a87b548c97ed5388838e4c0"
+    },
+    {
+      "path": "src/agents/tools/read_doc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e2cae61e32dadca6f9a17c20114386070bf9eee",
+      "size": 7063,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2e2cae61e32dadca6f9a17c20114386070bf9eee"
+    },
+    {
+      "path": "src/agents/tools/read_json.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "488fe70abb3c3f5ecb09b5c0df4af1f8bc26a5de",
+      "size": 9841,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/488fe70abb3c3f5ecb09b5c0df4af1f8bc26a5de"
+    },
+    {
+      "path": "src/agents/tools/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "057925e2f365b55112d0339b0f5686977ccacc8d",
+      "size": 6378,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/057925e2f365b55112d0339b0f5686977ccacc8d"
+    },
+    {
+      "path": "src/agents/tools/run_etl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69838f07bc67dd4ebbf7a48756634229f78a05e5",
+      "size": 6347,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/69838f07bc67dd4ebbf7a48756634229f78a05e5"
+    },
+    {
+      "path": "src/agents/tools/schema_normalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "460143bf826dc42cdda0083a78150eae2b23c2ac",
+      "size": 3227,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/460143bf826dc42cdda0083a78150eae2b23c2ac"
+    },
+    {
+      "path": "src/agents/tools/units.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbce8fa7ca5423310c8b514310581262b7bafb2a",
+      "size": 1645,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/dbce8fa7ca5423310c8b514310581262b7bafb2a"
+    },
+    {
+      "path": "src/agents/tracing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fa038d6eae27ef093276b72a1d4b76a32c832d8",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/4fa038d6eae27ef093276b72a1d4b76a32c832d8"
+    },
+    {
+      "path": "src/agents/tracing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c30615f330b8b4e928466fcc86dab33af4ea94d0",
+      "size": 1547,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c30615f330b8b4e928466fcc86dab33af4ea94d0"
+    },
+    {
+      "path": "src/agents/tracing/context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aace3e8d84b0a79b3dc11e1fcf6e61faa4c50baf",
+      "size": 1199,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/aace3e8d84b0a79b3dc11e1fcf6e61faa4c50baf"
+    },
+    {
+      "path": "src/agents/tracing/create.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2295d9ce836b19b66a59e371fa953332e9857cc8",
+      "size": 2468,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2295d9ce836b19b66a59e371fa953332e9857cc8"
+    },
+    {
+      "path": "src/agents/tracing/instrument.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "355afb63d41e8de9d418a6257b4d3168c26ff88a",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/355afb63d41e8de9d418a6257b4d3168c26ff88a"
+    },
+    {
+      "path": "src/agents/tracing/processor_interface.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "422f53b896e1cfd8741ba501a55fac71fa7f9d75",
+      "size": 861,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/422f53b896e1cfd8741ba501a55fac71fa7f9d75"
+    },
+    {
+      "path": "src/agents/tracing/processors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f89bad3a73e5f365919bc1bd7d5d8316a7727f7f",
+      "size": 2195,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f89bad3a73e5f365919bc1bd7d5d8316a7727f7f"
+    },
+    {
+      "path": "src/agents/tracing/provider.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "347b5481c6026aa2b48d3f0d211af4a7870ba910",
+      "size": 5710,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/347b5481c6026aa2b48d3f0d211af4a7870ba910"
+    },
+    {
+      "path": "src/agents/tracing/scope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1417a809a778723a22ff658e481219b669f29d5a",
+      "size": 1162,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1417a809a778723a22ff658e481219b669f29d5a"
+    },
+    {
+      "path": "src/agents/tracing/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "839f61c5399bd49b35d493f3452ab3e12b533bef",
+      "size": 1104,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/839f61c5399bd49b35d493f3452ab3e12b533bef"
+    },
+    {
+      "path": "src/agents/tracing/span_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2937ccc5d39b7955f59ea9037949ed7c2122bea3",
+      "size": 3959,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2937ccc5d39b7955f59ea9037949ed7c2122bea3"
+    },
+    {
+      "path": "src/agents/tracing/spans.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1827ee5d602c46a384dad9663c5a3aabe554182",
+      "size": 5099,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e1827ee5d602c46a384dad9663c5a3aabe554182"
+    },
+    {
+      "path": "src/agents/tracing/store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "391c9f116fe2855d6af9952e51085c90396baccd",
+      "size": 16775,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/391c9f116fe2855d6af9952e51085c90396baccd"
+    },
+    {
+      "path": "src/agents/tracing/traces.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90c6bd2ffccd59b0f4cc018b24cf992d197fc486",
+      "size": 3911,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/90c6bd2ffccd59b0f4cc018b24cf992d197fc486"
+    },
+    {
+      "path": "src/agents/tracing/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b6da4ce20edbd758c5730e980296f91f7af39c",
+      "size": 337,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/75b6da4ce20edbd758c5730e980296f91f7af39c"
+    },
+    {
+      "path": "src/agents/verification",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a66edbe07cf5d1df3fd5370b90f8c8d3c4d60839",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/a66edbe07cf5d1df3fd5370b90f8c8d3c4d60839"
+    },
+    {
+      "path": "src/agents/verification/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4563fa367f77f43dc2b5b8cb02a4109ad16cfe36",
+      "size": 366,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4563fa367f77f43dc2b5b8cb02a4109ad16cfe36"
+    },
+    {
+      "path": "src/agents/verification/answer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1050d0fa5568618f8bf26caf47600b36dba3343a",
+      "size": 19389,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1050d0fa5568618f8bf26caf47600b36dba3343a"
+    },
+    {
+      "path": "src/agents/verification/terminal_policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad9a034ee9a93b138af13cd46d8b1ad51189c5e7",
+      "size": 7257,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ad9a034ee9a93b138af13cd46d8b1ad51189c5e7"
+    },
+    {
+      "path": "src/agents/verification/video_constraints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18628a528ac755ded173b655d9d20b0bc7d8af3e",
+      "size": 11703,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/18628a528ac755ded173b655d9d20b0bc7d8af3e"
+    },
+    {
+      "path": "src/agents/video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1da8935fe944dbb4124dd1e63a4b0dee8e50c38",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/c1da8935fe944dbb4124dd1e63a4b0dee8e50c38"
+    },
+    {
+      "path": "src/agents/video/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "217d91ceadb39244b73cb92da8712ad9ec9d7966",
+      "size": 68,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/217d91ceadb39244b73cb92da8712ad9ec9d7966"
+    },
+    {
+      "path": "src/agents/video/prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43da7598764cc17babe96f37ab58d95bc1d94a02",
+      "size": 4623,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/43da7598764cc17babe96f37ab58d95bc1d94a02"
+    },
+    {
+      "path": "src/agents/video/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30939a356e2670a1a981ab194a9376126c860c06",
+      "size": 16223,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/30939a356e2670a1a981ab194a9376126c860c06"
+    },
+    {
+      "path": "src/agents/video/rule_templater.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "924ab250a21697d180b0a925a0ec69ee7f945a5b",
+      "size": 36042,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/924ab250a21697d180b0a925a0ec69ee7f945a5b"
+    },
+    {
+      "path": "src/agents/video/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d49462200e930b1c614cb86553fded46d1178a21",
+      "size": 3905,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d49462200e930b1c614cb86553fded46d1178a21"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "510524667b1f9bf99ee2c6fc3dccd74665356d4f",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/510524667b1f9bf99ee2c6fc3dccd74665356d4f"
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/agent",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efd18706786c57bfbb1222285188ffe18c9bef27",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/efd18706786c57bfbb1222285188ffe18c9bef27"
+    },
+    {
+      "path": "tests/agent/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/agent/test_react_native.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f652b3850c359606b63c4e1084e3b68c56194519",
+      "size": 41957,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f652b3850c359606b63c4e1084e3b68c56194519"
+    },
+    {
+      "path": "tests/application",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "889fcd69482b21d0606b87de3f8cc7ffd06f1f94",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/889fcd69482b21d0606b87de3f8cc7ffd06f1f94"
+    },
+    {
+      "path": "tests/application/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/application/test_app_factory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b682f83f2eba6172d5e5dc35059d93f03b0ae2f5",
+      "size": 7965,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b682f83f2eba6172d5e5dc35059d93f03b0ae2f5"
+    },
+    {
+      "path": "tests/application/test_app_resolves_sampling_defaults.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22d0e1944f16047238a8e1fe5c57748c4809bef2",
+      "size": 3756,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/22d0e1944f16047238a8e1fe5c57748c4809bef2"
+    },
+    {
+      "path": "tests/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd1cfbfa5addd283ab5c5dc42d8e5cacef8fa25d",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/fd1cfbfa5addd283ab5c5dc42d8e5cacef8fa25d"
+    },
+    {
+      "path": "tests/config/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/config/test_config_new_fields.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c3a9cee8f9bf65bd252d70e160f08edf409791a",
+      "size": 8904,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4c3a9cee8f9bf65bd252d70e160f08edf409791a"
+    },
+    {
+      "path": "tests/config/test_config_rate_limit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feed70ae358742339e7f798a2d2c3849ac911f41",
+      "size": 6190,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/feed70ae358742339e7f798a2d2c3849ac911f41"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4989433711428b6f9ebdbf7670596a8eab61366",
+      "size": 885,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f4989433711428b6f9ebdbf7670596a8eab61366"
+    },
+    {
+      "path": "tests/dashboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e3f86abc3f05c16dc0b65936385cabdce7ddce3",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/7e3f86abc3f05c16dc0b65936385cabdce7ddce3"
+    },
+    {
+      "path": "tests/dashboard/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/dashboard/test_tracing_dashboard_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1431a26dafd72fa1eaa5e4ba8e450ba808a18204",
+      "size": 3984,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/1431a26dafd72fa1eaa5e4ba8e450ba808a18204"
+    },
+    {
+      "path": "tests/etl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f72636831b725e35c8b227685891fdae8cf83b4",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/1f72636831b725e35c8b227685891fdae8cf83b4"
+    },
+    {
+      "path": "tests/etl/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/etl/test_detect_prose_files.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911aa861614efc8d711d251f7412fbec3111cad2",
+      "size": 2914,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/911aa861614efc8d711d251f7412fbec3111cad2"
+    },
+    {
+      "path": "tests/etl/test_etl_entity_grouping.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3948f8efffa443faa5e36cf3cd2e5d4dae761d00",
+      "size": 29257,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3948f8efffa443faa5e36cf3cd2e5d4dae761d00"
+    },
+    {
+      "path": "tests/etl/test_etl_extract_e2e.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d64b01741cabbf089d74a25829ae9de4a67ac43",
+      "size": 5493,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8d64b01741cabbf089d74a25829ae9de4a67ac43"
+    },
+    {
+      "path": "tests/etl/test_etl_extractor_fallback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83f2d4c863a85f9d10af543bfc6bd242ba09e89",
+      "size": 10084,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d83f2d4c863a85f9d10af543bfc6bd242ba09e89"
+    },
+    {
+      "path": "tests/etl/test_etl_fund_disambiguation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f6c0b7a384fa0853577476cefcfedbce1d004eb",
+      "size": 4969,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0f6c0b7a384fa0853577476cefcfedbce1d004eb"
+    },
+    {
+      "path": "tests/etl/test_etl_identity_repair.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a63a4501e7bdc523225ff54ac94d5f72320267f",
+      "size": 9266,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2a63a4501e7bdc523225ff54ac94d5f72320267f"
+    },
+    {
+      "path": "tests/etl/test_etl_merge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c8e5d31c5e932f4603a66be9a4362e5ebf84f25",
+      "size": 18216,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/5c8e5d31c5e932f4603a66be9a4362e5ebf84f25"
+    },
+    {
+      "path": "tests/etl/test_etl_pdf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee362075b1f6e29ed60832df13c5651226b5506",
+      "size": 8189,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3ee362075b1f6e29ed60832df13c5651226b5506"
+    },
+    {
+      "path": "tests/etl/test_etl_prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9c3095ccc30818823fc4cf6f9870211fb81a4de",
+      "size": 26854,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e9c3095ccc30818823fc4cf6f9870211fb81a4de"
+    },
+    {
+      "path": "tests/etl/test_etl_proportion_convention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e53da1cde9cbb40648f117e8a810fd28c3f54d8",
+      "size": 4775,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0e53da1cde9cbb40648f117e8a810fd28c3f54d8"
+    },
+    {
+      "path": "tests/etl/test_etl_reconcile_record.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "858b03d88f1e27813e25d82dfcd33ba8ebf3933c",
+      "size": 4508,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/858b03d88f1e27813e25d82dfcd33ba8ebf3933c"
+    },
+    {
+      "path": "tests/etl/test_etl_record.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5e987d7b3e0d9f249a47a0d3a629e02a9acfcc0",
+      "size": 9151,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a5e987d7b3e0d9f249a47a0d3a629e02a9acfcc0"
+    },
+    {
+      "path": "tests/etl/test_etl_router.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1eade4bbe6b8f5c4abe8f1c67206b44bc07f643",
+      "size": 2592,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b1eade4bbe6b8f5c4abe8f1c67206b44bc07f643"
+    },
+    {
+      "path": "tests/etl/test_etl_schema_kb.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bbc1c721672a6f99cd491e5a13d42daa752bc0",
+      "size": 3087,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/13bbc1c721672a6f99cd491e5a13d42daa752bc0"
+    },
+    {
+      "path": "tests/etl/test_etl_synonym_unify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0acdaa8dfec2c68829a42ba7309cc06ff4475337",
+      "size": 15946,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0acdaa8dfec2c68829a42ba7309cc06ff4475337"
+    },
+    {
+      "path": "tests/etl/test_etl_text_adapter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c287e7344909c235bb1a44cc05b5062775c4f664",
+      "size": 3092,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c287e7344909c235bb1a44cc05b5062775c4f664"
+    },
+    {
+      "path": "tests/etl/test_etl_threading.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb8b017b0785aa9c6208d46e4b4e1db5332a9760",
+      "size": 1580,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/fb8b017b0785aa9c6208d46e4b4e1db5332a9760"
+    },
+    {
+      "path": "tests/etl/test_etl_trace.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c40d95139846eaa12e0aad8b90e6cfee2bb7b163",
+      "size": 2323,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/c40d95139846eaa12e0aad8b90e6cfee2bb7b163"
+    },
+    {
+      "path": "tests/etl/test_etl_validate_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47dcfc0c6beb42703fae3b0f52ad640b6250e459",
+      "size": 1699,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/47dcfc0c6beb42703fae3b0f52ad640b6250e459"
+    },
+    {
+      "path": "tests/etl/test_etl_verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "130e3a6d328c1111c2342be0c9babc16592f8fdc",
+      "size": 6577,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/130e3a6d328c1111c2342be0c9babc16592f8fdc"
+    },
+    {
+      "path": "tests/explorer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db0315e7762f11874e4c7ecbd05d4dc45dd8c9db",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/db0315e7762f11874e4c7ecbd05d4dc45dd8c9db"
+    },
+    {
+      "path": "tests/explorer/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "tests/explorer/test_explorer_prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d21a3368ca11988ad4108fe50633b40801abfee",
+      "size": 1838,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/5d21a3368ca11988ad4108fe50633b40801abfee"
+    },
+    {
+      "path": "tests/explorer/test_explorer_registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b908db8512c1d8ef74951110c2d520623f48ed27",
+      "size": 9940,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b908db8512c1d8ef74951110c2d520623f48ed27"
+    },
+    {
+      "path": "tests/explorer/test_explorer_runner_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a714c114f08fafa915c70bdd52fbbefe3ac43c08",
+      "size": 11593,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a714c114f08fafa915c70bdd52fbbefe3ac43c08"
+    },
+    {
+      "path": "tests/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7fe8d2101b442397908dcd0a74eabd95fbfe13df",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/7fe8d2101b442397908dcd0a74eabd95fbfe13df"
+    },
+    {
+      "path": "tests/helpers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/helpers/scripted_adapters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad6a39d5f56295b2770b475c712b158dbba5e35a",
+      "size": 2871,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ad6a39d5f56295b2770b475c712b158dbba5e35a"
+    },
+    {
+      "path": "tests/llm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bf9918a1b35c6416201c80115bec8e0930a8fde",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/3bf9918a1b35c6416201c80115bec8e0930a8fde"
+    },
+    {
+      "path": "tests/llm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/llm/test_model_adapter_request.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb64a13bb54d2ce2a396256ad83c074e93910f1e",
+      "size": 24141,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/bb64a13bb54d2ce2a396256ad83c074e93910f1e"
+    },
+    {
+      "path": "tests/llm/test_protocol_adapter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98323eac39fae9619c83effa6d47c3dde14b5517",
+      "size": 4465,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/98323eac39fae9619c83effa6d47c3dde14b5517"
+    },
+    {
+      "path": "tests/llm/test_rate_limit_adapter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9be75c1ed0c7e5c5d0bc14f463914cef7860545",
+      "size": 16025,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d9be75c1ed0c7e5c5d0bc14f463914cef7860545"
+    },
+    {
+      "path": "tests/llm/test_rate_limit_bucket.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af66c0c3b9eb4a28354ecdb823300b784a72935",
+      "size": 8526,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7af66c0c3b9eb4a28354ecdb823300b784a72935"
+    },
+    {
+      "path": "tests/llm/test_tokenizer_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08447d6a142500fdf60e7052f6f5393f4d475479",
+      "size": 1709,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/08447d6a142500fdf60e7052f6f5393f4d475479"
+    },
+    {
+      "path": "tests/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5702a9f3ab9d3953adc62235bc8f775589db1bfe",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/5702a9f3ab9d3953adc62235bc8f775589db1bfe"
+    },
+    {
+      "path": "tests/prompts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/prompts/test_prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "597e6879cf4c577336c82dc71078673a4b7956d8",
+      "size": 6452,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/597e6879cf4c577336c82dc71078673a4b7956d8"
+    },
+    {
+      "path": "tests/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee784d558dc560d98bbf91866cfb38dfecea66a5",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/ee784d558dc560d98bbf91866cfb38dfecea66a5"
+    },
+    {
+      "path": "tests/runs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/runs/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a81c02fe26a42b9b8799b65298bae1e5d422a6e",
+      "size": 878,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/9a81c02fe26a42b9b8799b65298bae1e5d422a6e"
+    },
+    {
+      "path": "tests/runs/test_blocklist.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abf67e8fec8a1606bb2b540ce369b972ef864dab",
+      "size": 8032,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/abf67e8fec8a1606bb2b540ce369b972ef864dab"
+    },
+    {
+      "path": "tests/runs/test_etl_failure_isolation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de63d4ff5f22b969794648c9ab55014e0b2d44cf",
+      "size": 2505,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/de63d4ff5f22b969794648c9ab55014e0b2d44cf"
+    },
+    {
+      "path": "tests/runs/test_runner_key_pinning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1c463e9755a001ab32673de580b80a36c401fa",
+      "size": 12298,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2b1c463e9755a001ab32673de580b80a36c401fa"
+    },
+    {
+      "path": "tests/runs/test_runner_run_id_precision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8b37c88caebf3909ae4556a5556ed4ec11f54dd",
+      "size": 4580,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b8b37c88caebf3909ae4556a5556ed4ec11f54dd"
+    },
+    {
+      "path": "tests/runs/test_runner_tracing_timeout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "125e58762cec2ccea0d43d15a029c4d4582af042",
+      "size": 7051,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/125e58762cec2ccea0d43d15a029c4d4582af042"
+    },
+    {
+      "path": "tests/runs/test_task_range.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618f980173c781eb9ae8476f16058e3cc0e82037",
+      "size": 6036,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/618f980173c781eb9ae8476f16058e3cc0e82037"
+    },
+    {
+      "path": "tests/runtime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21f954d11965b92bc6eb86a7d290dede8057eb5f",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/21f954d11965b92bc6eb86a7d290dede8057eb5f"
+    },
+    {
+      "path": "tests/runtime/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/runtime/test_media.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "266a61674e590ed534eab9b5445a3a0f3ef5b2ad",
+      "size": 1054,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/266a61674e590ed534eab9b5445a3a0f3ef5b2ad"
+    },
+    {
+      "path": "tests/runtime/test_recorder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f4d79d114faa1b16b8b27740d784b0177f7713a",
+      "size": 7816,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/2f4d79d114faa1b16b8b27740d784b0177f7713a"
+    },
+    {
+      "path": "tests/runtime/test_recorder_prompt_capture.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682c12e5a77c9ef316d1a275a925a501fbb86e66",
+      "size": 7759,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/682c12e5a77c9ef316d1a275a925a501fbb86e66"
+    },
+    {
+      "path": "tests/submission",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41f7e1ba40b5f09d20a97fda218d0cdf7b1b2f3f",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/41f7e1ba40b5f09d20a97fda218d0cdf7b1b2f3f"
+    },
+    {
+      "path": "tests/submission/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "tests/submission/test_submission_config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b63569414b6f3899ec83e65c42ef6667ac6cfb19",
+      "size": 1167,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b63569414b6f3899ec83e65c42ef6667ac6cfb19"
+    },
+    {
+      "path": "tests/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8114e0594c54b947b530244a464114003a05fb0b",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/8114e0594c54b947b530244a464114003a05fb0b"
+    },
+    {
+      "path": "tests/tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/tools/test_build_virtual_context_fail_open.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d308cb16b6f470aba9dc08ffe2d73125d420c7a5",
+      "size": 3045,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d308cb16b6f470aba9dc08ffe2d73125d420c7a5"
+    },
+    {
+      "path": "tests/tools/test_context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8165883fa17e4124293da6325080bf1ecf2a61f7",
+      "size": 2529,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8165883fa17e4124293da6325080bf1ecf2a61f7"
+    },
+    {
+      "path": "tests/tools/test_dispatcher.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "298d950ec4c55434fd0fa07d82363bb371582502",
+      "size": 13934,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/298d950ec4c55434fd0fa07d82363bb371582502"
+    },
+    {
+      "path": "tests/tools/test_explore_inputs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a08ff9310a445313ce845d07291840866e7e1bb",
+      "size": 3222,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/3a08ff9310a445313ce845d07291840866e7e1bb"
+    },
+    {
+      "path": "tests/tools/test_explore_tool_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ca440a557134948ece4ac2aa6d12a0b709a258",
+      "size": 8343,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/32ca440a557134948ece4ac2aa6d12a0b709a258"
+    },
+    {
+      "path": "tests/tools/test_explore_video_tool.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dcd029c0f655e842f715cdb7f70998aae4c16ae",
+      "size": 6251,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/7dcd029c0f655e842f715cdb7f70998aae4c16ae"
+    },
+    {
+      "path": "tests/tools/test_grep_context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e51eed42e676b0d12387a1981d2c54aeb602de",
+      "size": 1507,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/15e51eed42e676b0d12387a1981d2c54aeb602de"
+    },
+    {
+      "path": "tests/tools/test_handle_answer_from_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f5fe5052cb44a189120ca17924f4da10192554",
+      "size": 21692,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/16f5fe5052cb44a189120ca17924f4da10192554"
+    },
+    {
+      "path": "tests/tools/test_inspect_files.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7091f743c0c2f77260a5d6b6c9c37f1eec67f36",
+      "size": 15620,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/d7091f743c0c2f77260a5d6b6c9c37f1eec67f36"
+    },
+    {
+      "path": "tests/tools/test_preview_pdf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "633c6d14e8eb635c23a445e106460e388c7b6c98",
+      "size": 15848,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/633c6d14e8eb635c23a445e106460e388c7b6c98"
+    },
+    {
+      "path": "tests/tools/test_python_exec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f00c28c86a46ca529884d0c6220a6c31c8a7d14",
+      "size": 4649,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/6f00c28c86a46ca529884d0c6220a6c31c8a7d14"
+    },
+    {
+      "path": "tests/tools/test_read_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d2c37f515fdc01d3adbcc817b9b6d1543ed652",
+      "size": 5401,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/b2d2c37f515fdc01d3adbcc817b9b6d1543ed652"
+    },
+    {
+      "path": "tests/tools/test_read_doc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a289fed602ddec8ca555e351075fefa26389c5aa",
+      "size": 8417,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a289fed602ddec8ca555e351075fefa26389c5aa"
+    },
+    {
+      "path": "tests/tools/test_read_json.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98918e3a9f2589a71a34d0ec36c6d08cbce31280",
+      "size": 15417,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/98918e3a9f2589a71a34d0ec36c6d08cbce31280"
+    },
+    {
+      "path": "tests/tools/test_registry_immutable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6de4c43987be84d24c2a48411dab945c134f8b32",
+      "size": 4144,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/6de4c43987be84d24c2a48411dab945c134f8b32"
+    },
+    {
+      "path": "tests/tools/test_registry_input_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2f9ff8615b88899e54e13f36df29078a7125acd",
+      "size": 2751,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e2f9ff8615b88899e54e13f36df29078a7125acd"
+    },
+    {
+      "path": "tests/tools/test_registry_json_schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3111397e5a6a71fcf9ee26110d6b347033298a8",
+      "size": 6147,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/f3111397e5a6a71fcf9ee26110d6b347033298a8"
+    },
+    {
+      "path": "tests/tools/test_run_etl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f9f63b6514d19eb0b967ca2990b0cd0d839ff78",
+      "size": 4501,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/6f9f63b6514d19eb0b967ca2990b0cd0d839ff78"
+    },
+    {
+      "path": "tests/tools/test_schema_normalizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3a24646a582d7f6aabe6cc4a70baaf0178593e7",
+      "size": 5722,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/a3a24646a582d7f6aabe6cc4a70baaf0178593e7"
+    },
+    {
+      "path": "tests/tools/test_sqlite_runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b1b0842bed640f4c9bebebab625cbc351bc196",
+      "size": 16391,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/93b1b0842bed640f4c9bebebab625cbc351bc196"
+    },
+    {
+      "path": "tests/tracing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5248e999c5a122a753811c0c774c93be38a8236",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/d5248e999c5a122a753811c0c774c93be38a8236"
+    },
+    {
+      "path": "tests/tracing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/tracing/test_tracing_processor_lifecycle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7a3a31cf4d11b18f1e9f0f5dd90f2dda6af1cc7",
+      "size": 3903,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e7a3a31cf4d11b18f1e9f0f5dd90f2dda6af1cc7"
+    },
+    {
+      "path": "tests/tracing/test_tracing_store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faeabe9cb3a7cdff5fe4d4b85a2506a93a240dbb",
+      "size": 10188,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/faeabe9cb3a7cdff5fe4d4b85a2506a93a240dbb"
+    },
+    {
+      "path": "tests/verification",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5d7a4141eef7700a3fe6f30a47fbbc77ac34384",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/b5d7a4141eef7700a3fe6f30a47fbbc77ac34384"
+    },
+    {
+      "path": "tests/verification/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/verification/test_answer_verifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c5ab5e0243ee26750a55af708c7e625130e1d62",
+      "size": 2715,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/5c5ab5e0243ee26750a55af708c7e625130e1d62"
+    },
+    {
+      "path": "tests/verification/test_terminal_policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef125c84663d8629b2f34ace60bab7be6f276971",
+      "size": 2221,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ef125c84663d8629b2f34ace60bab7be6f276971"
+    },
+    {
+      "path": "tests/verification/test_video_constraints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4426a55ffe0d3a1283221f0735490de16d607e85",
+      "size": 14004,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/4426a55ffe0d3a1283221f0735490de16d607e85"
+    },
+    {
+      "path": "tests/video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9950643abb13a7270010a74389301ea33502143",
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/trees/b9950643abb13a7270010a74389301ea33502143"
+    },
+    {
+      "path": "tests/video/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "tests/video/test_rule_templater.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebba523420930133f9325c535ff36b9049219405",
+      "size": 19216,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ebba523420930133f9325c535ff36b9049219405"
+    },
+    {
+      "path": "tests/video/test_video_registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e0260358cb233f771f95a30025dda80eba21db6",
+      "size": 8120,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/8e0260358cb233f771f95a30025dda80eba21db6"
+    },
+    {
+      "path": "tests/video/test_video_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e794e86871f6e227e776db7b4d370b258fee581",
+      "size": 4342,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/0e794e86871f6e227e776db7b4d370b258fee581"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccc0fdff0031aac2d7cb432dba456891bdb29cd3",
+      "size": 286948,
+      "url": "https://api.github.com/repos/Reverse-7/kddcup2026-dataagents/git/blobs/ccc0fdff0031aac2d7cb432dba456891bdb29cd3"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,2400 @@
+{
+  "sha": "eb87653a7930a87a336acc97445a7592cf9c41f5",
+  "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/eb87653a7930a87a336acc97445a7592cf9c41f5",
+  "tree": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b5c2d29ca5812fe139022f7e8fc68b12e0f137c",
+      "size": 203,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6b5c2d29ca5812fe139022f7e8fc68b12e0f137c"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f832384c6a74d41ddb364e59d9767d88eedc323",
+      "size": 2314,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9f832384c6a74d41ddb364e59d9767d88eedc323"
+    },
+    {
+      "path": "CLAUDE.local.md.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf201a23796f61bd23c390e3f33492a390ef5a9b",
+      "size": 1373,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/cf201a23796f61bd23c390e3f33492a390ef5a9b"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c82cd0cadcfa8ff8a5ac191f2ad4404488464ba0",
+      "size": 15539,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c82cd0cadcfa8ff8a5ac191f2ad4404488464ba0"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3174fded326b9087fb36ad6fbfb2f30c87b7622c",
+      "size": 15230,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/3174fded326b9087fb36ad6fbfb2f30c87b7622c"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98dddc33fc9bdd4761d443ce5112cc973ecc0d7a",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/98dddc33fc9bdd4761d443ce5112cc973ecc0d7a"
+    },
+    {
+      "path": "data/claude_trajectory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15020af6c5f16b534fda0a57dafcd68ef7f4ca52",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/15020af6c5f16b534fda0a57dafcd68ef7f4ca52"
+    },
+    {
+      "path": "data/claude_trajectory/REPORT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d457b2739399898a7a81b615292679fe72f95d6f",
+      "size": 23826,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/d457b2739399898a7a81b615292679fe72f95d6f"
+    },
+    {
+      "path": "data/claude_trajectory/task_11",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89afac3a0533d7edfe920622995c68740e074775",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/89afac3a0533d7edfe920622995c68740e074775"
+    },
+    {
+      "path": "data/claude_trajectory/task_11/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c99551227f6d31bf4f2f4056569e93afd9484ab",
+      "size": 6326,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0c99551227f6d31bf4f2f4056569e93afd9484ab"
+    },
+    {
+      "path": "data/claude_trajectory/task_145",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cca7b57da066ce0f159c0cf704421e27ed84fb87",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/cca7b57da066ce0f159c0cf704421e27ed84fb87"
+    },
+    {
+      "path": "data/claude_trajectory/task_145/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16578e3870dbc3bdd87d502e05627a40c52cf324",
+      "size": 2671,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/16578e3870dbc3bdd87d502e05627a40c52cf324"
+    },
+    {
+      "path": "data/claude_trajectory/task_163",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9df412213d1ab950243d36f3aa5f3c6f362fa108",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/9df412213d1ab950243d36f3aa5f3c6f362fa108"
+    },
+    {
+      "path": "data/claude_trajectory/task_163/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03a16fef546c2b91c3314130d11d6b7464dc632e",
+      "size": 4604,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/03a16fef546c2b91c3314130d11d6b7464dc632e"
+    },
+    {
+      "path": "data/claude_trajectory/task_169",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ebfc25ece5118a27c82c06f76a3ad2b2de7acb3",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/0ebfc25ece5118a27c82c06f76a3ad2b2de7acb3"
+    },
+    {
+      "path": "data/claude_trajectory/task_169/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4706ede63e35e2bfbf36b94e9f032d4334daafe3",
+      "size": 5301,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4706ede63e35e2bfbf36b94e9f032d4334daafe3"
+    },
+    {
+      "path": "data/claude_trajectory/task_173",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d21286ae581e8c5feaaf9b3f0c41519e81b04da7",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/d21286ae581e8c5feaaf9b3f0c41519e81b04da7"
+    },
+    {
+      "path": "data/claude_trajectory/task_173/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "879729e787d9d0b0611ebefdf08560aed9116a21",
+      "size": 6124,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/879729e787d9d0b0611ebefdf08560aed9116a21"
+    },
+    {
+      "path": "data/claude_trajectory/task_180",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01bbf536e6f688ab7b86ade8fa339350434aa91c",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/01bbf536e6f688ab7b86ade8fa339350434aa91c"
+    },
+    {
+      "path": "data/claude_trajectory/task_180/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b15cc482fd97d13aa9d1a12438cd14de7fbf5a6",
+      "size": 5657,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0b15cc482fd97d13aa9d1a12438cd14de7fbf5a6"
+    },
+    {
+      "path": "data/claude_trajectory/task_19",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "811d402af22aa43b4fe1d89490629f37e5a867f6",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/811d402af22aa43b4fe1d89490629f37e5a867f6"
+    },
+    {
+      "path": "data/claude_trajectory/task_19/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f75aecb09d552e5229c347c28ee965b9bfa97ae",
+      "size": 4966,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8f75aecb09d552e5229c347c28ee965b9bfa97ae"
+    },
+    {
+      "path": "data/claude_trajectory/task_194",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0738c1ade7fa3fbfdb6760453dde0675f01007d5",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/0738c1ade7fa3fbfdb6760453dde0675f01007d5"
+    },
+    {
+      "path": "data/claude_trajectory/task_194/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8acc62a0623d137f4e9c7a92335142de9e6061ca",
+      "size": 5263,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8acc62a0623d137f4e9c7a92335142de9e6061ca"
+    },
+    {
+      "path": "data/claude_trajectory/task_196",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a24013652828da9f31d34e9d3c1c1f45cb1ebd96",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/a24013652828da9f31d34e9d3c1c1f45cb1ebd96"
+    },
+    {
+      "path": "data/claude_trajectory/task_196/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "116a89e3d823418eaa761f09a3286a63d12116eb",
+      "size": 4720,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/116a89e3d823418eaa761f09a3286a63d12116eb"
+    },
+    {
+      "path": "data/claude_trajectory/task_199",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c4feac7e31a5d684138715b8f0ea59d4875d4c1",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/0c4feac7e31a5d684138715b8f0ea59d4875d4c1"
+    },
+    {
+      "path": "data/claude_trajectory/task_199/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff20e5cb2250a43f80b100014aad70edc5c9fb73",
+      "size": 7199,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ff20e5cb2250a43f80b100014aad70edc5c9fb73"
+    },
+    {
+      "path": "data/claude_trajectory/task_200",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9b3e76096f2fea7af1c32aa3086986d551b128e",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/c9b3e76096f2fea7af1c32aa3086986d551b128e"
+    },
+    {
+      "path": "data/claude_trajectory/task_200/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43a683f620ee6d165815f200d36c9811354ec469",
+      "size": 6248,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/43a683f620ee6d165815f200d36c9811354ec469"
+    },
+    {
+      "path": "data/claude_trajectory/task_214",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8194d0ef72bd92ffccdd02d4cb29d981cbcacd90",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/8194d0ef72bd92ffccdd02d4cb29d981cbcacd90"
+    },
+    {
+      "path": "data/claude_trajectory/task_214/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9414971819687cd1876a4c584355f5bd926510",
+      "size": 5208,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/cf9414971819687cd1876a4c584355f5bd926510"
+    },
+    {
+      "path": "data/claude_trajectory/task_218",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "677a5101403d663c021deee49c853b5a64ed67cc",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/677a5101403d663c021deee49c853b5a64ed67cc"
+    },
+    {
+      "path": "data/claude_trajectory/task_218/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07fb5407b2a9c129eb7821cebafa06c54b2176a8",
+      "size": 5429,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/07fb5407b2a9c129eb7821cebafa06c54b2176a8"
+    },
+    {
+      "path": "data/claude_trajectory/task_22",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fef97be1f276f5fc1798d47d990ed538fa8dda2e",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/fef97be1f276f5fc1798d47d990ed538fa8dda2e"
+    },
+    {
+      "path": "data/claude_trajectory/task_22/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6646f93c1474d5047212821bad03f1c9c91bcf48",
+      "size": 4218,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6646f93c1474d5047212821bad03f1c9c91bcf48"
+    },
+    {
+      "path": "data/claude_trajectory/task_24",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60828e44e9bb255435fd42faa7c06010b690f0c5",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/60828e44e9bb255435fd42faa7c06010b690f0c5"
+    },
+    {
+      "path": "data/claude_trajectory/task_24/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "865372fc770cfc938358f1823af6004d2032c5a6",
+      "size": 3050,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/865372fc770cfc938358f1823af6004d2032c5a6"
+    },
+    {
+      "path": "data/claude_trajectory/task_243",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f2f6f15bf66349d6e03243563468b5ca4a5a337",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/1f2f6f15bf66349d6e03243563468b5ca4a5a337"
+    },
+    {
+      "path": "data/claude_trajectory/task_243/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "239547a9bdc6e0c9991e5a601c38912163d6a96c",
+      "size": 5219,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/239547a9bdc6e0c9991e5a601c38912163d6a96c"
+    },
+    {
+      "path": "data/claude_trajectory/task_249",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76f9c5d50029b4c2d18a1ab7c82380dbdbf7f439",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/76f9c5d50029b4c2d18a1ab7c82380dbdbf7f439"
+    },
+    {
+      "path": "data/claude_trajectory/task_249/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "412031aabb3afd2bc351cfd4bd297359aab838f3",
+      "size": 6029,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/412031aabb3afd2bc351cfd4bd297359aab838f3"
+    },
+    {
+      "path": "data/claude_trajectory/task_25",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d892f7ba8e851fab7a8565bead52c0768ab03f7a",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/d892f7ba8e851fab7a8565bead52c0768ab03f7a"
+    },
+    {
+      "path": "data/claude_trajectory/task_25/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "596507cb0eeed5488a66b7e1ee64805e962432f6",
+      "size": 5482,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/596507cb0eeed5488a66b7e1ee64805e962432f6"
+    },
+    {
+      "path": "data/claude_trajectory/task_250",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5efeeaa37fbca4ebf5aea7d579ee5d299cddc81",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/c5efeeaa37fbca4ebf5aea7d579ee5d299cddc81"
+    },
+    {
+      "path": "data/claude_trajectory/task_250/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4d1299ddc4f878f3f3acb4cb5dc07d2eac4a12a",
+      "size": 4683,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a4d1299ddc4f878f3f3acb4cb5dc07d2eac4a12a"
+    },
+    {
+      "path": "data/claude_trajectory/task_257",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73176efac53816a4426acf95d9d1b34a1c9f29e3",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/73176efac53816a4426acf95d9d1b34a1c9f29e3"
+    },
+    {
+      "path": "data/claude_trajectory/task_257/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bb5d3c774bd25f4d281cd04cacc0fcd447aeab5",
+      "size": 5855,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5bb5d3c774bd25f4d281cd04cacc0fcd447aeab5"
+    },
+    {
+      "path": "data/claude_trajectory/task_259",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f8eb0476e7866cb4b08ff24a7a4e6dda264d513",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/5f8eb0476e7866cb4b08ff24a7a4e6dda264d513"
+    },
+    {
+      "path": "data/claude_trajectory/task_259/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d1f306623dc4b5d64338924ac81d848db273a28",
+      "size": 6864,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4d1f306623dc4b5d64338924ac81d848db273a28"
+    },
+    {
+      "path": "data/claude_trajectory/task_26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c37e9a0808460d8520e86253d5c5c047622f9bf",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/0c37e9a0808460d8520e86253d5c5c047622f9bf"
+    },
+    {
+      "path": "data/claude_trajectory/task_26/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9c459bb060c33c40264b7a2a6dd2609a4752607",
+      "size": 2252,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a9c459bb060c33c40264b7a2a6dd2609a4752607"
+    },
+    {
+      "path": "data/claude_trajectory/task_261",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee732a05ba5b051a6ed5513b353de6cd70369321",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/ee732a05ba5b051a6ed5513b353de6cd70369321"
+    },
+    {
+      "path": "data/claude_trajectory/task_261/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "967edbc1957abe716414e3be37cda584a6eae3bd",
+      "size": 6202,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/967edbc1957abe716414e3be37cda584a6eae3bd"
+    },
+    {
+      "path": "data/claude_trajectory/task_269",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dd52c406c61866fd4979fe12db3ffe86098a9a0",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/8dd52c406c61866fd4979fe12db3ffe86098a9a0"
+    },
+    {
+      "path": "data/claude_trajectory/task_269/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a24b9180d56c7e39235b7de21649f3ea018675",
+      "size": 4582,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/77a24b9180d56c7e39235b7de21649f3ea018675"
+    },
+    {
+      "path": "data/claude_trajectory/task_27",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a44a224d8ecaf01f9d768fdfc2e8f3c928c23da9",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/a44a224d8ecaf01f9d768fdfc2e8f3c928c23da9"
+    },
+    {
+      "path": "data/claude_trajectory/task_27/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a15aff4b2b9029311a073aed0e418ff3a2b077af",
+      "size": 2302,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a15aff4b2b9029311a073aed0e418ff3a2b077af"
+    },
+    {
+      "path": "data/claude_trajectory/task_283",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7e2ec53e36d0da37e12981dcbf869e6e53cab28",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/b7e2ec53e36d0da37e12981dcbf869e6e53cab28"
+    },
+    {
+      "path": "data/claude_trajectory/task_283/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af4136dd1b9dc71f13766ab7c3b62faffb6f951a",
+      "size": 4357,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/af4136dd1b9dc71f13766ab7c3b62faffb6f951a"
+    },
+    {
+      "path": "data/claude_trajectory/task_287",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01fcac61e63eaea6d86973753b64c4dda03666de",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/01fcac61e63eaea6d86973753b64c4dda03666de"
+    },
+    {
+      "path": "data/claude_trajectory/task_287/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b833a75dd5e78cd19f803190ba1083039875a00",
+      "size": 4590,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4b833a75dd5e78cd19f803190ba1083039875a00"
+    },
+    {
+      "path": "data/claude_trajectory/task_292",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e197f7b5aa27f03a65200bcb438f73e82b9a87ac",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/e197f7b5aa27f03a65200bcb438f73e82b9a87ac"
+    },
+    {
+      "path": "data/claude_trajectory/task_292/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af4893b908d2c79c714a3e4acafbe180ea2da1f5",
+      "size": 4086,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/af4893b908d2c79c714a3e4acafbe180ea2da1f5"
+    },
+    {
+      "path": "data/claude_trajectory/task_303",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb5b0028caf11f6d3e505e49a2239cf4d866901e",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/fb5b0028caf11f6d3e505e49a2239cf4d866901e"
+    },
+    {
+      "path": "data/claude_trajectory/task_303/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ffbff90386990472325c3afbc4319f46226ff7c",
+      "size": 5035,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2ffbff90386990472325c3afbc4319f46226ff7c"
+    },
+    {
+      "path": "data/claude_trajectory/task_305",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27de986bea3e4838197e04e4a601aa296c817e30",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/27de986bea3e4838197e04e4a601aa296c817e30"
+    },
+    {
+      "path": "data/claude_trajectory/task_305/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "470c912f6a0a4f48ba423a41131db40a0351c653",
+      "size": 4524,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/470c912f6a0a4f48ba423a41131db40a0351c653"
+    },
+    {
+      "path": "data/claude_trajectory/task_330",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f5ee9036b153c3f7d9c9f2dc6a873791eb5a396",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/3f5ee9036b153c3f7d9c9f2dc6a873791eb5a396"
+    },
+    {
+      "path": "data/claude_trajectory/task_330/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10b2d2fa4d9581cdeff3b33c1706137ace37aa30",
+      "size": 8171,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/10b2d2fa4d9581cdeff3b33c1706137ace37aa30"
+    },
+    {
+      "path": "data/claude_trajectory/task_344",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "364dbfc19ecafcb7c1309c50432b7cf2cbdf48a2",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/364dbfc19ecafcb7c1309c50432b7cf2cbdf48a2"
+    },
+    {
+      "path": "data/claude_trajectory/task_344/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba81d194623475eb695b51eb7519f368296956ea",
+      "size": 12747,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ba81d194623475eb695b51eb7519f368296956ea"
+    },
+    {
+      "path": "data/claude_trajectory/task_349",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cf58510dde31d2b64dd395cb2ee54c174a3c1d2",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/3cf58510dde31d2b64dd395cb2ee54c174a3c1d2"
+    },
+    {
+      "path": "data/claude_trajectory/task_349/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f5a7a3c5b6883003b6eb53f877031ea4bdd6d98",
+      "size": 4078,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8f5a7a3c5b6883003b6eb53f877031ea4bdd6d98"
+    },
+    {
+      "path": "data/claude_trajectory/task_350",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13b2d0fe1842dd599364fa710592d5ea9ea92c91",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/13b2d0fe1842dd599364fa710592d5ea9ea92c91"
+    },
+    {
+      "path": "data/claude_trajectory/task_350/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d0cc9912a4715169ae3e351df2deebe7dd41cf6",
+      "size": 6427,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/3d0cc9912a4715169ae3e351df2deebe7dd41cf6"
+    },
+    {
+      "path": "data/claude_trajectory/task_352",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90c3791c72f3217bf878237a62ebe8bb635a08a5",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/90c3791c72f3217bf878237a62ebe8bb635a08a5"
+    },
+    {
+      "path": "data/claude_trajectory/task_352/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a30b94be1a93ab6b46750929231f4919dfe0aa80",
+      "size": 6916,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a30b94be1a93ab6b46750929231f4919dfe0aa80"
+    },
+    {
+      "path": "data/claude_trajectory/task_355",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c629d0884166c7714b04ab9f70ee64d81d7ee17",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/9c629d0884166c7714b04ab9f70ee64d81d7ee17"
+    },
+    {
+      "path": "data/claude_trajectory/task_355/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45b996c3a4f983da3650b9453caf15803711f88",
+      "size": 4534,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e45b996c3a4f983da3650b9453caf15803711f88"
+    },
+    {
+      "path": "data/claude_trajectory/task_379",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad6b31ee7d0ebc78c6e62bdfb307cc842c5c2df0",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/ad6b31ee7d0ebc78c6e62bdfb307cc842c5c2df0"
+    },
+    {
+      "path": "data/claude_trajectory/task_379/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa5945818ba42914a064b630f3e01281cd0f6b1",
+      "size": 6195,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/dfa5945818ba42914a064b630f3e01281cd0f6b1"
+    },
+    {
+      "path": "data/claude_trajectory/task_38",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e141ef862f4a314d6f023e2e22d4236bd3a5f81",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/4e141ef862f4a314d6f023e2e22d4236bd3a5f81"
+    },
+    {
+      "path": "data/claude_trajectory/task_38/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e541848681d20792a33b42b78bf6ef9b8185544",
+      "size": 4878,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2e541848681d20792a33b42b78bf6ef9b8185544"
+    },
+    {
+      "path": "data/claude_trajectory/task_396",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "69346031396fcc7dd15e208c443fc22a5328b2a9",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/69346031396fcc7dd15e208c443fc22a5328b2a9"
+    },
+    {
+      "path": "data/claude_trajectory/task_396/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c5473b6c2404508337de25499470f4f4c8704bf",
+      "size": 7425,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4c5473b6c2404508337de25499470f4f4c8704bf"
+    },
+    {
+      "path": "data/claude_trajectory/task_408",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0d8bd606b54679d7a6cb019b8d4a72b82878d60",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/f0d8bd606b54679d7a6cb019b8d4a72b82878d60"
+    },
+    {
+      "path": "data/claude_trajectory/task_408/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0978312cc2161b031d4c5fef5ed2d159a5ecb5e2",
+      "size": 8295,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0978312cc2161b031d4c5fef5ed2d159a5ecb5e2"
+    },
+    {
+      "path": "data/claude_trajectory/task_415",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9267e6234ba7474d3c1ed85c5318e5f6e381ab65",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/9267e6234ba7474d3c1ed85c5318e5f6e381ab65"
+    },
+    {
+      "path": "data/claude_trajectory/task_415/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ec917bb7832bc5436dab3c8c1baa2e8eae7e0dd",
+      "size": 5639,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/7ec917bb7832bc5436dab3c8c1baa2e8eae7e0dd"
+    },
+    {
+      "path": "data/claude_trajectory/task_418",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "451dc110c7c889a3b4bd73be8361897c731ab67a",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/451dc110c7c889a3b4bd73be8361897c731ab67a"
+    },
+    {
+      "path": "data/claude_trajectory/task_418/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14b2616c5c2e547135cb0c51c09f69cfa1e90207",
+      "size": 7662,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/14b2616c5c2e547135cb0c51c09f69cfa1e90207"
+    },
+    {
+      "path": "data/claude_trajectory/task_420",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d039124e0021e8192ae0b46abf516d608b8dd0d",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/6d039124e0021e8192ae0b46abf516d608b8dd0d"
+    },
+    {
+      "path": "data/claude_trajectory/task_420/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ec7abf09e11bff9cea2d9ea1db0bfb998aa2be0",
+      "size": 5411,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9ec7abf09e11bff9cea2d9ea1db0bfb998aa2be0"
+    },
+    {
+      "path": "data/claude_trajectory/task_64",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af9c64a8813892c579d665b218158b5961935278",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/af9c64a8813892c579d665b218158b5961935278"
+    },
+    {
+      "path": "data/claude_trajectory/task_64/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "306ce2c08171b9c49ec74436e977c37b11ca8367",
+      "size": 2045,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/306ce2c08171b9c49ec74436e977c37b11ca8367"
+    },
+    {
+      "path": "data/claude_trajectory/task_67",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f5044a7136a141ea293d02ad5cb647acaab3bfa",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/6f5044a7136a141ea293d02ad5cb647acaab3bfa"
+    },
+    {
+      "path": "data/claude_trajectory/task_67/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb32b9e71d1bab66b72e5db74902f3045afe32c1",
+      "size": 2625,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/bb32b9e71d1bab66b72e5db74902f3045afe32c1"
+    },
+    {
+      "path": "data/claude_trajectory/task_74",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d6bf00bd057b553de9f7c4ce66f085cc3df459b",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/2d6bf00bd057b553de9f7c4ce66f085cc3df459b"
+    },
+    {
+      "path": "data/claude_trajectory/task_74/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f24b53ee4b2e72c6604e8cba891f0a54aae7b486",
+      "size": 1718,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f24b53ee4b2e72c6604e8cba891f0a54aae7b486"
+    },
+    {
+      "path": "data/claude_trajectory/task_75",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e6577430b4e754767debc4917430fd327dc6be2",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/8e6577430b4e754767debc4917430fd327dc6be2"
+    },
+    {
+      "path": "data/claude_trajectory/task_75/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5f3b606826f44916ea7e63590443673f4db9679",
+      "size": 2075,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c5f3b606826f44916ea7e63590443673f4db9679"
+    },
+    {
+      "path": "data/claude_trajectory/task_80",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "998c09d2ec878a27dbb1f812c4b82c0f70009456",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/998c09d2ec878a27dbb1f812c4b82c0f70009456"
+    },
+    {
+      "path": "data/claude_trajectory/task_80/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59b0895f9ee4468a926b0d8333d4825c0e07b1d4",
+      "size": 3123,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/59b0895f9ee4468a926b0d8333d4825c0e07b1d4"
+    },
+    {
+      "path": "data/claude_trajectory/task_86",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26818ecd91d1340bbdaad8b5c0213396ac111bdf",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/26818ecd91d1340bbdaad8b5c0213396ac111bdf"
+    },
+    {
+      "path": "data/claude_trajectory/task_86/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19213c272bc572ae2fd3f00d5c9c824bb9969aee",
+      "size": 3514,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/19213c272bc572ae2fd3f00d5c9c824bb9969aee"
+    },
+    {
+      "path": "data/claude_trajectory/task_89",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7ae501ca56b7f2320cb048dc50f0913d5a52e03",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/a7ae501ca56b7f2320cb048dc50f0913d5a52e03"
+    },
+    {
+      "path": "data/claude_trajectory/task_89/reason.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb33470b4188e7092daadc6b036a2509bbad397f",
+      "size": 3684,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/cb33470b4188e7092daadc6b036a2509bbad397f"
+    },
+    {
+      "path": "data_agent_baseline_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15e10d8fe5d67488c202ddc16516e0c45f923efd",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/15e10d8fe5d67488c202ddc16516e0c45f923efd"
+    },
+    {
+      "path": "data_agent_baseline_v1/.dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb421e55c6f09030e421137316740492f008d46d",
+      "size": 592,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/eb421e55c6f09030e421137316740492f008d46d"
+    },
+    {
+      "path": "data_agent_baseline_v1/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5173624ba91f289306253ffaa8ed0fbb7aec8ff3",
+      "size": 3042,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5173624ba91f289306253ffaa8ed0fbb7aec8ff3"
+    },
+    {
+      "path": "data_agent_baseline_v1/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa9f793008d1eca671fa8b5af94cea9b5a8667a",
+      "size": 1223,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/3aa9f793008d1eca671fa8b5af94cea9b5a8667a"
+    },
+    {
+      "path": "data_agent_baseline_v1/build_and_test_docker.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "495340f84e98caac271bd85f114841652c78ff2d",
+      "size": 4016,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/495340f84e98caac271bd85f114841652c78ff2d"
+    },
+    {
+      "path": "data_agent_baseline_v1/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4ce6cc5c85733538bfb3d4e6432144a6c55141b",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/b4ce6cc5c85733538bfb3d4e6432144a6c55141b"
+    },
+    {
+      "path": "data_agent_baseline_v1/configs/baseline_v1.example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c30070ffd42ee073906a3af59bf184da5bcf62a",
+      "size": 740,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8c30070ffd42ee073906a3af59bf184da5bcf62a"
+    },
+    {
+      "path": "data_agent_baseline_v1/entrypoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2029122d2f9cbdad33f43d95d949a860968bcd7a",
+      "size": 3875,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2029122d2f9cbdad33f43d95d949a860968bcd7a"
+    },
+    {
+      "path": "data_agent_baseline_v1/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16edcb83746831b2f21437de925dd03c4b6f00de",
+      "size": 1023,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/16edcb83746831b2f21437de925dd03c4b6f00de"
+    },
+    {
+      "path": "data_agent_baseline_v1/run_baseline_v1.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "79d8652a195438f9d6b4955aca2e9808537553be",
+      "size": 1035,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/79d8652a195438f9d6b4955aca2e9808537553be"
+    },
+    {
+      "path": "data_agent_baseline_v1/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd707979106cf1b89e82171f8e1738f4ab830143",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/bd707979106cf1b89e82171f8e1738f4ab830143"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef8dd1fd494df0f0bac0dab27d1fc5f65c96cba1",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/ef8dd1fd494df0f0bac0dab27d1fc5f65c96cba1"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794976d41a72259f22bd276d29a617cad2b6cb2e",
+      "size": 115,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/794976d41a72259f22bd276d29a617cad2b6cb2e"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20320de80d88134f4344c19b58eb38014d37a633",
+      "size": 7317,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/20320de80d88134f4344c19b58eb38014d37a633"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "280abeef3f2f0cd83b7f03989cd5b57b781fbae3",
+      "size": 4301,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/280abeef3f2f0cd83b7f03989cd5b57b781fbae3"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/model_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a419e5bd46020bb07d88b8ddcc51c6c1ea1e287",
+      "size": 2297,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5a419e5bd46020bb07d88b8ddcc51c6c1ea1e287"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/orchestrator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f108ae3cddc15147378ad21677a1bf43cd4841ce",
+      "size": 3187,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f108ae3cddc15147378ad21677a1bf43cd4841ce"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/run",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "968ef2226ad37ff07f15353fe1fde2a4325892b8",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/968ef2226ad37ff07f15353fe1fde2a4325892b8"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/run/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/run/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "865d6ebb62684425803e78eb4621221177393d67",
+      "size": 8848,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/865d6ebb62684425803e78eb4621221177393d67"
+    },
+    {
+      "path": "data_agent_baseline_v1/src/data_agent_baseline_v1/submit_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9545724b4b62ca68bc17421d7f8ddfc88418bb5f",
+      "size": 3027,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9545724b4b62ca68bc17421d7f8ddfc88418bb5f"
+    },
+    {
+      "path": "data_agent_baseline_v1/submit_pipeline.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f9a7d8b42eb8257adea7197478c704de7719551",
+      "size": 1941,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4f9a7d8b42eb8257adea7197478c704de7719551"
+    },
+    {
+      "path": "data_agent_baseline_v1/uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71b210178212e6ae2893a04d28921cdf1ee53d3e",
+      "size": 533884,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/71b210178212e6ae2893a04d28921cdf1ee53d3e"
+    },
+    {
+      "path": "data_agent_baseline_v1/verify_archive.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aba5a34a17db7a2bf393eaf563cb19bb90c10081",
+      "size": 3676,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/aba5a34a17db7a2bf393eaf563cb19bb90c10081"
+    },
+    {
+      "path": "data_agent_baseline_v1/verify_submission.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e32591284415f6ff78189b5b4ff4c565fd2825d6",
+      "size": 4081,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e32591284415f6ff78189b5b4ff4c565fd2825d6"
+    },
+    {
+      "path": "data_agent_v0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd63b9ef9b3aca72110231de535a0a6819141751",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/dd63b9ef9b3aca72110231de535a0a6819141751"
+    },
+    {
+      "path": "data_agent_v0/.dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b9284335654855234ac68591c207202577d8aa6",
+      "size": 636,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6b9284335654855234ac68591c207202577d8aa6"
+    },
+    {
+      "path": "data_agent_v0/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2b162154e81a7be54993f464fe0e2e9dc277501",
+      "size": 222,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b2b162154e81a7be54993f464fe0e2e9dc277501"
+    },
+    {
+      "path": "data_agent_v0/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ebeeecde2cfad82ec0e5e9936923e17d25af1cf",
+      "size": 2750,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/1ebeeecde2cfad82ec0e5e9936923e17d25af1cf"
+    },
+    {
+      "path": "data_agent_v0/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93f50f61e352cd17ff59f22b8caacec28199dccd",
+      "size": 1895,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/93f50f61e352cd17ff59f22b8caacec28199dccd"
+    },
+    {
+      "path": "data_agent_v0/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13e14b617e120f2246d9f05b0b75612ef19ee573",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/13e14b617e120f2246d9f05b0b75612ef19ee573"
+    },
+    {
+      "path": "data_agent_v0/configs/v0.example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c28f524c5f3c4dc972f09554830a5954205a220c",
+      "size": 833,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c28f524c5f3c4dc972f09554830a5954205a220c"
+    },
+    {
+      "path": "data_agent_v0/entrypoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "490799e07fe1374fd699a99e857a67b04839045b",
+      "size": 3729,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/490799e07fe1374fd699a99e857a67b04839045b"
+    },
+    {
+      "path": "data_agent_v0/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc0babca0d8ad65752a669768b52a74e2d23bb3",
+      "size": 841,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5dc0babca0d8ad65752a669768b52a74e2d23bb3"
+    },
+    {
+      "path": "data_agent_v0/run_v0.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4915d0c4a17c130d9919408d88615cba6fee70b5",
+      "size": 961,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4915d0c4a17c130d9919408d88615cba6fee70b5"
+    },
+    {
+      "path": "data_agent_v0/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d139a68388dc45daf8115607ee44e06ab7e9e73",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/4d139a68388dc45daf8115607ee44e06ab7e9e73"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1c8a6ce616020d6adce4aa07a8e2c9231a8b4ce",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/f1c8a6ce616020d6adce4aa07a8e2c9231a8b4ce"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4949921293032dfd2f4096fe90b9da004d322eea",
+      "size": 98,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4949921293032dfd2f4096fe90b9da004d322eea"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea7d8eded7670113c0db014eeeb7e1d526c239b6",
+      "size": 7294,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ea7d8eded7670113c0db014eeeb7e1d526c239b6"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d0110abee532c0e04524ba39edb6a5437af210d",
+      "size": 5124,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5d0110abee532c0e04524ba39edb6a5437af210d"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/executor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834935213a401be0dfc36f8895ed39f49538c47f",
+      "size": 9128,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/834935213a401be0dfc36f8895ed39f49538c47f"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/model_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfddce9296fd1c20d007cd893ad036837fd7b818",
+      "size": 2204,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/bfddce9296fd1c20d007cd893ad036837fd7b818"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/orchestrator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81b338a62b043e07e53af13ed0100dab7fed3b12",
+      "size": 14398,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/81b338a62b043e07e53af13ed0100dab7fed3b12"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/output",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6edc6faa231d30f26cbd2ad8ead54a5757b8d41b",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/6edc6faa231d30f26cbd2ad8ead54a5757b8d41b"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/output/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/output/normalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f277f8cc474dcd8b3dc9b4a18218175437c55b2",
+      "size": 1080,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0f277f8cc474dcd8b3dc9b4a18218175437c55b2"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/output/shape.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7c02a53cb35cadd62437c652a426bdfa2764d0a",
+      "size": 8974,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f7c02a53cb35cadd62437c652a426bdfa2764d0a"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/planner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20b02ce9515f85407d343c7b206d41fe990a028a",
+      "size": 11178,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/20b02ce9515f85407d343c7b206d41fe990a028a"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/preload.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44758e1317ee8a422aae9b1255a582a6d496cce8",
+      "size": 9302,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/44758e1317ee8a422aae9b1255a582a6d496cce8"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "415760ce4e7c0e485ab8b750f0e21ebc34232047",
+      "size": 7281,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/415760ce4e7c0e485ab8b750f0e21ebc34232047"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/repl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36fc5534e66f657df12d87faf2247b559dac5fb5",
+      "size": 12732,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/36fc5534e66f657df12d87faf2247b559dac5fb5"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/run",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14613a50c89e2c878914d746ddbc4f419a15f441",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/14613a50c89e2c878914d746ddbc4f419a15f441"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/run/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/run/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47791b8a03df40c2bb6f863edc90e5f81534420b",
+      "size": 9116,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/47791b8a03df40c2bb6f863edc90e5f81534420b"
+    },
+    {
+      "path": "data_agent_v0/src/data_agent_v0/submit_runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f245956261c3ceb0a40ed712f4804587727f84",
+      "size": 3066,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a7f245956261c3ceb0a40ed712f4804587727f84"
+    },
+    {
+      "path": "data_agent_v0/uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91d4bbd683774001787b5e8b815ba56746ea82b",
+      "size": 532329,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/d91d4bbd683774001787b5e8b815ba56746ea82b"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cf2dc0500cc491fc0998d614a4d2810cb7b0e97",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/7cf2dc0500cc491fc0998d614a4d2810cb7b0e97"
+    },
+    {
+      "path": "docs/DOCKER_PACKAGING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31b303f0b743bf6d6edb334b75eaf0e2a7aa02d1",
+      "size": 17587,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/31b303f0b743bf6d6edb334b75eaf0e2a7aa02d1"
+    },
+    {
+      "path": "docs/EVAL_PLAN_30D.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5751d58dc4505fddecc62a186e1319ead8a186bc",
+      "size": 13386,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5751d58dc4505fddecc62a186e1319ead8a186bc"
+    },
+    {
+      "path": "docs/PHASE_PLAN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fd12b4dee23b6ea79d67af0298e633966c0f6b",
+      "size": 3357,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/04fd12b4dee23b6ea79d67af0298e633966c0f6b"
+    },
+    {
+      "path": "docs/VERSION_HISTORY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97b77f269d685af4036bb0848452c42a8fc4756",
+      "size": 12050,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b97b77f269d685af4036bb0848452c42a8fc4756"
+    },
+    {
+      "path": "docs/分难度方案设计.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "befee48e2c9924aba8c7229ac25228394505579f",
+      "size": 44897,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/befee48e2c9924aba8c7229ac25228394505579f"
+    },
+    {
+      "path": "docs/改进路线图.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b3c4503804cb9cc724aabe1745c8767c15b23f7",
+      "size": 15505,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6b3c4503804cb9cc724aabe1745c8767c15b23f7"
+    },
+    {
+      "path": "docs/方案调研综述.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "168ccd01ecd58a9cee5e56aad3ce869fa1f0a258",
+      "size": 31189,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/168ccd01ecd58a9cee5e56aad3ce869fa1f0a258"
+    },
+    {
+      "path": "docs/比赛简介.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad5556a6055c2cdab44e1663a0cbba28597b2827",
+      "size": 12975,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ad5556a6055c2cdab44e1663a0cbba28597b2827"
+    },
+    {
+      "path": "experiments",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6edf4fa29d0d07586261b6c8eca585e812a92d65",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/6edf4fa29d0d07586261b6c8eca585e812a92d65"
+    },
+    {
+      "path": "experiments/_template.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a3dedb1ddef976291a81b4ff103e110769980b6",
+      "size": 1335,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0a3dedb1ddef976291a81b4ff103e110769980b6"
+    },
+    {
+      "path": "kddcup2026-starter-kit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4e0fb2a12ad578629848ce5ee81b10c6cb16763",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/d4e0fb2a12ad578629848ce5ee81b10c6cb16763"
+    },
+    {
+      "path": "kddcup2026-starter-kit/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21c61b1540740d59c96c1d87f9f54a116ed47b83",
+      "size": 234,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/21c61b1540740d59c96c1d87f9f54a116ed47b83"
+    },
+    {
+      "path": "kddcup2026-starter-kit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b346331ea4b06aa6865b3cabe74c2082452f6dc",
+      "size": 7523,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4b346331ea4b06aa6865b3cabe74c2082452f6dc"
+    },
+    {
+      "path": "kddcup2026-starter-kit/README.zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ca44fb58e50ebf7c218071fa781442c2ab70d4c",
+      "size": 7386,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5ca44fb58e50ebf7c218071fa781442c2ab70d4c"
+    },
+    {
+      "path": "kddcup2026-starter-kit/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b8f347700fb3b72ac1dad649e83750e8070ac6c",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/0b8f347700fb3b72ac1dad649e83750e8070ac6c"
+    },
+    {
+      "path": "kddcup2026-starter-kit/assets/HKUSTGZ_DIAL.jpg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "946ae7b49a60e9a4ebda183544578a9a254a38f6",
+      "size": 153429,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/946ae7b49a60e9a4ebda183544578a9a254a38f6"
+    },
+    {
+      "path": "kddcup2026-starter-kit/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2de5dd35a1656323cc04f0d7faa0f20d446e652e",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/2de5dd35a1656323cc04f0d7faa0f20d446e652e"
+    },
+    {
+      "path": "kddcup2026-starter-kit/configs/react_baseline.example.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47af0120e19a3089de817ec4858efb61426b278d",
+      "size": 267,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/47af0120e19a3089de817ec4858efb61426b278d"
+    },
+    {
+      "path": "kddcup2026-starter-kit/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "addeb978a75dcb5378a9ce0bf79b4149a524d076",
+      "size": 845,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/addeb978a75dcb5378a9ce0bf79b4149a524d076"
+    },
+    {
+      "path": "kddcup2026-starter-kit/run_baseline.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "65fa2ee4ca71c51b672dc46742c4c927e79b6072",
+      "size": 1479,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/65fa2ee4ca71c51b672dc46742c4c927e79b6072"
+    },
+    {
+      "path": "kddcup2026-starter-kit/run_retry.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ceda92a3c40b4dab16d1aa6fd8a36cf4c8083e55",
+      "size": 1313,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ceda92a3c40b4dab16d1aa6fd8a36cf4c8083e55"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd8c83b49020ea45e2a65bdb119bb597c4edd711",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/bd8c83b49020ea45e2a65bdb119bb597c4edd711"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38951b0553d64f64ac0bc32b248431d5bbf4066a",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/38951b0553d64f64ac0bc32b248431d5bbf4066a"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a05eb9abb93a3c0a4e3f1ef478fe80d1793cee90",
+      "size": 49,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a05eb9abb93a3c0a4e3f1ef478fe80d1793cee90"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68acbef4b76e6ce8a84a3b27a64a08c07a87b45e",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/68acbef4b76e6ce8a84a3b27a64a08c07a87b45e"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17ae81f107744df674e955792eb28e09347a27f4",
+      "size": 802,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/17ae81f107744df674e955792eb28e09347a27f4"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "963c6d9aa6dc252a0fc1e2d9d4ad2f6e8bd804a6",
+      "size": 2273,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/963c6d9aa6dc252a0fc1e2d9d4ad2f6e8bd804a6"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents/prompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95bedc7a781caa584e840f39da09a0de58bd95be",
+      "size": 2238,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/95bedc7a781caa584e840f39da09a0de58bd95be"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents/react.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c74f9bd5d21ba416809b443b5b215db9afa98987",
+      "size": 5453,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c74f9bd5d21ba416809b443b5b215db9afa98987"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/agents/runtime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b23b2b35ea5fb666dde323b4f386b84d0d403f1b",
+      "size": 1261,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b23b2b35ea5fb666dde323b4f386b84d0d403f1b"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c1367995221962ec50060b18cefaa8aed1bd2cf",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/1c1367995221962ec50060b18cefaa8aed1bd2cf"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/benchmark/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4645ab52bd87ae0c99ff45f09b1913af35c7e1b8",
+      "size": 284,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4645ab52bd87ae0c99ff45f09b1913af35c7e1b8"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/benchmark/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3efece57ce3a329b6ab1dad7e03c90af9f961a5a",
+      "size": 3346,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/3efece57ce3a329b6ab1dad7e03c90af9f961a5a"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/benchmark/schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c00d32c11c7c0d17e7d2268fb8d6bf8f9d68e14f",
+      "size": 1120,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c00d32c11c7c0d17e7d2268fb8d6bf8f9d68e14f"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12a0c44d18bffc4cbb920600a212f63b47c7684a",
+      "size": 9661,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/12a0c44d18bffc4cbb920600a212f63b47c7684a"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdd593209dfcf0cada800407230cd8613cf1b81e",
+      "size": 3134,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/bdd593209dfcf0cada800407230cd8613cf1b81e"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/run",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2bc5b1cd1b8e4101733dc951082ec405bb0a7a84",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/2bc5b1cd1b8e4101733dc951082ec405bb0a7a84"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/run/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "488ed25407f2130f0055f61b2e8c69c29864c783",
+      "size": 211,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/488ed25407f2130f0055f61b2e8c69c29864c783"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/run/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cbe06c102fd5a80ea23d9e62042b3eb6521b2f0",
+      "size": 9870,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/7cbe06c102fd5a80ea23d9e62042b3eb6521b2f0"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8106a18f6f490fec70a8e15d5b18852ed72fe04b",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/8106a18f6f490fec70a8e15d5b18852ed72fe04b"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7ccb448f4b2da48529db20d75bf1771dec77b6b",
+      "size": 256,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f7ccb448f4b2da48529db20d75bf1771dec77b6b"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools/filesystem.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebd56054784420bf4324b5886f5beadced8c76f2",
+      "size": 2800,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ebd56054784420bf4324b5886f5beadced8c76f2"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools/python_exec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388f0eb554b02e7db017130510e73ac098792fd4",
+      "size": 4663,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/388f0eb554b02e7db017130510e73ac098792fd4"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools/registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e6bdd6b923926a82693abc89404b570b9d4e350",
+      "size": 7394,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9e6bdd6b923926a82693abc89404b570b9d4e350"
+    },
+    {
+      "path": "kddcup2026-starter-kit/src/data_agent_baseline/tools/sqlite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a011df9c9e707d7821a6965743f31ebe0776edc",
+      "size": 1616,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/1a011df9c9e707d7821a6965743f31ebe0776edc"
+    },
+    {
+      "path": "kddcup2026-starter-kit/uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa9d2223ef3e4009a74454b58fa4e2a5c8ebfc8",
+      "size": 511537,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5aa9d2223ef3e4009a74454b58fa4e2a5c8ebfc8"
+    },
+    {
+      "path": "reports",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7406fe09f99a87619caf2d5e5b13b3d523d0893",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/c7406fe09f99a87619caf2d5e5b13b3d523d0893"
+    },
+    {
+      "path": "reports/_3seed_logs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3dba1dbdbd96e7be0b50e161ff0fcfe0f0f8f2f9",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/3dba1dbdbd96e7be0b50e161ff0fcfe0f0f8f2f9"
+    },
+    {
+      "path": "reports/_3seed_logs/v0_v5_F1F2tuned_3seed_demo_qwen35_v0_v5_F1F2tuned.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fb32f11cc73587df4bf0013e66f77b5373c2246",
+      "size": 710,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2fb32f11cc73587df4bf0013e66f77b5373c2246"
+    },
+    {
+      "path": "reports/_3seed_logs/v0_v5_F1F2tuned_3seed_demo_qwen35_v0_v5_F1F2tuned_s42.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807548c9a15595cd2fccaae4d8ab508511cd83d8",
+      "size": 714,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/807548c9a15595cd2fccaae4d8ab508511cd83d8"
+    },
+    {
+      "path": "reports/baseline_3seed_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0ee70ec55002b2b7dc5f3f160795d2b7f8e1fd2",
+      "size": 29028,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/d0ee70ec55002b2b7dc5f3f160795d2b7f8e1fd2"
+    },
+    {
+      "path": "reports/baseline_3seed_remote_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d267f3cf2753360887876ea3af358e3f5f67a69c",
+      "size": 30184,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/d267f3cf2753360887876ea3af358e3f5f67a69c"
+    },
+    {
+      "path": "reports/baseline_3seed_remote_vs_baseline_v1_3seed_remote.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6160cc318dc5f780a5473454b5f1a65029f41127",
+      "size": 2732,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6160cc318dc5f780a5473454b5f1a65029f41127"
+    },
+    {
+      "path": "reports/baseline_3seed_remote_vs_v0_3seed_remote.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f664fbd43ba1ddbd753bbeb7d085a43fd332203a",
+      "size": 2789,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f664fbd43ba1ddbd753bbeb7d085a43fd332203a"
+    },
+    {
+      "path": "reports/baseline_3seed_vs_v0_3seed_diff.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "128ef5b58108ee02265c650041745948400ce0c1",
+      "size": 2907,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/128ef5b58108ee02265c650041745948400ce0c1"
+    },
+    {
+      "path": "reports/baseline_architecture.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5dbcd56b05a137532eda9e975e5269c66704949",
+      "size": 47039,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a5dbcd56b05a137532eda9e975e5269c66704949"
+    },
+    {
+      "path": "reports/baseline_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa26f1c65a1c8e02e399db80dd93fc7bf092c6f6",
+      "size": 41708,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/fa26f1c65a1c8e02e399db80dd93fc7bf092c6f6"
+    },
+    {
+      "path": "reports/baseline_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82dd2e7365f90a75cfa93cecf8fbdef18ecd5d16",
+      "size": 14256,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/82dd2e7365f90a75cfa93cecf8fbdef18ecd5d16"
+    },
+    {
+      "path": "reports/baseline_v1_3seed_remote_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c14814107b26272548ecee5497549187754b1c2",
+      "size": 27801,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0c14814107b26272548ecee5497549187754b1c2"
+    },
+    {
+      "path": "reports/baseline_v1_3seed_remote_vs_v0_3seed_remote.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "473fcbfe78af8f4103ee5f9a87a999f04ccc851a",
+      "size": 2936,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/473fcbfe78af8f4103ee5f9a87a999f04ccc851a"
+    },
+    {
+      "path": "reports/baseline_v2_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cd9877723412ee90d3dd6e1c774754b8b2e9723",
+      "size": 43448,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5cd9877723412ee90d3dd6e1c774754b8b2e9723"
+    },
+    {
+      "path": "reports/baseline_v2_vs_v0_v3_full_diff.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d58f9b0b0baab2ede1f41e9e60d78aac4804b4b",
+      "size": 2652,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8d58f9b0b0baab2ede1f41e9e60d78aac4804b4b"
+    },
+    {
+      "path": "reports/baseline_vs_v0_v2_diff.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dea57c5269f8193f5d323c02c7f782a61370c64b",
+      "size": 2194,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/dea57c5269f8193f5d323c02c7f782a61370c64b"
+    },
+    {
+      "path": "reports/demo_profile.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7efa959421f92ebf7d25fdb88cd76d632f5d1e01",
+      "size": 2118,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/7efa959421f92ebf7d25fdb88cd76d632f5d1e01"
+    },
+    {
+      "path": "reports/demo_qwen35_baseline_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c66e1b30bdc43014f2ae74511441108700fecf8f",
+      "size": 14363,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c66e1b30bdc43014f2ae74511441108700fecf8f"
+    },
+    {
+      "path": "reports/demo_qwen35_baseline_v1_s43_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f4c06f64cebe109fb6cb5925b0da0c2d8affd52",
+      "size": 14366,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0f4c06f64cebe109fb6cb5925b0da0c2d8affd52"
+    },
+    {
+      "path": "reports/demo_qwen35_baseline_v2_s42_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a68cadcf9ac5b5d0f1c394021c4716458fd94aa",
+      "size": 14519,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6a68cadcf9ac5b5d0f1c394021c4716458fd94aa"
+    },
+    {
+      "path": "reports/demo_qwen35_baseline_v2_s43_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b514499376d3bdd9e965a6af69a0f90a8858ad4",
+      "size": 14568,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5b514499376d3bdd9e965a6af69a0f90a8858ad4"
+    },
+    {
+      "path": "reports/demo_qwen35_baseline_v2_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "338d0c2527cc79be216c08da0f58fb5993be3a9d",
+      "size": 14397,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/338d0c2527cc79be216c08da0f58fb5993be3a9d"
+    },
+    {
+      "path": "reports/demo_qwen35_retry30_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7ce3d3f65f8675669cc8fadda11a4e71af0f880",
+      "size": 5227,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b7ce3d3f65f8675669cc8fadda11a4e71af0f880"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10c526dc79a1c026be0bd79a25f064a28bb7289d",
+      "size": 14257,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/10c526dc79a1c026be0bd79a25f064a28bb7289d"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v2_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e168e2c31a1ee121f380d34c0a1a3f60b210885f",
+      "size": 14166,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e168e2c31a1ee121f380d34c0a1a3f60b210885f"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v3_full_s42_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e29a0585b9c29f83f7c668394a9d7a240276ecbc",
+      "size": 14490,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e29a0585b9c29f83f7c668394a9d7a240276ecbc"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v3_full_s43_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3551a6151ef63218945f883e35b91abc7e01d27d",
+      "size": 14277,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/3551a6151ef63218945f883e35b91abc7e01d27d"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v3_full_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174c5eea4e1e2f18dbb937e768ef865d9236cdcb",
+      "size": 14350,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/174c5eea4e1e2f18dbb937e768ef865d9236cdcb"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v4_F1F2_s43_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "367fc4efaab73977db3e274fe1ba9af4ef78f713",
+      "size": 14131,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/367fc4efaab73977db3e274fe1ba9af4ef78f713"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v5_F1F2tuned_s42_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e06f8d43096d814df002ea715c6c225441a7122",
+      "size": 14319,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6e06f8d43096d814df002ea715c6c225441a7122"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v5_F1F2tuned_s43_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f64a53274646981f30a7d0ce1d6db12312bbe2d5",
+      "size": 14085,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f64a53274646981f30a7d0ce1d6db12312bbe2d5"
+    },
+    {
+      "path": "reports/demo_qwen35_v0_v5_F1F2tuned_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10cc568e00f4ac1da6d17287c27ed775f2f33602",
+      "size": 14251,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/10cc568e00f4ac1da6d17287c27ed775f2f33602"
+    },
+    {
+      "path": "reports/docker_verify_20260427_153959_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "599d44ee7442d7611b1e95af8ada7de2996869b2",
+      "size": 33232,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/599d44ee7442d7611b1e95af8ada7de2996869b2"
+    },
+    {
+      "path": "reports/smoke_v0_scored.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2706446c273808f8760c97bd8c525aba07faea47",
+      "size": 742,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2706446c273808f8760c97bd8c525aba07faea47"
+    },
+    {
+      "path": "reports/v0_2seed_clean_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cda7cd84e3ec911c185149cd10c4156b7f143ab4",
+      "size": 26002,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/cda7cd84e3ec911c185149cd10c4156b7f143ab4"
+    },
+    {
+      "path": "reports/v0_3seed_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fa8f3baae3bafadbca1de88ff74d3c827a3c17e",
+      "size": 27724,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/1fa8f3baae3bafadbca1de88ff74d3c827a3c17e"
+    },
+    {
+      "path": "reports/v0_3seed_remote_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab79f2deb5201ed8f503bb21dbfdc912dd7e71b6",
+      "size": 28153,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ab79f2deb5201ed8f503bb21dbfdc912dd7e71b6"
+    },
+    {
+      "path": "reports/v0_3seed_remote_vs_v0_v5_F1F2tuned_3seed.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a53c9eccb631ee39f0a59d3ad154ad9f798766e",
+      "size": 2901,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0a53c9eccb631ee39f0a59d3ad154ad9f798766e"
+    },
+    {
+      "path": "reports/v0_v2_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "374b158fe046f862569a38f51924194b4192586e",
+      "size": 40474,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/374b158fe046f862569a38f51924194b4192586e"
+    },
+    {
+      "path": "reports/v0_v3_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a8f24972c69535b8a11bddaffb51c6292142d68",
+      "size": 1736,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6a8f24972c69535b8a11bddaffb51c6292142d68"
+    },
+    {
+      "path": "reports/v0_v3_full_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe25cb9c68ee7d9e33984483c1a6bd137dcafe12",
+      "size": 40374,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/fe25cb9c68ee7d9e33984483c1a6bd137dcafe12"
+    },
+    {
+      "path": "reports/v0_v5_F1F2tuned_3seed_eval_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3df8c818508e85d2ae8c1ee92013984b76a8c5d",
+      "size": 29476,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c3df8c818508e85d2ae8c1ee92013984b76a8c5d"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c52813faddf66d81a26e35e52a36a9b55ce19527",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/c52813faddf66d81a26e35e52a36a9b55ce19527"
+    },
+    {
+      "path": "scripts/convert_bird.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6645829591f7bfad5d24b2f6334c29c9eba91b59",
+      "size": 10604,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6645829591f7bfad5d24b2f6334c29c9eba91b59"
+    },
+    {
+      "path": "scripts/profile_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fdfc342042d95d92ce327a0b8d6795c159515c2",
+      "size": 8426,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9fdfc342042d95d92ce327a0b8d6795c159515c2"
+    },
+    {
+      "path": "scripts/run_3seed_eval.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5c6be5e73c70f7ee59c4b48e04bf220fd0657a01",
+      "size": 6389,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5c6be5e73c70f7ee59c4b48e04bf220fd0657a01"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad2490a549252b3e60f235693e458ddd62b19081",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/ad2490a549252b3e60f235693e458ddd62b19081"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a15899e543526543ba3e67a4416e2128aeca8c74",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/a15899e543526543ba3e67a4416e2128aeca8c74"
+    },
+    {
+      "path": "src/eval/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/eval/enhanced_eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab2111810d449f8a3ddc490be2da01819d3ca677",
+      "size": 18744,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ab2111810d449f8a3ddc490be2da01819d3ca677"
+    },
+    {
+      "path": "src/eval/eval_diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f553f0b589d8a770c578704c91ead3c708f2009",
+      "size": 11340,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/0f553f0b589d8a770c578704c91ead3c708f2009"
+    },
+    {
+      "path": "src/eval/normalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd0e8bb15bf2b334d722f7ec47200eec1d1aef83",
+      "size": 1621,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/cd0e8bb15bf2b334d722f7ec47200eec1d1aef83"
+    },
+    {
+      "path": "src/eval/scorer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17738f3316519cece91fbf71a3119aad1f5772aa",
+      "size": 7192,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/17738f3316519cece91fbf71a3119aad1f5772aa"
+    },
+    {
+      "path": "submission_log.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74363770cad2fc706cb2317e3d579587156547f6",
+      "size": 802,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/74363770cad2fc706cb2317e3d579587156547f6"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "754e606dee4c43ee510700d14a43b14736e097be",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/754e606dee4c43ee510700d14a43b14736e097be"
+    },
+    {
+      "path": "tools/agent_diagnose",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "364009cbac54739e87a56be23d3a5da6ef79fe88",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/364009cbac54739e87a56be23d3a5da6ef79fe88"
+    },
+    {
+      "path": "tools/agent_diagnose/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9330515e8695dc1a57948b4ef0e52e680e5e615e",
+      "size": 120,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/9330515e8695dc1a57948b4ef0e52e680e5e615e"
+    },
+    {
+      "path": "tools/agent_diagnose/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6202a3070a064d87b083679e0c22ea4d79bc0e0b",
+      "size": 1091,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/6202a3070a064d87b083679e0c22ea4d79bc0e0b"
+    },
+    {
+      "path": "tools/agent_diagnose/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a4e3f96aed950c3cf36e02d42a4ed6c83b28f8",
+      "size": 1207,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b5a4e3f96aed950c3cf36e02d42a4ed6c83b28f8"
+    },
+    {
+      "path": "tools/agent_diagnose/run_diagnose.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "929e4c0d17831699e524cf26bea72e5cd43bf5d3",
+      "size": 333,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/929e4c0d17831699e524cf26bea72e5cd43bf5d3"
+    },
+    {
+      "path": "tools/agent_diagnose/serve_remote.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b74e28c159ab08698bb7ea5631bcc8d25fbf0643",
+      "size": 1277,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/b74e28c159ab08698bb7ea5631bcc8d25fbf0643"
+    },
+    {
+      "path": "tools/agent_diagnose/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53164e6e726e032413ecd12e90ba66d995ebf9ab",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/53164e6e726e032413ecd12e90ba66d995ebf9ab"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e8724766959de7b6c8dc7fac5f1ce6a58e8d485",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/9e8724766959de7b6c8dc7fac5f1ce6a58e8d485"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b884bc3b4ec1a53edc067886bc4674c83d18d2e",
+      "size": 100,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/2b884bc3b4ec1a53edc067886bc4674c83d18d2e"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02b0c2c048484b3debe92baa43c4c747cdd16734",
+      "size": 8532,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/02b0c2c048484b3debe92baa43c4c747cdd16734"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95054dacad4cc18977a6c454c63ef15a32ec3e0e",
+      "size": 2866,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/95054dacad4cc18977a6c454c63ef15a32ec3e0e"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5db31663b7074088baa1ce197aecdc77a1513e51",
+      "size": 7432,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5db31663b7074088baa1ce197aecdc77a1513e51"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10034bc14c9aa3c48cf41150486aada62b468b96",
+      "size": 2682,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/10034bc14c9aa3c48cf41150486aada62b468b96"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/markdown_helper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e20610c0a0ff23487f8d2c6c87c5f8d6d6e967dd",
+      "size": 257,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e20610c0a0ff23487f8d2c6c87c5f8d6d6e967dd"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/normalize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9dcb4d1fb1084ae346223f9336dde93e777697e",
+      "size": 23155,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a9dcb4d1fb1084ae346223f9336dde93e777697e"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/scoring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91de1280d9815e04bac013f1e69af910a11892b7",
+      "size": 2021,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/91de1280d9815e04bac013f1e69af910a11892b7"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e838fd2986d287c02341509b308986e11990f2b",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/4e838fd2986d287c02341509b308986e11990f2b"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/htmx.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59937d712d905c314d0bbcd3c49cc8a15d0b6cdd",
+      "size": 50917,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/59937d712d905c314d0bbcd3c49cc8a15d0b6cdd"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/prism-json.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4256f8200dea61ae59efc812131068239e2bf682",
+      "size": 449,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/4256f8200dea61ae59efc812131068239e2bf682"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/prism-python.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96932b01ef6f6f669b1f79d4bfa381dc3a46ec88",
+      "size": 2113,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/96932b01ef6f6f669b1f79d4bfa381dc3a46ec88"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/prism.min.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c4cc0576b3bcaab878c4e04c231aa8f4d74d2a8",
+      "size": 1789,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8c4cc0576b3bcaab878c4e04c231aa8f4d74d2a8"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/prism.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "054ce1e780f4ebc6f59a8d26c4b9b5fc615f03ee",
+      "size": 18997,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/054ce1e780f4ebc6f59a8d26c4b9b5fc615f03ee"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/static/style.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccc1b19a8d39791ddcf0ee54497526c0382fd98e",
+      "size": 20778,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/ccc1b19a8d39791ddcf0ee54497526c0382fd98e"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/stats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "579b543778ca7b0c75afdfaa878778ea21c63bc2",
+      "size": 13825,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/579b543778ca7b0c75afdfaa878778ea21c63bc2"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24ed07c9d819a01c77cd07294f8032f56425be66",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/24ed07c9d819a01c77cd07294f8032f56425be66"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/base.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "276424b77c20d8fb2700dbe021020816fb29c112",
+      "size": 2230,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/276424b77c20d8fb2700dbe021020816fb29c112"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/eval.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "351de7f61ac5d38dc8864006762df9659ef96d0a",
+      "size": 5373,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/351de7f61ac5d38dc8864006762df9659ef96d0a"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/overview.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a7c5ba9d6e97ccc8e15bea3bc753ba4a70093e",
+      "size": 1937,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/62a7c5ba9d6e97ccc8e15bea3bc753ba4a70093e"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "339744187ce882482e03fd9b58d0c8d1a32910e9",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/339744187ce882482e03fd9b58d0c8d1a32910e9"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/__init.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a23caebe8f4e70ffb8297a0379b3a346120c15b4",
+      "size": 75,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a23caebe8f4e70ffb8297a0379b3a346120c15b4"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/agent_summary_card.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7ffcd19d443b1d85d78dab32926006605fe1583",
+      "size": 3725,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e7ffcd19d443b1d85d78dab32926006605fe1583"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/kpi_row.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52c9aaa8a60a2bda6b259d712a87632e9e6b1e7b",
+      "size": 1687,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/52c9aaa8a60a2bda6b259d712a87632e9e6b1e7b"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/planner_card.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a995c529b2af55c88d61b3982c36851e5007f364",
+      "size": 2124,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a995c529b2af55c88d61b3982c36851e5007f364"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/prediction_diff.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a20a9caea2e9ecf38919707cb4631dfe0174b157",
+      "size": 2559,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/a20a9caea2e9ecf38919707cb4631dfe0174b157"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/run_table.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "073bc31adeb18673d02ba366dccd933b4ce61294",
+      "size": 2489,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/073bc31adeb18673d02ba366dccd933b4ce61294"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/score_matrix.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ccb6868526d1495d651edc74eb5df6259b481c1",
+      "size": 3165,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/5ccb6868526d1495d651edc74eb5df6259b481c1"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/partials/step_card.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c08f7b53e55a0a566dce0845e096750f58f9b292",
+      "size": 4174,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/c08f7b53e55a0a566dce0845e096750f58f9b292"
+    },
+    {
+      "path": "tools/agent_diagnose/src/agent_diagnose/templates/task_replay.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "707c543b80a08c74b58f7f2d988d7db355d0a7d6",
+      "size": 5243,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/707c543b80a08c74b58f7f2d988d7db355d0a7d6"
+    },
+    {
+      "path": "tools/agent_diagnose/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3ad2b2bf9b380bff6a2a24b5e38ba2ca4fa61e4",
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/trees/e3ad2b2bf9b380bff6a2a24b5e38ba2ca4fa61e4"
+    },
+    {
+      "path": "tools/agent_diagnose/tests/test_data_layer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aaf7b55bb0e5914b669d84e13a869419e3344e7",
+      "size": 2338,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/8aaf7b55bb0e5914b669d84e13a869419e3344e7"
+    },
+    {
+      "path": "tools/agent_diagnose/tests/test_normalize_step.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e83927e9f52698921c36464f79d8c89dc9514b07",
+      "size": 2874,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/e83927e9f52698921c36464f79d8c89dc9514b07"
+    },
+    {
+      "path": "tools/agent_diagnose/uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9c1b39c03915e946556c67134266186f30c8cdd",
+      "size": 638181,
+      "url": "https://api.github.com/repos/BrightLiao/KDDCupDataAgent/git/blobs/f9c1b39c03915e946556c67134266186f30c8cdd"
+    }
+  ],
+  "truncated": false
+}
