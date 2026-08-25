@@ -51,13 +51,15 @@ zzz_ai_data/
 
 ### Phase 0 — 环境搭建（0.5 天）
 
-- [ ] 安装 Python 3.10+、[uv](https://docs.astral.sh/uv/)（starter kit 用它管理依赖）
-- [ ] 准备一个 LLM 后端：OpenAI 兼容 API（如阿里云百炼 Qwen 系列 / OpenAI / DeepSeek 等），配好 `.env`
-- [ ] `code/competitions/` 下 clone starter kit、下载 Phase 1 demo 数据集并解压
+- [x] 安装 Python 3.10+、[uv](https://docs.astral.sh/uv/)（starter kit 用它管理依赖）
+- [ ] 准备一个 LLM 后端：OpenAI 兼容 API（如阿里云百炼 Qwen 系列 / OpenAI / DeepSeek 等），配好 `.env` ← **当前卡点**
+- [x] `code/competitions/` 下 clone starter kit、下载 Phase 1 demo 数据集并解压（50 题，`dabench status` 验证通过）
+
+> 环境实录（真实命令/路径/踩坑）：[learning/00-environment-setup.md](learning/00-environment-setup.md)
 
 ### Phase 1 — 跑通官方 Baseline（1~2 天）
 
-- [ ] 按 `code/competitions/kddcup2026-data-agents-starter-kit/README` 装依赖（`uv sync`）
+- [x] 按 `code/competitions/kddcup2026-data-agents-starter-kit/README` 装依赖（`uv sync`）
 - [ ] 在 demo 数据集上端到端跑通 ReAct baseline，产出 `prediction.csv`
 - [ ] 记录：跑通了哪些 task、失败哪些、日志在哪 → 写入 `learning/experiments-log/`
 
@@ -97,18 +99,29 @@ zzz_ai_data/
 
 ## 三、快速开始
 
+> **当前状态（2026-08-25）**：1~2 步已在本机完成，数据集已就位并验证。
+> 换机重建按下面顺序执行；本机实际命令与踩坑见 [learning/00-environment-setup.md](learning/00-environment-setup.md)。
+
 ```powershell
 # 1. 进入比赛资料目录，克隆官方 starter kit
 cd code\competitions
 git clone https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit.git
 
-# 2. 下载 Phase 1 demo 数据集（官网 dataagent.top 的 DataAgent-Bench 区块有链接）
-#    解压后放到 code/competitions/datasets/ 下
+# 2. 获取 Phase 1 demo 数据集（436MB zip 放 datasets\ 下）
+#    Google Drive 或百度网盘（提取码 bh3v）二选一，链接见 code/competitions/datasets/README.md
+#    解压到 starter kit 官方默认路径：
+tar.exe -xf ..\datasets\demo_samples_0417.zip -C kddcup2026-data-agents-starter-kit\PHASE_1\data\
+#    （需先 New-Item PHASE_1\data 目录；解压后结构为 PHASE_1\data\public\input|output）
 
-# 3. 配置 LLM API key（参考 starter kit 内 .env.example）
-
-# 4. 跑 baseline
-cd kddcup2026-data-agents-starter-kit
+# 3. 安装 uv 并同步依赖
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+$env:Path = "$env:USERPROFILE\.local\bin;$env:Path"   # 新终端免打
+cd kddcup2026-data-agents-starter-kit\PHASE_1
 uv sync
-uv run python -m ...   # 以官方 README 为准
+
+# 4. 验证数据集可见
+uv run dabench status --config configs/react_baseline.example.yaml   # 期望 Public tasks: 50
+
+# 5. 配置 LLM API（复制 example 为 local yaml 填 model/api_base/api_key）后跑 baseline
+uv run dabench run-benchmark --config configs/react_baseline.local.yaml
 ```
