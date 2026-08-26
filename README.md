@@ -19,6 +19,7 @@
 
 - ✅ 环境全通：starter kit + 50 题数据集 + DeepSeek 后端 + 8 处兼容补丁
 - ✅ 官方 baseline 单题跑通：task_11 答案与标准答案**完全一致**（22 步 / 72 秒）
+- ✅ 学习资料就绪：源码精读 5 篇全完成 + [人类视角任务白话解释](learning/competition-notes/03-task-walkthrough-human-view.md) + ReAct 基础笔记
 - ⏭️ 下一步：50 题全量跑分摸清基线 → 失败 case 归因 → 自研 agent 迭代
 - 🎯 目标阶梯：官方裸 baseline ≈0.376 → 自研超越它 → 冲 0.55~0.60（Phase1 冠军 A-board 水平）
 

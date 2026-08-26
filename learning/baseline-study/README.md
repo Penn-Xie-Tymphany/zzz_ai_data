@@ -10,11 +10,14 @@
 
 | # | 模块 | 要回答的问题 | 文件 | 状态 |
 | --- | --- | --- | --- | --- |
-| 01 | 项目结构总览 | 入口在哪？数据怎么加载？CLI 怎么用？ | `00-project-structure.md` | ☐ |
-| 02 | Agent 主循环 | thought→action→observation 如何驱动？何时终止？ | `01-agent-loop.md` | ☐ |
-| 03 | 工具系统 | 每个工具的输入/输出协议？工具结果如何截断回灌？ | `02-tools.md` | ☐ |
-| 04 | Prompt 工程 | system prompt 结构？JSON 输出协议如何约束与解析容错？ | `03-prompting.md` | ☐ |
-| 05 | 评测流程 | multiset 列比对实现？micro/macro 计算？罚分逻辑？ | `04-evaluation.md` | ☐ |
+| 01 | 项目结构总览 | 入口在哪？数据怎么加载？CLI 怎么用？ | `00-project-structure.md` | ✅ |
+| 02 | Agent 主循环 | thought→action→observation 如何驱动？何时终止？ | `01-agent-loop.md` | ✅ |
+| 03 | 工具系统 | 每个工具的输入/输出协议？工具结果如何截断回灌？ | `02-tools.md` | ✅ |
+| 04 | Prompt 工程 | system prompt 结构？JSON 输出协议如何约束与解析容错？ | `03-prompting.md` | ✅ |
+| 05 | 评测流程 | multiset 列比对实现？micro/macro 计算？罚分逻辑？ | `04-evaluation.md` | ✅ |
+| - | 补丁记录 | 本机为接 DeepSeek 打的 8 处修改（重克隆必读） | `01-patches-for-deepseek.md` | ✅ |
+
+> 配套人类视角任务解释：[../competition-notes/03-task-walkthrough-human-view.md](../competition-notes/03-task-walkthrough-human-view.md)
 
 ## 通用笔记模板
 

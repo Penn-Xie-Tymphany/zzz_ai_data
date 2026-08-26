@@ -4,12 +4,12 @@
 
 | # | 主题 | 文件 | 状态 |
 | --- | --- | --- | --- |
-| 01 | ReAct 范式：Reasoning + Acting 循环 | `01-react.md` | ☐ 未开始 |
-| 02 | Function Calling 与 JSON 输出协议 | `02-function-calling.md` | ☐ |
-| 03 | Text-to-SQL：schema linking、执行反馈修正 | `03-text2sql.md` | ☐ |
-| 04 | 非结构化文档理解（PDF/DOCX 解析、长上下文） | `04-document-understanding.md` | ☐ |
+| 01 | ReAct 范式：Reasoning + Acting 循环 | `01-react.md` | ✅（结合官方 react.py 实讲） |
+| 02 | Function Calling 与 JSON 输出协议 | `02-function-calling.md` | ☐（v0.1 自研前置，重点） |
+| 03 | Text-to-SQL：schema linking、执行反馈修正 | `03-text2sql.md` | ☐（medium 题核心技能） |
+| 04 | 非结构化文档理解（PDF/DOCX 解析、长上下文） | `04-document-understanding.md` | ☐（hard/extreme 核心） |
 | 05 | Agent 设计模式：规划(DAG)、反思、多智能体 | `05-agent-patterns.md` | ☐ |
-| 06 | 沙箱执行与安全：Python/SQL 执行环境隔离 | `06-sandbox.md` | ☐ |
+| 06 | 沙箱执行与安全：Python/SQL 执行环境隔离 | `06-sandbox.md` | ◐（02-tools.md 已覆盖大半） |
 
 ## 笔记模板
 
