@@ -2,6 +2,9 @@
 
 > 对象：`code/competitions/kddcup2026-data-agents-starter-kit/`
 > 方法：边读边记，所有结论必须带 `文件路径:行号`，方便回跳。
+>
+> ⚠️ 先读 [01-patches-for-deepseek.md](01-patches-for-deepseek.md)：我们为接 DeepSeek 打了 8 处补丁，
+> 精读时注意区分"官方原逻辑"与"本机修改"。
 
 ## 精读清单
 

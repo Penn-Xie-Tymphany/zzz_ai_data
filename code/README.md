@@ -2,6 +2,12 @@
 
 所有可运行代码都在这里。分三类：
 
+> **当前状态（2026-08-26）**：starter-kit 已克隆 + PHASE_1 依赖已 `uv sync` + 数据集已就位（`PHASE_1/data/public/`，50 题）+
+> DeepSeek 已配置（`PHASE_1/configs/react_baseline.local.yaml`，含 API key，勿提交）+ task_11 单题验证通过。
+>
+> ⚠️ **starter kit 源码含 8 处本机补丁**（DeepSeek 兼容），重克隆必须按
+> [补丁记录](../learning/baseline-study/01-patches-for-deepseek.md) 重打。
+
 | 子目录 | 内容 | 是否入库 |
 | --- | --- | --- |
 | `competitions/` | 官方 starter kit 克隆 + 官方数据集 | ❌ gitignore（外部仓库 + 大文件） |

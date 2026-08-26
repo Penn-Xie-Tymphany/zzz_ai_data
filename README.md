@@ -13,6 +13,17 @@
 
 ---
 
+## 📍 当前进度快照（2026-08-26）
+
+> **总控文档：[learning/competition-notes/02-progress-and-targets.md](learning/competition-notes/02-progress-and-targets.md)** ← 想快速了解"做了什么/还做什么/优化到什么程度"，看这份。
+
+- ✅ 环境全通：starter kit + 50 题数据集 + DeepSeek 后端 + 8 处兼容补丁
+- ✅ 官方 baseline 单题跑通：task_11 答案与标准答案**完全一致**（22 步 / 72 秒）
+- ⏭️ 下一步：50 题全量跑分摸清基线 → 失败 case 归因 → 自研 agent 迭代
+- 🎯 目标阶梯：官方裸 baseline ≈0.376 → 自研超越它 → 冲 0.55~0.60（Phase1 冠军 A-board 水平）
+
+---
+
 ## 一、目录结构
 
 ```
