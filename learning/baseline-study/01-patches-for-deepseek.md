@@ -1,0 +1,45 @@
+# 01 · Starter Kit 本机补丁记录（DeepSeek 兼容）
+
+> ⚠️ 所有补丁都在 `code/competitions/kddcup2026-data-agents-starter-kit/` 内（gitignore，不入库）。
+> **若重新克隆官方仓库，必须按本文档重打补丁！**
+> 背景：官方 baseline 按 gpt-4.1-mini 调优；接 DeepSeek(deepseek-chat/v4-flash) 后连环翻车，最终 5 处补丁跑通 task_11 且答案全对。
+
+## 补丁总览
+
+| # | 文件 | 问题 | 修复 |
+| --- | --- | --- | --- |
+| P1 | `agents/model.py` | 模型输出前导文字 → 严格解析必炸 | `response_format={"type":"json_object"}` |
+| P2 | `agents/model.py` | 单次 LLM 调用无限挂起（600s×重试） | `timeout=120, max_retries=2` |
+| P3 | `agents/model.py` | json 模式下生成过长 → 慢+截断 | `max_tokens=2048`（+token 用量日志） |
+| P4 | `run/runner.py` | **multiprocessing 死锁**（join 先于 queue.get） | 改为先轮询 queue 再处理进程 |
+| P5 | `run/runner.py` | Windows 中文环境 GBK 编码写文件崩溃 | `write_text/open(encoding="utf-8")` |
+| P6 | `agents/react.py` | DeepSeek 在 JSON 字符串里写裸换行 | `JSONDecoder(strict=False)` |
+| P7 | `agents/react.py` | 盲跑无法观测 | 每步打印 step/action/耗时 |
+| P8 | `agents/prompt.py` | 长 Python 代码撑破 JSON（引号不转义） | 加转义规则 Rule8/9 + 多行代码 few-shot 示例 |
+
+配置侧（`configs/react_baseline.local.yaml`）：`model: deepseek-chat`、`api_base: https://api.deepseek.com/v1`、`max_steps: 40`（默认 16 不够 DeepSeek 的谨慎风格）、`task_timeout_seconds: 1800`。
+
+## 故障链复盘（重要学习素材）
+
+按发现顺序，每一层修好才暴露下一层：
+
+1. **前导文字**：模型输出 `"I'll start by...\n{...}"`，`raw_decode` 在 char 0 就抛错 → P1 用服务端 json 模式根治。
+2. **无限挂起**：偶发单次调用永不返回；OpenAI 客户端默认 timeout=600s×重试 → 表现为"任务超时"但 trace 里 0 步 → P2 快速失败。
+3. **multiprocessing 死锁**（最隐蔽）：`runner.py` 子进程 `queue.put(大结果)` + 父进程先 `join()` —— Python 文档明令禁止的模式。表现为"答案已生成却永远不写文件"。Python 文档原文："joining processes that use queues...deadlock" → P4 先 get 后 join。
+4. **GBK 崩溃**：中文 Windows 默认 locale 编码，trace 含 `ö` 直接 UnicodeEncodeError → P5 全部显式 utf-8。**任何跨平台 IO 都要显式 encoding。**
+5. **裸换行**：json 模式只保证"是合法 JSON 结构"，但模型仍会在字符串里塞原始 `\n`（RFC 违规）→ P6 `strict=False`。
+6. **引号灾难**：`print("...")` 的双引号没转义 → "Expecting ',' delimiter"，模型陷入重试死循环烧光步数 → P8 提示词约束 + few-shot 示例。
+7. **步数预算**：DeepSeek 风格偏谨慎（验证型多步），16 步不够 → 配置调到 40。
+
+## 最终效果
+
+- task_11（easy）：22 步 / 72s / 4 次错误自愈 / prediction 与 gold **完全一致**
+- 每步耗时 1~8s，token 用量 in≈700→15000 递增（observation 回灌膨胀），out≈50-800
+
+## 对自研 agent 的启示（v0.x 设计输入）
+
+1. 输出协议解析必须**宽容 + 自愈**：strict=False、fence 剥离、错误回灌让模型自纠；
+2. 更优解是 **Function Calling 协议**替代自由文本 JSON——服务端保证结构合法，从根上消灭此类故障（列入 my-data-agent v0.2 候选）；
+3. LLM 客户端永远显式设 timeout/max_retries/max_tokens；
+4. 多进程结果传递用队列轮询模式，不要 join-and-hope；
+5. 观察到 observation 回灌使上下文线性膨胀（15KB@17 步），长任务需要截断/摘要策略（v0.2 工具增强点）。

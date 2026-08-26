@@ -52,16 +52,18 @@ zzz_ai_data/
 ### Phase 0 — 环境搭建（0.5 天）
 
 - [x] 安装 Python 3.10+、[uv](https://docs.astral.sh/uv/)（starter kit 用它管理依赖）
-- [ ] 准备一个 LLM 后端：OpenAI 兼容 API（如阿里云百炼 Qwen 系列 / OpenAI / DeepSeek 等），配好 `.env` ← **当前卡点**
+- [x] 准备 LLM 后端：DeepSeek `deepseek-chat`（v4-flash），配置见 starter kit `configs/react_baseline.local.yaml`
 - [x] `code/competitions/` 下 clone starter kit、下载 Phase 1 demo 数据集并解压（50 题，`dabench status` 验证通过）
 
 > 环境实录（真实命令/路径/踩坑）：[learning/00-environment-setup.md](learning/00-environment-setup.md)
+> ⚠️ 官方代码含 8 处 DeepSeek 兼容补丁，重克隆需重打：[learning/baseline-study/01-patches-for-deepseek.md](learning/baseline-study/01-patches-for-deepseek.md)
 
 ### Phase 1 — 跑通官方 Baseline（1~2 天）
 
 - [x] 按 `code/competitions/kddcup2026-data-agents-starter-kit/README` 装依赖（`uv sync`）
-- [ ] 在 demo 数据集上端到端跑通 ReAct baseline，产出 `prediction.csv`
-- [ ] 记录：跑通了哪些 task、失败哪些、日志在哪 → 写入 `learning/experiments-log/`
+- [x] 单题跑通：task_11 (easy) 答案与 gold **完全一致**（22 步/72s）→ [实验记录](learning/experiments-log/2026-08-26-first-baseline-task.md)
+- [ ] 小批量：`run-benchmark --limit 5` 看 easy 通过率
+- [ ] 全量 50 题 + 记录 micro/macro → 写入 `learning/experiments-log/`
 
 ### Phase 2 — 精读 Baseline 源码（3~5 天）
 
