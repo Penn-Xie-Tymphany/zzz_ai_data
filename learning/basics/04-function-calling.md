@@ -1,0 +1,85 @@
+# 04 · Function Calling：让服务端保证输出结构合法
+
+> 是什么：API 层面的结构化输出协议——你声明工具的 schema，模型返回**服务端保证可解析**的结构化调用。
+> 为什么重要：官方 baseline 用"自由文本 JSON"协议，我们实测踩了 6 类解析坑（见 baseline-study/01-patches-for-deepseek.md）；
+> Function Calling 从根上消灭这类问题，是自研 my-data-agent v0.1 的核心设计决策。
+> 状态：DeepSeek / OpenAI / 主流兼容端点全部支持。
+
+## 一、先回顾自由文本 JSON 的问题
+
+baseline 的做法：prompt 里约定模型输出 `{"thought":..., "action":..., "action_input":{...}}`，客户端用解析器硬解。
+实测故障清单：
+
+| 故障 | 根因 |
+| --- | --- |
+| 前导文字破坏解析 | 模型爱加开场白 |
+| "Invalid control character" | 字符串里写裸换行 |
+| "Expecting ',' delimiter" 循环 | Python 双引号没转义，撑破字符串 |
+| 输出被 max_tokens 截断 → 必然非法 | 长代码生成 |
+
+本质：**把结构化输出的正确性责任交给了概率采样**——每个 token 都可能出错。
+
+## 二、Function Calling 怎么做
+
+```python
+response = client.chat.completions.create(
+    model="deepseek-chat",
+    messages=messages,
+    tools=[{
+        "type": "function",
+        "function": {
+            "name": "execute_python",
+            "description": "Execute Python code in the task context dir.",
+            "parameters": {                       # ← JSON Schema 声明参数结构
+                "type": "object",
+                "properties": {
+                    "code": {"type": "string", "description": "..."}
+                },
+                "required": ["code"]
+            }
+        }
+    }],
+    tool_choice="auto",          # auto / none / 强制指定某个工具
+)
+```
+
+模型的返回不再是自由文本，而是结构化对象：
+
+```python
+message.tool_calls[0].function.name       # "execute_python"
+message.tool_calls[0].function.arguments  # '{"code": "..."}' ← 服务端约束生成
+```
+
+## 三、为什么它更可靠（机制层面）
+
+1. **约束解码**：服务端在采样时按 schema 约束 token 合法集（类似 grammar-guided decoding），
+   结构合法性是**解码时保证**的，不是事后祈祷；
+2. **转义由服务端处理**：代码里的换行/引号在 arguments 字符串里天然正确转义；
+3. **协议与提示解耦**：不再需要"规则 5/6/7/8/9"那些防呆条款，prompt 回归纯业务指令；
+4. **多轮标准流程**：assistant 发起 tool_calls → 客户端执行 → 以 `role="tool"` 消息回灌结果 → 继续。
+
+```
+messages = [...,
+  assistant: tool_calls=[{id, function:{name,arguments}}],
+  tool:      {tool_call_id, content: "<observation>"}
+]
+```
+
+注意：和 ReAct 文本协议一样，历史仍需全量重发（见 basics/02），只是每步的"动作"部分从文本变成了结构化字段。
+
+## 四、对比总结
+
+| 维度 | 自由文本 JSON（baseline） | Function Calling |
+| --- | --- | --- |
+| 结构可靠性 | 靠 prompt+解析容错，实测 6 类故障 | 服务端解码时保证 |
+| 转义处理 | 模型自己负责，经常翻车 | 天然正确 |
+| thought 放哪 | JSON 字段里 | content 或单独字段（自行约定） |
+| 可移植性 | 任何能出文本的模型都行 | 需端点支持（主流都已支持） |
+| 适用 | 极简/教学场景 | 生产 agent 的默认选择 |
+
+## 五、在自研项目中的落点
+
+- my-data-agent v0.1：`tools` 声明 + `tool_calls` 解析替换 protocol.py 的正则解析；
+- thought 保留为普通 content（模型自然语言），action/action_input 由 tool_calls 承载；
+- answer 也做成一个 tool（与 baseline 语义一致：唯一终止出口）；
+- 兜底：万一端点不支持 FC，再降级回文本协议（保留 protocol.py 作为 fallback）。
