@@ -12,8 +12,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from my_data_agent.agent import ReActAgent
-from my_data_agent.llm import LLMClient
+from penn_data_agent.agent import ReActAgent
+from penn_data_agent.llm import LLMClient
 
 
 def main() -> None:

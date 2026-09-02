@@ -1,7 +1,7 @@
-# 02 · 进度与目标总控（持续更新）
+# 进度与目标总控（持续更新）
 
 > **这份文档回答三个问题：现在做了什么？还需要做什么？要优化到什么程度？**
-> 每次重大进展后更新本文件。最后更新：2026-08-26
+> 每次重大进展后更新本文件。最后更新：2026-09-02
 
 ---
 
@@ -9,13 +9,16 @@
 
 | 日期 | 里程碑 | 产出 |
 | --- | --- | --- |
-| 08-25 | 工作区框架搭建（learning/ + code/ 双区结构） | git 初始提交，GitHub 同步 |
-| 08-25 | 比赛调研：规则/评分/难度分级整理 | [01-competition-overview.md](01-competition-overview.md) |
+| 08-25 | 工作区框架搭建（learning/PENN + code 双区结构） | git 初始提交，GitHub 同步 |
+| 08-25 | 比赛调研：规则/评分/难度分级整理 | [basics/competition-overview.md](basics/competition-overview.md) |
 | 08-25 | 官方 starter kit 克隆 + uv 环境 | PHASE_1 可运行 |
 | 08-25 | Phase 1 demo 数据集落地（50 题） | `dabench status` 验证通过 |
 | 08-25 | SSH key + GitHub 仓库推送 | github.com/Penn-Xie-Tymphany/zzz_ai_data |
-| 08-26 | DeepSeek 接入 + **8 处兼容补丁**（死锁/编码/JSON 解析等） | [补丁记录](../baseline-study/01-patches-for-deepseek.md) |
-| 08-26 | **官方 baseline 单题跑通：task_11 答案与 gold 完全一致**（22 步/72s） | [实验日志](../experiments-log/2026-08-26-first-baseline-task.md) |
+| 08-26 | DeepSeek 接入 + **8 处兼容补丁**（死锁/编码/JSON 解析等） | [baseline/patches.md](baseline/patches.md) |
+| 08-26 | **官方 baseline 单题跑通：task_11 答案与 gold 完全一致**（22 步/72s） | [experiments-log/2026-08-26-first-baseline-task.md](experiments-log/2026-08-26-first-baseline-task.md) |
+| 08-27 | 源码精读五篇（结构/主循环/工具/prompt/评测） | 已整合进 [baseline/](baseline/README.md) |
+| 09-02 | 切到阿里云百炼 qwen3.8-flash（开箱即用、无速率限制） | task_11 17 步全对 |
+| 09-02 | 目录重构：learning → `PENN/`（baseline/agent/basics 三分区） | 本仓库当前结构 |
 
 ## 二、还需要做什么（按优先级）
 
@@ -24,18 +27,18 @@
 - [ ] **小批量验证**：`run-benchmark --limit 5`（easy 题），确认链路稳定、观察通过率
 - [ ] **全量 50 题跑分**：得到我们环境下的 baseline 基线分（micro/macro/perfect 数）
 - [ ] **失败 case 归因**：按难度分层统计，每题记录"挂在哪一步"（解析？工具？推理？步数？）
-- [ ] 精读 baseline 源码四模块（[精读清单](../baseline-study/README.md)），补齐 00~04 笔记
+- [ ] 精读笔记查漏补缺（架构层已梳理完，细节随用随补）
 
 ### 中期（1~2 周）— 自研 agent 迭代
 
-- [ ] my-data-agent v0.1：脱离官方代码复刻最小 ReAct loop（用 Function Calling 替代自由文本 JSON —— 直接消灭本轮所有解析类故障）
+- [ ] penn_data_agent v0.1：脱离官方代码复刻最小 ReAct loop（用 Function Calling 替代自由文本 JSON —— 直接消灭官方 6 类解析故障）
 - [ ] v0.2 工具增强：schema 摘要、observation 截断策略（上下文线性膨胀问题）、文档分块读取
 - [ ] v0.3 显式规划：先产出计划再执行
 - [ ] 对照实验：同一批题，自研 vs 官方 baseline 分数对比
 
 ### 远期（持续）— 向高分架构演进
 
-- [ ] 借鉴冠军方案的 **PLAN→EXPLORE→ANSWER→VERIFY 四阶段架构**（见下文参考基准）
+- [ ] 借鉴冠军方案的 **PLAN→EXPLORE→ANSWER→VERIFY 四阶段架构**（见第 3 节）
 - [ ] 确定性门控（不信任模型自律）：EXPLORE 达标前禁止 ANSWER、答案形状校验、fail-closed 输出守卫
 - [ ] 难度专项：medium(Text-to-SQL 多源)、hard/extreme(长文档推理) 各自的针对性策略
 
@@ -76,5 +79,5 @@
 
 ## 四、相关资源索引
 
-- 高分开源方案（学习材料）：见 [resources](../resources/README.md)
-- 本机补丁与环境：[00-environment-setup](../00-environment-setup.md)、[01-patches-for-deepseek](../baseline-study/01-patches-for-deepseek.md)
+- 高分开源方案（学习材料）：[basics/resources.md](basics/resources.md)
+- 环境与跑法：`baseline/ops.md`；DeepSeek 补丁：`baseline/patches.md`

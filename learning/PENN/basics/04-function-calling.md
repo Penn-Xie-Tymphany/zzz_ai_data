@@ -1,8 +1,8 @@
 # 04 · Function Calling：让服务端保证输出结构合法
 
 > 是什么：API 层面的结构化输出协议——你声明工具的 schema，模型返回**服务端保证可解析**的结构化调用。
-> 为什么重要：官方 baseline 用"自由文本 JSON"协议，我们实测踩了 6 类解析坑（见 baseline-study/01-patches-for-deepseek.md）；
-> Function Calling 从根上消灭这类问题，是自研 my-data-agent v0.1 的核心设计决策。
+> 为什么重要：官方 baseline 用"自由文本 JSON"协议，我们实测踩了 6 类解析坑（见 ../baseline/patches.md）；
+> Function Calling 从根上消灭这类问题，是自研 penn_data_agent v0.1 的核心设计决策。
 > 状态：DeepSeek / OpenAI / 主流兼容端点全部支持。
 
 ## 一、先回顾自由文本 JSON 的问题
@@ -79,7 +79,7 @@ messages = [...,
 
 ## 五、在自研项目中的落点
 
-- my-data-agent v0.1：`tools` 声明 + `tool_calls` 解析替换 protocol.py 的正则解析；
+- penn_data_agent v0.1：`tools` 声明 + `tool_calls` 解析替换 protocol.py 的正则解析；
 - thought 保留为普通 content（模型自然语言），action/action_input 由 tool_calls 承载；
 - answer 也做成一个 tool（与 baseline 语义一致：唯一终止出口）；
 - 兜底：万一端点不支持 FC，再降级回文本协议（保留 protocol.py 作为 fallback）。

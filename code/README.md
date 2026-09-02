@@ -2,11 +2,11 @@
 
 所有可运行代码都在这里。分三类：
 
-> **当前状态（2026-08-26）**：starter-kit 已克隆 + PHASE_1 依赖已 `uv sync` + 数据集已就位（`PHASE_1/data/public/`，50 题）+
-> DeepSeek 已配置（`PHASE_1/configs/react_baseline.local.yaml`，含 API key，勿提交）+ task_11 单题验证通过。
+> **当前状态（2026-09-02）**：starter-kit 已克隆 + PHASE_1 依赖已 `uv sync` + 数据集已就位（`PHASE_1/data/public/`，50 题）+
+> 阿里云百炼 qwen3.8-flash 已配置（`PHASE_1/configs/qwen38_flash.yaml`，含 API key，勿提交）+ task_11 单题验证通过。
 >
-> ⚠️ **starter kit 源码含 8 处本机补丁**（DeepSeek 兼容），重克隆必须按
-> [补丁记录](../learning/baseline-study/01-patches-for-deepseek.md) 重打。
+> ⚠️ **若用 DeepSeek 后端**，starter kit 源码需 8 处本机补丁，重克隆必须按
+> [补丁记录](../learning/PENN/baseline/patches.md) 重打；改用阿里云百炼后无需补丁。
 
 | 子目录 | 内容 | 是否入库 |
 | --- | --- | --- |
@@ -34,5 +34,5 @@ uv sync
 ## 使用约定
 
 - `competitions/` 内的官方代码**只读不改**；想改逻辑就复制到 `solutions/` 再动手；
-- 自研 agent 每个版本打 tag（v0.1、v0.2 …），配合 `learning/experiments-log/` 做对照；
+- 自研 agent 每个版本打 tag（v0.1、v0.2 …），配合 `learning/PENN/experiments-log/` 做对照；
 - 数据集路径统一约定为 `code/competitions/datasets/<phase>/...`，自研代码里用相对路径或环境变量引用。

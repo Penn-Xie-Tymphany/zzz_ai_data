@@ -4,7 +4,7 @@
 验证「DeepSeek deepseek-chat + 官方 ReAct baseline + 本地 demo 数据集」全链路可用。
 
 ## 配置
-- 代码：官方 starter kit PHASE_1（含 8 处本机补丁，见 `learning/baseline-study/01-patches-for-deepseek.md`）
+- 代码：官方 starter kit PHASE_1（含 8 处本机补丁，见 [baseline/patches.md](../baseline/patches.md)）
 - 数据集：Phase 1 demo 50 题
 - 模型：deepseek-chat（v4-flash），temperature=0，max_tokens=2048，max_steps=40，task_timeout=1800s
 

@@ -1,4 +1,4 @@
-# 01 · Starter Kit 本机补丁记录（DeepSeek 兼容）
+# baseline 补丁记录（DeepSeek 兼容，重克隆必读）
 
 > ⚠️ 所有补丁都在 `code/competitions/kddcup2026-data-agents-starter-kit/` 内（gitignore，不入库）。
 > **若重新克隆官方仓库，必须按本文档重打补丁！**
@@ -39,7 +39,7 @@
 ## 对自研 agent 的启示（v0.x 设计输入）
 
 1. 输出协议解析必须**宽容 + 自愈**：strict=False、fence 剥离、错误回灌让模型自纠；
-2. 更优解是 **Function Calling 协议**替代自由文本 JSON——服务端保证结构合法，从根上消灭此类故障（列入 my-data-agent v0.2 候选）；
+2. 更优解是 **Function Calling 协议**替代自由文本 JSON——服务端保证结构合法，从根上消灭此类故障（见 `basics/04`，penn_data_agent v0.1 已采用）；
 3. LLM 客户端永远显式设 timeout/max_retries/max_tokens；
 4. 多进程结果传递用队列轮询模式，不要 join-and-hope；
 5. 观察到 observation 回灌使上下文线性膨胀（15KB@17 步），长任务需要截断/摘要策略（v0.2 工具增强点）。

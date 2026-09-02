@@ -1,7 +1,7 @@
 [project]
-name = "my-data-agent"
+name = "penn-data-agent"
 version = "0.1.0"
-description = "Self-built Data Agent for KDD Cup 2026 (DataAgent-Bench) learning"
+description = "Penn's self-built Data Agent for KDD Cup 2026 (DataAgent-Bench)"
 requires-python = ">=3.10"
 dependencies = [
     "openai>=1.40",

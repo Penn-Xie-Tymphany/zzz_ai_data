@@ -1,11 +1,11 @@
-# my-data-agent — 自研 Data Agent
+# penn_data_agent — Penn 的自研 Data Agent
 
 > 目标：从零实现一个能在 DataAgent-Bench demo 上跑通的自研 agent，再逐步叠加改进。
 > 不 fork 官方代码，自己写，官方 starter kit 仅作参照与评测对照。
 
-## 版本路线
+> 设计输入来自 baseline 跑通实测，详见 `learning/PENN/baseline/patches.md` 的"启示"一节。
 
-> 设计输入来自 baseline 跑通实测，详见 `learning/baseline-study/01-patches-for-deepseek.md` 的"启示"一节。
+## 版本路线
 
 | 版本 | 目标 | 状态 |
 | --- | --- | --- |
@@ -22,16 +22,16 @@
 | 官方裸 baseline（demo 实测） | micro ≈ 0.376 |
 | Phase 1 冠军 KOBUSHI | A-board 0.5965 / hidden B-board 0.6812 |
 
-目标：v0.1 对齐官方 → v0.3+ 冲 0.55+。完整目标阶梯见 `learning/competition-notes/02-progress-and-targets.md`。
+目标：v0.1 对齐官方 → v0.3+ 冲 0.55+。完整目标阶梯见 `learning/PENN/00-progress.md`。
 
 ## 目录规划（随实现逐步充实）
 
 ```
-my-data-agent/
+penn_data_agent/
 ├── README.md            # 本文件
 ├── pyproject.toml       # 依赖管理
 ├── src/
-│   └── my_data_agent/
+│   └── penn_data_agent/
 │       ├── __init__.py
 │       ├── agent.py         # Agent 主循环（v0.1）
 │       ├── llm.py           # LLM 后端封装（OpenAI 兼容 API）

@@ -48,7 +48,7 @@ messages.append(observation)            # ④ 观察回灌 → 进入下一轮
 3. **ReAct ≠ 只能线性**：比赛强调 DAG 式非线性推理（并行子查询+汇合），这是 baseline 没有的，
    也是冠军方案四阶段架构（PLAN→EXPLORE→ANSWER→VERIFY）的出发点——**先学懂 ReAct，再超越它**。
 
-## 4. 一分钟实现清单（自研 my-data-agent v0.1 对照）
+## 4. 一分钟实现清单（penn_data_agent v0.1 对照）
 
 必须有的五件事：
 - [ ] system prompt（角色+规则+工具说明+输出示例）
@@ -57,4 +57,4 @@ messages.append(observation)            # ④ 观察回灌 → 进入下一轮
 - [ ] 工具分发（dict[str, callable]）
 - [ ] 终止动作（answer）+ 全程 trace 记录
 
-参考：我们已经在 `code/solutions/my-data-agent/src/my_data_agent/` 里搭了骨架（agent.py/protocol.py）。
+参考：我们已经在 `code/solutions/penn_data_agent/src/penn_data_agent/` 里搭了骨架（agent.py/protocol.py）。
