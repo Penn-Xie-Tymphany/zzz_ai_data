@@ -86,11 +86,30 @@ ssh -T git@github.com    # Hi Penn-Xie-Tymphany! ✅
 - github.com:22 端口本机可直连，无需 443 备用通道
 - 推送：`git branch -M main; git push -u origin main`
 
+### 6) LLM 后端：阿里云百炼（qwen3.8-flash）
+
+- 曾用 DeepSeek(`deepseek-chat`) 与 OpenRouter，最终改用**阿里云百炼**（无速率限制、商用稳定）。
+- 配置文件：`PHASE_1/configs/qwen38_flash.yaml`（**含密钥，已被 .gitignore 忽略，绝不入库**）。
+- 关键字段（值见本地文件，这里只记结构）：
+  ```yaml
+  agent:
+    model: qwen3.8-flash
+    api_base: https://ws-aiq3phs9t4to7xr1.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+    api_key: <sk-ws-... 阿里云百炼专属密钥>
+    max_steps: 40
+    temperature: 0.0
+  run:
+    max_workers: 1
+    task_timeout_seconds: 1800
+  ```
+- ✅ 已实测跑通：`uv run dabench run-task task_11 --config configs/qwen38_flash.yaml`
+  - 17 步成功，输出 3 行正确预测（`ID,SEX,Diagnosis`），tokens 905→9897，耗时约 3 分钟。
+  - 说明：阿里云 OpenAI 兼容接口 `/compatible-mode/v1` 与官方 baseline 的 openai SDK **开箱即用**，无需 DeepSeek 那 8 处补丁。
+
 ## 待办（下一步卡点）
 
-- [ ] 配置 LLM API：复制 `configs/react_baseline.example.yaml` 为 `react_baseline.local.yaml`，
-      填入 OpenAI 兼容端点的 model / api_base / api_key
-- [ ] 先跑单题验证链路：`uv run dabench run-task task_11 --config ...local.yaml`
+- [x] 配置 LLM API：阿里云百炼 `qwen38_flash.yaml`（OpenAI 兼容端点，开箱即用）
+- [x] 单题验证链路：`uv run dabench run-task task_11 --config ...local.yaml` ✅（qwen3.8-flash）
 - [ ] 再小批量：`run-benchmark --limit 5`，最后全量 50 题
 
 ## 网络环境备忘
