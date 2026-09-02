@@ -34,5 +34,5 @@ uv sync
 ## 使用约定
 
 - `competitions/` 内的官方代码**只读不改**；想改逻辑就复制到 `solutions/` 再动手；
-- 自研 agent 每个版本打 tag（v0.1、v0.2 …），配合 `learning/PENN/experiments-log/` 做对照；
+- 自研 agent 每个版本打 tag（v0.1、v0.2 …），把每次跑分结果回填到 `learning/PENN/00-progress.md` 做对照；
 - 数据集路径统一约定为 `code/competitions/datasets/<phase>/...`，自研代码里用相对路径或环境变量引用。

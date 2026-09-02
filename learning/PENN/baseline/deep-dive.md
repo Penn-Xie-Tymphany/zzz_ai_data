@@ -142,4 +142,4 @@ Score = Recall − 0.5 × (Extra列数 / 预测列数)
 - `trace.json` —— 完整轨迹（thought/action/observation），是排错与复盘的核心证据；
 - `run.json` —— 元信息（耗时、token、模型）。
 
-> 失败复盘 = 看 trace.json 找"思维在哪一步断了"，结合 experiments-log 记录。
+> 失败复盘 = 看 trace.json 找"思维在哪一步断了"，把结论沉淀进 `../00-progress.md` 的待办与时间线。

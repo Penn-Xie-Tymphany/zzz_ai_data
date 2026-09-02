@@ -15,8 +15,7 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [00-progress.md](00-progress.md) | 进度总览：踩过哪些坑、分数阶梯、下一步 |
-| [experiments-log/](experiments-log/) | 跑分实验日志（一次一记） |
+| [00-progress.md](00-progress.md) | ⭐ **总控文档**：进度、待办、目标阶梯、踩坑沉淀（每次进展后必须更新） |
 
 ## 半钟速览顺序
 

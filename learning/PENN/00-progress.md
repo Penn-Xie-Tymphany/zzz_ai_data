@@ -15,7 +15,7 @@
 | 08-25 | Phase 1 demo 数据集落地（50 题） | `dabench status` 验证通过 |
 | 08-25 | SSH key + GitHub 仓库推送 | github.com/Penn-Xie-Tymphany/zzz_ai_data |
 | 08-26 | DeepSeek 接入 + **8 处兼容补丁**（死锁/编码/JSON 解析等） | [baseline/patches.md](baseline/patches.md) |
-| 08-26 | **官方 baseline 单题跑通：task_11 答案与 gold 完全一致**（22 步/72s） | [experiments-log/2026-08-26-first-baseline-task.md](experiments-log/2026-08-26-first-baseline-task.md) |
+| 08-26 | **官方 baseline 单题跑通：task_11 答案与 gold 完全一致**（22 步/72s） | 详细复盘已并入本文档时间线 |
 | 08-27 | 源码精读五篇（结构/主循环/工具/prompt/评测） | 已整合进 [baseline/](baseline/README.md) |
 | 09-02 | 切到阿里云百炼 qwen3.8-flash（开箱即用、无速率限制） | task_11 17 步全对 |
 | 09-02 | 目录重构：learning → `PENN/`（baseline/agent/basics 三分区） | 本仓库当前结构 |

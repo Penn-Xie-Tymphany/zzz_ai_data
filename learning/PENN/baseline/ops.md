@@ -78,7 +78,7 @@ artifacts/runs/<run_id>/task_XX/
 **三步排查法**：
 1. 看 `prediction.csv` 是否正确 → 不对就进 trace；
 2. 在 `trace.json` 里找到"思维断点"（哪一步开始绕路/报错）；
-3. 对照 `experiments-log/` 记录归因，形成迭代输入。
+3. 对照 `00-progress.md` 记录归因，形成迭代输入。
 
 ---
 
