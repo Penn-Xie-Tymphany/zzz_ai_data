@@ -68,7 +68,6 @@ git grep -n -E "api[_-]?key\s*[:=]\s*['\"]" -- .
 | 类别 | 路径/规则 |
 | --- | --- |
 | 密钥与环境变量 | `.env`、`.env.*`（保留 `.env.example`） |
-| 官方 starter kit | `code/competitions/kddcup2026-data-agents-starter-kit/`（外部仓库，不复制入库，只保留说明 README） |
 | 数据集大文件 | `code/competitions/datasets/*`（`*.zip` / `*.csv` / `*.db` 等） |
 | 运行产物 | `artifacts/`、`runs/`、`outputs/`、`logs/`、`*.sqlite-journal` |
 | 虚拟环境/构建 | `.venv/`、`venv/`、`__pycache__/`、`*.egg-info/`、`build/`、`dist/`、`uv.lock` |
@@ -76,6 +75,8 @@ git grep -n -E "api[_-]?key\s*[:=]\s*['\"]" -- .
 | 临时/搜索产物 | `*_tree.json`、`*search*.json` |
 
 **通用原则**：不确定是否会越权泄露的东西，一律不提交；宁缺勿滥。
+
+> 补充：官方 starter-kit（`code/competitions/kddcup2026-data-agents-starter-kit/`）已于 2026-09-05 作为**快照纳入版本管理**（官方 `@069ee5b` + DeepSeek 兼容补丁，随 clone 一并获得）。该目录自带 `.gitignore`（覆盖其 `data/`、`artifacts/*`、`configs/*`、`.env.*`），**保护依然生效**：切勿把 demo 数据、运行产物、本地 config（含 api_key）提交进主库。
 
 ---
 

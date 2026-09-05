@@ -19,7 +19,7 @@
 供多人共用的 KDD Cup 2026 学习与自研工作区，包含两大部分：
 
 - **`learning/`** — 学习资料区（Markdown 笔记）。每人一个子目录 `learning/<用户名>/`，互不覆盖。
-- **`code/`** — 代码区。官方比赛资料放 `code/competitions/`（不入库），自研方案放 `code/solutions/<用户名>/`。
+- **`code/`** — 代码区。官方比赛资料放 `code/competitions/`（starter-kit 已快照内置、数据集不入库），自研方案放 `code/solutions/<用户名>/`。
 
 仓库级协作规则（提交规范、敏感信息检查、不纳入管理的文件）见 [AGENTS.md](AGENTS.md)。
 
@@ -31,7 +31,7 @@ zzz_ai_data/
 ├── AGENTS.md                        # 仓库协作规范（AI / 协作者必读）
 ├── learning/                        # 学习资料区（每人 learning/<用户名>/）
 └── code/
-    ├── competitions/                # 官方比赛资料（外部仓库 + 数据集，不入库）
+    ├── competitions/                # 官方比赛资料（starter-kit 已内置；数据集不入库）
     └── solutions/                   # 自研方案代码（每人 code/solutions/<用户名>/）
 ```
 
@@ -46,18 +46,16 @@ zzz_ai_data/
 ### 快速开始（跑官方 baseline）
 
 ```powershell
-# 1. 克隆官方 starter kit 到 code/competitions/
-cd code\competitions
-git clone https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit.git
-
+# 1. starter kit 已内置：code/competitions/kddcup2026-data-agents-starter-kit/
+#    （2026-09-05 官方 @069ee5b 快照 + penn-deepseek 兼容补丁，随本仓库 clone 一并获得）
 # 2. 下载并解压数据集（见 code/competitions/datasets/README.md）
 # 3. 安装 uv 并同步依赖
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-cd kddcup2026-data-agents-starter-kit\PHASE_1
+cd code\competitions\kddcup2026-data-agents-starter-kit\PHASE_1
 uv sync
 
-# 4. 配置 LLM API（模型 / api_base / api_key），然后：
+# 4. 配置 LLM API（模型 / api_base / api_key，参考 configs/ 下 .example.yaml），然后：
 uv run dabench status --config <你的config.yaml>          # 期望 Public tasks: 50
 uv run dabench run-task task_11 --config <你的config.yaml> # 单题验证
 ```

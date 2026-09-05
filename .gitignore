@@ -12,8 +12,9 @@ uv.lock
 .env.*
 !.env.example
 
-# 官方比赛资料：starter kit 是外部仓库、数据集是大文件，均不入库（保留说明 README）
-code/competitions/kddcup2026-data-agents-starter-kit/
+# 官方比赛资料：starter-kit 已作为快照直接纳入版本管理（2026-09-05 自 HKUSTDial/kddcup2026-data-agents-starter-kit@069ee5b 导入，
+# 含 penn-deepseek-patches 补丁；其内部 data/、artifacts/、configs/*.local 等由 starter-kit 自带 .gitignore 继续忽略）。
+# 比赛数据集为大文件，不入库（保留说明 README）。
 code/competitions/datasets/*
 !code/competitions/datasets/README.md
 
@@ -29,6 +30,6 @@ logs/
 .DS_Store
 Thumbs.db
 
-# ��ʱ�������
+# ��ʱ�������
 *_tree.json
 *search*.json
