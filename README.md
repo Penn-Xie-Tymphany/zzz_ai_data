@@ -5,7 +5,9 @@
 > **比赛一句话**：给定自然语言分析问题 + 一组异构数据资产（CSV / JSON / SQLite / PDF / 图表），
 > 构建自主 Data Agent：拆解任务 → 规划步骤 → 调用工具（Python / SQL / API）→ 多步推理 → 输出表格答案 `prediction.csv`。
 >
-> **评分**：`Score = Recall − λ · (Extra Columns / Predicted Columns)`，列按 multiset 比对（忽略列名/行序），λ = 0.5。
+> **评分**：`Score = max(0, Recall − λ · (Extra Columns / Predicted Columns))`，
+> 列按内容签名匹配（忽略列名/行序/列序、一对一），λ 官方未公开数值、复现口径 0.5；
+> 本地同口径评分器见 `code/competitions/evaluation/`。
 >
 > **官方资源**：
 >
@@ -31,7 +33,7 @@ zzz_ai_data/
 ├── AGENTS.md                        # 仓库协作规范（AI / 协作者必读）
 ├── learning/                        # 学习资料区（每人 learning/<用户名>/）
 └── code/
-    ├── competitions/                # 官方比赛资料（starter-kit 已内置；数据集不入库）
+    ├── competitions/                # 官方资料（starter-kit 快照内置、PHASE_2 已删）+ 本地评测工具 evaluation/
     └── solutions/                   # 自研方案代码（每人 code/solutions/<用户名>/）
 ```
 
@@ -58,6 +60,11 @@ uv sync
 # 4. 配置 LLM API（模型 / api_base / api_key，参考 configs/ 下 .example.yaml），然后：
 uv run dabench status --config <你的config.yaml>          # 期望 Public tasks: 50
 uv run dabench run-task task_11 --config <你的config.yaml> # 单题验证
+
+# 5. 跑完的 prediction 用本地评分器按官方口径打分（对比排行榜/基线）
+py code/competitions/evaluation/scoring.py --predict-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/artifacts/runs/<run_id> `
+    --gold-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/data/public/output `
+    --input-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/data/public/input
 ```
 
 > 各人的环境配置、踩坑记录、学习笔记都在其 `learning/<用户名>/` 下。

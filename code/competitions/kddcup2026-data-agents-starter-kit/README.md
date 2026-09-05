@@ -9,6 +9,12 @@ English | [中文](README.zh.md)
 
 </div>
 
+> ⚠️ **This snapshot is trimmed (2026-09-05, annotated by the zzz_ai_data maintainers):**
+> this starter kit is now tracked inside the zzz_ai_data monorepo and **`PHASE_2/` has been
+> removed** — the workspace competes in Phase 1 only (Phase 2 video/multimodal track is out of
+> scope). Any later references to `PHASE_2/` in this file are upstream documentation retained for
+> reference and do **not** apply to this snapshot; use `PHASE_1/` only.
+
 This repository provides baseline starter kits for KDD Cup 2026 DataAgent-Bench. It is organized by competition phase so participants can start from the package that matches the phase they are working on.
 
 ## Repository Layout

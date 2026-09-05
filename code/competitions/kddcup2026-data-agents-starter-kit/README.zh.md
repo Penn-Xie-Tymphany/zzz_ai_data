@@ -9,6 +9,10 @@
 
 </div>
 
+> ⚠️ **本快照已裁剪（2026-09-05 由 zzz_ai_data 仓库维护者加注）**：本 starter kit 已纳入
+> zzz_ai_data 主仓库管理，**`PHASE_2/` 已删除**——该工作区只参加 Phase 1（Phase 2 视频/多模态
+> 赛道不做）。后文如仍描述 `PHASE_2/`，均为官方原文档存底，**不适用于本快照**；请只使用 `PHASE_1/`。
+
 本仓库提供 KDD Cup 2026 DataAgent-Bench 的 baseline starter kit。仓库按比赛阶段组织，参赛者可以根据自己正在使用的数据格式进入对应目录。
 
 ## 仓库结构

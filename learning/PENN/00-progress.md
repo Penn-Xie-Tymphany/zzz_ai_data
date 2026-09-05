@@ -3,6 +3,10 @@
 > **这份文档回答三个问题：现在做了什么？还需要做什么？要优化到什么程度？**
 > 每次重大进展后更新本文件。最后更新：2026-09-05
 
+> 🎯 **当前目标（2026-09-05 起）**：只参加 **Phase 1**（单一主赛道公共榜）并尽量拿高分。
+> Phase 2 的 Leaderboard Subtrack（图像/视频新模态）与 Creative Subtrack **均不参加**
+> （视频多模态赛道做不了）；`PHASE_2/` 官方源码已从仓库删除，相关文档仅作背景存档。
+
 ---
 
 ## 一、已经做了什么（时间线）
@@ -46,10 +50,12 @@
 
 ## 三、要优化到什么程度（参考基准与目标）
 
-### 评分机制回顾
+### 评分机制回顾（官方口径，详见 `code/competitions/evaluation/`）
 
-`Score = Recall − 0.5 × (Extra Columns / Predicted Columns)`，列 multiset 比对。
+`Score = max(0, Recall − λ × (Extra Columns / Predicted Columns))`，λ=0.5（复现口径，官方只公开符号 λ）。
+列按**内容签名**匹配（值归一化后多重集，忽略列名/行序/列序，一对一），负分截 0。
 **含义：答案宁缺勿滥——多给的列会被罚；少给列只损失 recall。**
+> 本地已实现官方同口径评分器 `code/competitions/evaluation/scoring.py`，可对跑出的 prediction 打分对比排行榜/基线（`--lam` 可调 λ）。
 
 ### 外部参照系（真实数据）
 
@@ -71,7 +77,7 @@
 | G2 | 摸清基线 | 50 题全量跑分，得到自己环境的 baseline 分数曲线 |
 | G3 | 不低于官方 baseline | 自研 v0.x 在 demo 上 ≥ 官方裸 baseline（≈0.376 或实测值） |
 | G4 | 进入优秀区间 | demo ≥ **0.55~0.60**（相当于 Phase 1 冠军 A-board 水平） |
-| G5 | 极限挑战 | hidden-set 思维：抗干扰文档、视频模态、fail-closed 设计 |
+| G5 | 极限挑战 | hidden-set 思维：抗干扰文档、fail-closed 设计（视频模态不做——Phase 2 不在范围） |
 
 ### 优化方向的优先级判断（基于评分公式）
 
@@ -83,3 +89,4 @@
 
 - 高分开源方案（学习材料）：[basics/参考资源收藏.md](basics/参考资源收藏.md)
 - 环境与跑法：`baseline/运维实操.md`；DeepSeek 补丁：`baseline/补丁记录.md`
+- 本地评分器（官方同口径，对比排行榜/基线用）：`code/competitions/evaluation/`

@@ -16,7 +16,8 @@
 | 数据集 | 渠道 |
 | --- | --- |
 | Phase 1 Demo | Google Drive: <https://drive.google.com/file/d/1c6u5WlFw4KV7CBRyXh5BvFYbKqxhBSbL/view> ・ 百度网盘: <https://pan.baidu.com/s/14MrxhShtuAjY9Z_jBMW_sg?pwd=bh3v>（提取码 bh3v） |
-| Phase 2 Demo | Google Drive: <https://drive.google.com/file/d/1QItyxal97dv875j_on6rq3PE8qByj_SA/view> ・ 百度网盘: <https://pan.baidu.com/s/1RSMWkUVUvaHfC06Skt72gQ?pwd=x4ws>（提取码 x4ws） |
+
+> 本项目只参加 Phase 1；Phase 2（含图像/视频新模态的 Leaderboard Subtrack）已明确不参加，Phase 2 Demo 数据与 PHASE_2/ 目录均已移除。
 
 ## 注意
 
