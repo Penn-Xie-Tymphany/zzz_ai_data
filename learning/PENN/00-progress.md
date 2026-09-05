@@ -10,16 +10,17 @@
 | 日期 | 里程碑 | 产出 |
 | --- | --- | --- |
 | 08-25 | 工作区框架搭建（learning/PENN + code 双区结构） | git 初始提交，GitHub 同步 |
-| 08-25 | 比赛调研：规则/评分/难度分级整理 | [basics/competition-overview.md](basics/competition-overview.md) |
+| 08-25 | 比赛调研：规则/评分/难度分级整理 | [basics/比赛总览.md](basics/比赛总览.md) |
 | 08-25 | 官方 starter kit 克隆 + uv 环境 | PHASE_1 可运行 |
 | 08-25 | Phase 1 demo 数据集落地（50 题） | `dabench status` 验证通过 |
 | 08-25 | SSH key + GitHub 仓库推送 | github.com/Penn-Xie-Tymphany/zzz_ai_data |
-| 08-26 | DeepSeek 接入 + **8 处兼容补丁**（死锁/编码/JSON 解析等） | [baseline/patches.md](baseline/patches.md) |
+| 08-26 | DeepSeek 接入 + **8 处兼容补丁**（死锁/编码/JSON 解析等） | [baseline/补丁记录.md](baseline/补丁记录.md) |
 | 08-26 | **官方 baseline 单题跑通：task_11 答案与 gold 完全一致**（22 步/72s） | 详细复盘已并入本文档时间线 |
 | 08-27 | 源码精读五篇（结构/主循环/工具/prompt/评测） | 已整合进 [baseline/](baseline/README.md) |
 | 09-02 | 切到阿里云百炼 qwen3.8-flash（开箱即用、无速率限制） | task_11 17 步全对 |
 | 09-02 | 目录重构：learning → `PENN/`（baseline/agent/basics 三分区） | 本仓库当前结构 |
-| 09-05 | **官方 REACT 模型机制拆解**（代码架构/设计取舍/任务隐性拆解 + 自研映射） | [agent/react-teardown.md](agent/react-teardown.md) |
+| 09-05 | **官方 REACT 模型机制拆解**（代码架构/设计取舍/任务隐性拆解 + 自研映射） | [agent/REACT机制拆解.md](agent/REACT机制拆解.md) |
+| 09-05 | PENN 学习文档文件名中文化（内容文档改中文名，UTF-8，同步全部交叉引用） | [PENN 总入口](README.md) |
 
 ## 二、还需要做什么（按优先级）
 
@@ -80,5 +81,5 @@
 
 ## 四、相关资源索引
 
-- 高分开源方案（学习材料）：[basics/resources.md](basics/resources.md)
-- 环境与跑法：`baseline/ops.md`；DeepSeek 补丁：`baseline/patches.md`
+- 高分开源方案（学习材料）：[basics/参考资源收藏.md](basics/参考资源收藏.md)
+- 环境与跑法：`baseline/运维实操.md`；DeepSeek 补丁：`baseline/补丁记录.md`

@@ -20,7 +20,7 @@
 
 | 目录 | 放什么 | 不放什么 |
 | --- | --- | --- |
-| `baseline/` | 官方 starter kit 的学习：架构、流程、评测、运维（patches / 跑法） | 通用 AI 知识；我的自研方案细节 |
+| `baseline/` | 官方 starter kit 的学习：架构、流程、评测、运维（补丁 / 跑法） | 通用 AI 知识；我的自研方案细节 |
 | `agent/` | **我的自研 agent** 项目说明、设计、路线图 | baseline 代码细节；通用知识 |
 | `basics/` | **跨项目通识**：ReAct / LLM 上下文 / token / 并发等跟项目无关的知识 | 只讲官方代码的东西 |
 
@@ -85,8 +85,9 @@ flowchart TD
 
 ## 5. 命名与编号
 
-- 文件命名全小写 `kebab-case`（`deep-dive.md`、`competition-overview.md`）。
-- `basics/` 下主题用数字前缀 `01-`、`02-`… 表推荐阅读顺序。
+- **内容文档用中文短名**，贴主题即可（如 `架构总览.md`、`函数调用.md`），不写死英文 kebab-case。
+- `basics/` 下内容文档保留 `NN-` 数字前缀表推荐阅读顺序（如 `03-采样与参数.md`），数字序号不变。
+- **约定功能名保持英文不翻译**：各目录 `README.md`（索引）、总控 `00-progress.md`、规范 `doc_agent.md`。
 - 目录内 `README.md` 为索引，用表格列出：编号 / 主题 / 文件 / 状态。
 
 ---

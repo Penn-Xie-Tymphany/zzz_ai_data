@@ -19,7 +19,7 @@
 
 ## 半钟速览顺序
 
-1. **baseline**：10 分钟读 [architecture.md](baseline/architecture.md) 的架构图 → 脑中建立"它怎么跑"的模型；
+1. **baseline**：10 分钟读 [架构总览.md](baseline/架构总览.md) 的架构图 → 脑中建立"它怎么跑"的模型；
 2. **basics**：按编号读 01~05，补齐通用地基；
 3. **agent**：待自研有实质进展后再开始读。
 

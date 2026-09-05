@@ -5,7 +5,7 @@
 
 ## 已有文档
 
-- [x] [react-teardown.md](react-teardown.md)：**官方 REACT 模型拆解**——代码架构（分层/数据流/主循环）+ 设计取舍 + "任务是怎么被隐性拆解的"，自研各版本（v0.1~四阶段）的改动方向已映射到文末。
+- [x] [REACT机制拆解.md](REACT机制拆解.md)：**官方 REACT 模型拆解**——代码架构（分层/数据流/主循环）+ 设计取舍 + "任务是怎么被隐性拆解的"，自研各版本（v0.1~四阶段）的改动方向已映射到文末。
 
 ## 规划中的文档
 
@@ -16,8 +16,8 @@
 ## 核心参考
 
 - 代码：`code/solutions/penn_data_agent/`
-- 路线的设计输入：`../baseline/deep-dive.md`、`../baseline/patches.md`
-- 官方 REACT 机制拆解（自研前必读）：`react-teardown.md`
+- 路线的设计输入：`../baseline/细节深挖.md`、`../baseline/补丁记录.md`
+- 官方 REACT 机制拆解（自研前必读）：`REACT机制拆解.md`
 - 版本目标与对标分数：`../00-progress.md`
 - 通识基础：`../basics/`
 
