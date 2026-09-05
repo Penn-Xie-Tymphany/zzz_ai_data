@@ -1,7 +1,7 @@
 # 进度与目标总控（持续更新）
 
 > **这份文档回答三个问题：现在做了什么？还需要做什么？要优化到什么程度？**
-> 每次重大进展后更新本文件。最后更新：2026-09-05
+> 每次重大进展后更新本文件。最后更新：2026-09-06
 
 > 🎯 **当前目标（2026-09-05 起）**：只参加 **Phase 1**（单一主赛道公共榜）并尽量拿高分。
 > Phase 2 的 Leaderboard Subtrack（图像/视频新模态）与 Creative Subtrack **均不参加**
@@ -25,13 +25,18 @@
 | 09-02 | 目录重构：learning → `PENN/`（baseline/agent/basics 三分区） | 本仓库当前结构 |
 | 09-05 | **官方 REACT 模型机制拆解**（代码架构/设计取舍/任务隐性拆解 + 自研映射） | [agent/REACT机制拆解.md](agent/REACT机制拆解.md) |
 | 09-05 | PENN 学习文档文件名中文化（内容文档改中文名，UTF-8，同步全部交叉引用） | [PENN 总入口](README.md) |
+| 09-06 | 目标收敛落库：删除 PHASE_2 官方源码（25 文件），文档统一口径「只打 Phase 1」 | 提交 907565e |
+| 09-06 | **官方同口径本地评分器落地**（列签名匹配 + λ 罚分、上限防作弊、18 条单测） | [evaluation/](../../code/competitions/evaluation/)，提交 5cf4500 |
+| 09-06 | **评分器融合 benchmark**：`run-benchmark` 跑完自动出分（明细写 `evaluation_report.json`）+ 新增 `dabench evaluate` 复盘历史 run（不调模型） | PHASE_1 本地补丁 + README 同步 |
+| 09-06 | 用历史 run 交叉验证：`evaluate` 与独立 `scoring.py` 同参数结果完全一致（submitted 6 题 mean 0.6667、perfect 4） | 链路闭环验证通过 |
 
 ## 二、还需要做什么（按优先级）
 
 ### 近期（本周）— 把 baseline 的底摸清
 
-- [ ] **小批量验证**：`run-benchmark --limit 5`（easy 题），确认链路稳定、观察通过率
-- [ ] **全量 50 题跑分**：得到我们环境下的 baseline 基线分（micro/macro/perfect 数）
+- [x] **官方同口径本地评分闭环**（评分器 + `run-benchmark` 自动出分 + `dabench evaluate` 复盘）——已具备，跑分随时可出报告
+- [ ] **小批量验证**：`run-benchmark --limit 5`（easy 题），确认链路稳定、观察通过率（跑完即自动出分）
+- [ ] **全量 50 题跑分**：得到我们环境下的 baseline 基线分（micro/macro/perfect 数），报告自动落在 run 目录 `evaluation_report.json`
 - [ ] **失败 case 归因**：按难度分层统计，每题记录"挂在哪一步"（解析？工具？推理？步数？）
 - [ ] 精读笔记查漏补缺（架构层已梳理完，细节随用随补）
 
@@ -55,7 +60,9 @@
 `Score = max(0, Recall − λ × (Extra Columns / Predicted Columns))`，λ=0.5（复现口径，官方只公开符号 λ）。
 列按**内容签名**匹配（值归一化后多重集，忽略列名/行序/列序，一对一），负分截 0。
 **含义：答案宁缺勿滥——多给的列会被罚；少给列只损失 recall。**
-> 本地已实现官方同口径评分器 `code/competitions/evaluation/scoring.py`，可对跑出的 prediction 打分对比排行榜/基线（`--lam` 可调 λ）。
+> 本地已实现官方同口径评分器 `code/competitions/evaluation/`，并融合进 starter-kit：
+> `run-benchmark` 跑完自动出分（明细写入 `artifacts/runs/<run_id>/evaluation_report.json`），
+> 复盘历史 run 用 `uv run dabench evaluate <run_id> --config <yaml>`（不调模型）；独立 CLI 仍可用 `--lam` 调 λ。
 
 ### 外部参照系（真实数据）
 
@@ -89,4 +96,4 @@
 
 - 高分开源方案（学习材料）：[basics/参考资源收藏.md](basics/参考资源收藏.md)
 - 环境与跑法：`baseline/运维实操.md`；DeepSeek 补丁：`baseline/补丁记录.md`
-- 本地评分器（官方同口径，对比排行榜/基线用）：`code/competitions/evaluation/`
+- 本地评分器（官方同口径，对比排行榜/基线用）：`code/competitions/evaluation/`；已融合 `run-benchmark` 自动出分
