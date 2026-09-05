@@ -8,8 +8,9 @@
 > **评分**：`Score = Recall − λ · (Extra Columns / Predicted Columns)`，列按 multiset 比对（忽略列名/行序），λ = 0.5。
 >
 > **官方资源**：
-> - 官网：<https://dataagent.top/>
-> - Starter Kit：<https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit>
+>
+> - 官网：[https://dataagent.top/](https://dataagent.top/)
+> - Starter Kit：[https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit](https://github.com/HKUSTDial/kddcup2026-data-agents-starter-kit)
 
 ---
 
