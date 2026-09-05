@@ -3,6 +3,11 @@
 > 把本地跑出的 `prediction.csv` 与 demo 的 `gold.csv` 按**官方同口径**对比打分，
 > 用于跟排行榜、公开基线（如官方裸 baseline micro≈0.376）做量化对比。
 > 纯 Python 标准库实现，无需 uv/三方依赖；测试为 unittest 风格，直接 `py` 可跑。
+>
+> **已融合进 starter-kit**：`PHASE_1` 的 `uv run dabench run-benchmark` 跑完会自动调用
+> 本评分器出分（报告写在 run 目录的 `evaluation_report.json`），
+> 复盘历史 run 用 `uv run dabench evaluate <run_id> --config <yaml>`（不调模型）。
+> 本目录仍保留独立 CLI，可对任意 prediction 目录打分。
 
 ## 评分规则（官方口径，规则 6.2/6.3）
 

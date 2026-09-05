@@ -16,7 +16,14 @@ from rich.table import Table
 
 from data_agent_baseline.benchmark.dataset import DABenchPublicDataset
 from data_agent_baseline.config import load_app_config
-from data_agent_baseline.run.runner import TaskRunArtifacts, create_run_output_dir, run_benchmark, run_single_task
+from data_agent_baseline.run import auto_score
+from data_agent_baseline.run.runner import (
+    TaskRunArtifacts,
+    create_run_output_dir,
+    resolve_run_id,
+    run_benchmark,
+    run_single_task,
+)
 from data_agent_baseline.tools.filesystem import list_context_tree
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -153,10 +160,38 @@ def run_task_command(
         console.print(f"Failure: {artifacts.failure_reason}")
 
 
+def _auto_score_and_print(
+    *,
+    run_output_dir: Path,
+    dataset_root: Path,
+    gold_root: Path | None,
+    lam: float | None,
+    title: str = "Automatic local scoring (官方同口径)",
+) -> auto_score.ScoreOutcome:
+    """跑本地评分并打印控制台摘要（失败只提示，不抛错）。"""
+    outcome = auto_score.score_run_dir(
+        run_output_dir=run_output_dir,
+        dataset_root=dataset_root,
+        gold_root=gold_root,
+        lam=lam,
+    )
+    if not outcome.ok:
+        console.print(f"[yellow]{outcome.reason}[/yellow]")
+        return outcome
+    console.print()
+    console.print(f"[bold]{title}[/bold]")
+    for line in auto_score.summary_lines(outcome.aggregate, outcome.lam):
+        console.print(line)
+    console.print(f"full report : {outcome.report_path}")
+    return outcome
+
+
 @app.command("run-benchmark")
 def run_benchmark_command(
     config: Path = typer.Option(..., exists=True, dir_okay=False, help="YAML config path."),
     limit: int | None = typer.Option(None, min=1, help="Maximum number of tasks to run."),
+    no_evaluate: bool = typer.Option(False, "--no-evaluate", help="跑完后跳过自动本地评分。"),
+    lam: float | None = typer.Option(None, help="本地评分罚分系数 λ，默认按评分器（0.5）。"),
 ) -> None:
     """Run the ReAct baseline on multiple tasks from the config selection."""
     app_config = load_app_config(config)
@@ -255,6 +290,37 @@ def run_benchmark_command(
     console.print(f"Run output: {run_output_dir}")
     console.print(f"Tasks attempted: {len(artifacts)}")
     console.print(f"Succeeded tasks: {sum(1 for item in artifacts if item.succeeded)}")
+    if not no_evaluate:
+        _auto_score_and_print(
+            run_output_dir=run_output_dir,
+            dataset_root=app_config.dataset.root_path,
+            gold_root=app_config.dataset.gold_root_path,
+            lam=lam,
+        )
+
+
+@app.command("evaluate")
+def evaluate_command(
+    run_id: str,
+    config: Path = typer.Option(..., exists=True, dir_okay=False, help="YAML config path."),
+    lam: float | None = typer.Option(None, help="本地评分罚分系数 λ，默认按评分器（0.5）。"),
+) -> None:
+    """对某个历史 run 目录做本地评分（不调用模型），复用 run 产物复盘。"""
+    app_config = load_app_config(config)
+    try:
+        effective_run_id = resolve_run_id(run_id)
+    except ValueError as exc:
+        raise typer.BadParameter(str(exc), param_hint="run_id") from exc
+    run_output_dir = app_config.run.output_dir / effective_run_id
+    if not run_output_dir.is_dir():
+        raise typer.BadParameter(f"run 目录不存在: {run_output_dir}", param_hint="run_id")
+    _auto_score_and_print(
+        run_output_dir=run_output_dir,
+        dataset_root=app_config.dataset.root_path,
+        gold_root=app_config.dataset.gold_root_path,
+        lam=lam,
+        title="Local evaluation (官方同口径)",
+    )
 
 
 def main() -> None:

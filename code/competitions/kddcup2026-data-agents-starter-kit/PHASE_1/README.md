@@ -128,6 +128,15 @@ uv run dabench <command> --config PATH [options]
 
 `run-benchmark` also supports `--limit N` to cap the number of tasks.
 
+> **Local patch: automatic scoring.** After a `run-benchmark` finishes, this snapshot
+> auto-scores every produced `prediction.csv` against the demo gold with the official
+> metric (see the repo-local `code/competitions/evaluation/`), prints an aggregate
+> summary, and writes per-task details to
+> `artifacts/runs/<run_id>/evaluation_report.json`. Disable with `--no-evaluate`; tune
+> the penalty coefficient with `--lam` (default 0.5). Re-score an existing run without
+> calling the model via `uv run dabench evaluate <run_id> --config <your-config.yaml>`.
+> When the scorer or gold data is unavailable the step is skipped with a notice.
+
 ## Tools
 
 The baseline exposes these tools to the model:

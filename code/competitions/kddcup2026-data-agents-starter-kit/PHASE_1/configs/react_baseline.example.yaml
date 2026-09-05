@@ -1,5 +1,7 @@
 dataset:
   root_path: data/public/input
+  # gold_root_path: data/public/output  # 可选：显式指定本地评分用 gold 目录
+                                        # 缺省时自动取 root_path 同级的 output/
 
 agent:
   model: YOUR_MODEL_NAME

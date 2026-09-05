@@ -7,7 +7,8 @@
 >
 > **评分**：`Score = max(0, Recall − λ · (Extra Columns / Predicted Columns))`，
 > 列按内容签名匹配（忽略列名/行序/列序、一对一），λ 官方未公开数值、复现口径 0.5；
-> 本地同口径评分器见 `code/competitions/evaluation/`。
+> 本地同口径评分器见 `code/competitions/evaluation/`，并已融合进 starter-kit 的
+> `run-benchmark`（每次跑完自动出分，报告写在 run 目录的 `evaluation_report.json`）。
 >
 > **官方资源**：
 >
@@ -34,6 +35,7 @@ zzz_ai_data/
 ├── learning/                        # 学习资料区（每人 learning/<用户名>/）
 └── code/
     ├── competitions/                # 官方资料（starter-kit 快照内置、PHASE_2 已删）+ 本地评测工具 evaluation/
+    │                                # （评分器已融合 starter-kit：run-benchmark 跑完自动出分）
     └── solutions/                   # 自研方案代码（每人 code/solutions/<用户名>/）
 ```
 
@@ -61,7 +63,12 @@ uv sync
 uv run dabench status --config <你的config.yaml>          # 期望 Public tasks: 50
 uv run dabench run-task task_11 --config <你的config.yaml> # 单题验证
 
-# 5. 跑完的 prediction 用本地评分器按官方口径打分（对比排行榜/基线）
+# 5. 跑完整 benchmark：跑完自动按官方口径出分（不想要可在末尾加 --no-evaluate）
+uv run dabench run-benchmark --config <你的config.yaml> [--lam 0.5]
+#    → 分数明细打印在控制台，完整报告写在 artifacts/runs/<run_id>/evaluation_report.json
+#    复盘历史 run（不调模型）：
+uv run dabench evaluate <run_id> --config <你的config.yaml>
+#    也可单独用评分器对任意 prediction 目录打分：
 py code/competitions/evaluation/scoring.py --predict-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/artifacts/runs/<run_id> `
     --gold-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/data/public/output `
     --input-root code/competitions/kddcup2026-data-agents-starter-kit/PHASE_1/data/public/input

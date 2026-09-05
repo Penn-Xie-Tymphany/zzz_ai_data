@@ -19,6 +19,8 @@ def _default_run_output_dir() -> Path:
 @dataclass(frozen=True, slots=True)
 class DatasetConfig:
     root_path: Path = field(default_factory=_default_dataset_root)
+    # 本地评分用的 gold 根目录；None 时由 run/auto_score.py 自动推导（root_path 同级 output/）
+    gold_root_path: Path | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -45,7 +47,7 @@ class AppConfig:
     run: RunConfig = field(default_factory=RunConfig)
 
 
-def _path_value(raw_value: str | None, default_value: Path) -> Path:
+def _path_value(raw_value: str | None, default_value: Path | None) -> Path | None:
     if not raw_value:
         return default_value
     candidate = Path(raw_value)
@@ -66,6 +68,7 @@ def load_app_config(config_path: Path) -> AppConfig:
 
     dataset_config = DatasetConfig(
         root_path=_path_value(dataset_payload.get("root_path"), dataset_defaults.root_path),
+        gold_root_path=_path_value(dataset_payload.get("gold_root_path"), None),
     )
     agent_config = AgentConfig(
         model=str(agent_payload.get("model", agent_defaults.model)),

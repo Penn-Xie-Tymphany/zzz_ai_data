@@ -128,6 +128,14 @@ uv run dabench <command> --config PATH [options]
 
 `run-benchmark` 还支持 `--limit N`，用于限制任务数量。
 
+> **本快照本地补丁：自动评分。** `run-benchmark` 跑完后会自动把产出的每个
+> `prediction.csv` 与本仓 demo gold 按官方口径（见仓库内 `code/competitions/evaluation/`）
+> 打分：控制台打印聚合结果，逐题明细写入
+> `artifacts/runs/<run_id>/evaluation_report.json`。不需要时加 `--no-evaluate`；
+> 罚分系数用 `--lam` 调整（默认 0.5）。想对历史 run 复盘且不调模型，可运行
+> `uv run dabench evaluate <run_id> --config <你的config.yaml>`。
+> 若评分器或 gold 数据不可用，该步骤会自动跳过并提示。
+
 ## Tools
 
 当前暴露给模型的工具有：
