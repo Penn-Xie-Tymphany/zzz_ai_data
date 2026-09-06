@@ -1,7 +1,7 @@
 # 进度与目标总控（持续更新）
 
 > **这份文档回答三个问题：现在做了什么？还需要做什么？要优化到什么程度？**
-> 每次重大进展后更新本文件。最后更新：2026-09-06
+> 每次重大进展后更新本文件。最后更新：2026-09-07
 
 > 🎯 **当前目标（2026-09-05 起）**：只参加 **Phase 1**（单一主赛道公共榜）并尽量拿高分。
 > Phase 2 的 Leaderboard Subtrack（图像/视频新模态）与 Creative Subtrack **均不参加**
@@ -33,6 +33,7 @@
 | 09-06 | 本地补丁 P9：`run-benchmark --difficulty`（可只跑 hard/medium/…），`summary.json` 记录难度 | [补丁记录.md](baseline/补丁记录.md) |
 | 09-06 | **首个全量 50 题基线：overall 0.5967 / submitted 0.6938 / perfect 29**（qwen3.6-flash，10m52s） | [全量跑分复盘.md](baseline/全量跑分复盘.md) |
 | 09-06 | 跑分归因：失分大头是 **11 道"提交但全错"**（非未提交）；**列数与 gold 一致→mean 0.806/perfect 29，多给列 0.167、少给列 0.056** | 同上（G2 达成，瓶颈重新定位） |
+| 09-07 | **自研 P-a-E v0.3 全量 50 题跑通**：plan-execute 架构（Recon/Planner/SubAgent/Composer/Verifier）落地，统一 qwen3.6-flash | 提交 48/50，**overall 0.5417 / perfect 27**；列形状守卫生效（42/48 列数一致、仅 6 题多给/少给），"列对值错"成主战场 |
 
 ## 二、还需要做什么（按优先级）
 
@@ -49,10 +50,12 @@
 
 ### 中期（1~2 周）— 自研 agent 迭代
 
-- [ ] penn_data_agent v0.1：脱离官方代码复刻最小 ReAct loop（用 Function Calling 替代自由文本 JSON —— 直接消灭官方 6 类解析故障）
-- [ ] v0.2 工具增强：schema 摘要、observation 截断策略（上下文线性膨胀问题）、文档分块读取
-- [ ] v0.3 显式规划：先产出计划再执行
-- [ ] 对照实验：同一批题，自研 vs 官方 baseline 分数对比
+- [x] **penn_data_agent v0.1：脱离官方代码复刻最小 ReAct loop** + 文本 JSON 协议 + 严格 schema 校验 + 重试（消灭官方 6 类解析故障；用文本 JSON 而非 FC 以兼容任意后端）
+- [x] **v0.2 工具增强**：schema 摘要（Recon 确定性扫描）、observation 截断（3000 字符）、上下文折叠
+- [x] **v0.3 显式规划（Plan-and-Execute + 子 Agent 隔离）**：Recon → Planner(Answer Contract) → 子 Agent(独立上下文) → Composer → Verifier(fail-closed)，全量 50 题跑通（run `20260906T183758Z`）
+- [ ] **v0.4 执行质量优化**（当前主线）：针对 20 题"列对但值错"——调 `worker_max_steps`/`worker_total_steps`、强化子 Agent 计算 prompt、关键中间量回传校验
+- [ ] **对照实验**：同模型下 `run_benchmark.py --mode react` 直接对比官方 ReAct 口径（架构设计.md §6.2 已做分数对照，但缺同 harness 的 react 跑分）
+- [ ] **修复单题超时**：`run_one` 落地 `task_timeout_seconds`，避免 API 超时拖垮整批（详见 [agent/全量跑分复盘_v03.md](agent/全量跑分复盘_v03.md)）
 
 ### 远期（持续）— 向高分架构演进
 
@@ -96,8 +99,8 @@
 | --- | --- | --- |
 | G1 ✅ | 跑通单题 | task_11 全对（已达成） |
 | G2 ✅ | 摸清基线 | **已达成**：50 题 overall 0.5967 / perfect 29（qwen3.6-flash + 官方原版代码） |
-| G3 | 不低于官方 baseline | 自研 v0.x 在 demo 上 ≥ 官方裸 baseline（≈0.376 或实测值） |
-| G4 | 进入优秀区间 | demo ≥ **0.55~0.60**（相当于 Phase 1 冠军 A-board 水平） |
+| G3 ✅ | 不低于官方裸 baseline | 自研 v0.3 在 demo 上 **0.5417 ≥ 官方裸 baseline 0.376**（达成）；但相对**我们自己的官方 qwen3.6-flash 配置 0.5967** 仍差 0.055（列对值错为主） |
+| G4 | 进入优秀区间 | demo ≥ **0.55~0.60**（相当于 Phase 1 冠军 A-board 水平）；v0.3 已 0.5417，逼近下沿 |
 | G5 | 极限挑战 | hidden-set 思维：抗干扰文档、fail-closed 设计（视频模态不做——Phase 2 不在范围） |
 
 ### 优化方向的优先级判断（基于评分公式）
