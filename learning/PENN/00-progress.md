@@ -29,12 +29,15 @@
 | 09-06 | **官方同口径本地评分器落地**（列签名匹配 + λ 罚分、上限防作弊、18 条单测） | [evaluation/](../../code/competitions/evaluation/)，提交 5cf4500 |
 | 09-06 | **评分器融合 benchmark**：`run-benchmark` 跑完自动出分（明细写 `evaluation_report.json`）+ 新增 `dabench evaluate` 复盘历史 run（不调模型） | PHASE_1 本地补丁 + README 同步 |
 | 09-06 | 用历史 run 交叉验证：`evaluate` 与独立 `scoring.py` 同参数结果完全一致（submitted 6 题 mean 0.6667、perfect 4） | 链路闭环验证通过 |
+| 09-06 | **接入阿里云 `qwen3.6-flash` 打 hard**：配置 `configs/qwen36_flash.yaml`，实测 120K prompt tokens 受理（本地小模型爆上下文的痛点解除） | task_330 首跑 11 步出答案，submitted mean 0.70 |
+| 09-06 | 本地补丁 P9：`run-benchmark --difficulty`（可只跑 hard/medium/…），`summary.json` 记录难度 | [补丁记录.md](baseline/补丁记录.md) |
 
 ## 二、还需要做什么（按优先级）
 
 ### 近期（本周）— 把 baseline 的底摸清
 
 - [x] **官方同口径本地评分闭环**（评分器 + `run-benchmark` 自动出分 + `dabench evaluate` 复盘）——已具备，跑分随时可出报告
+- [ ] **hard 专项跑分**：`run-benchmark --difficulty hard`（11 题，qwen3.6-flash），确认不再爆上下文、看 hard 分层得分
 - [ ] **小批量验证**：`run-benchmark --limit 5`（easy 题），确认链路稳定、观察通过率（跑完即自动出分）
 - [ ] **全量 50 题跑分**：得到我们环境下的 baseline 基线分（micro/macro/perfect 数），报告自动落在 run 目录 `evaluation_report.json`
 - [ ] **失败 case 归因**：按难度分层统计，每题记录"挂在哪一步"（解析？工具？推理？步数？）

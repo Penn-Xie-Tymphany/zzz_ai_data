@@ -190,13 +190,18 @@ def _auto_score_and_print(
 def run_benchmark_command(
     config: Path = typer.Option(..., exists=True, dir_okay=False, help="YAML config path."),
     limit: int | None = typer.Option(None, min=1, help="Maximum number of tasks to run."),
+    difficulty: str | None = typer.Option(
+        None,
+        "--difficulty",
+        help="只跑指定难度的题：easy / medium / hard / extreme；不传则跑全量。",
+    ),
     no_evaluate: bool = typer.Option(False, "--no-evaluate", help="跑完后跳过自动本地评分。"),
     lam: float | None = typer.Option(None, help="本地评分罚分系数 λ，默认按评分器（0.5）。"),
 ) -> None:
     """Run the ReAct baseline on multiple tasks from the config selection."""
     app_config = load_app_config(config)
     dataset = DABenchPublicDataset(app_config.dataset.root_path)
-    task_total = len(dataset.iter_tasks())
+    task_total = len(dataset.iter_tasks(difficulty=difficulty))
     if limit is not None:
         task_total = min(task_total, limit)
     effective_workers = app_config.run.max_workers
@@ -268,6 +273,7 @@ def run_benchmark_command(
             run_output_dir, artifacts = run_benchmark(
                 config=app_config,
                 limit=limit,
+                difficulty=difficulty,
                 progress_callback=on_task_complete,
             )
         except (ValueError, FileExistsError) as exc:

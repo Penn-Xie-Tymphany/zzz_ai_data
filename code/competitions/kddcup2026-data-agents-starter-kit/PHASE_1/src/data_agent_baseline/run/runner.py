@@ -231,12 +231,14 @@ def run_benchmark(
     model=None,
     tools: ToolRegistry | None = None,
     limit: int | None = None,
+    difficulty: str | None = None,
     progress_callback: Callable[[TaskRunArtifacts], None] | None = None,
 ) -> tuple[Path, list[TaskRunArtifacts]]:
     effective_run_id, run_output_dir = create_run_output_dir(config.run.output_dir, run_id=config.run.run_id)
 
     dataset = DABenchPublicDataset(config.dataset.root_path)
-    tasks = dataset.iter_tasks()
+    # difficulty 过滤：只跑指定难度（如 hard），None 表示全量
+    tasks = dataset.iter_tasks(difficulty=difficulty)
     if limit is not None:
         tasks = tasks[:limit]
 
@@ -289,6 +291,7 @@ def run_benchmark(
         {
             "run_id": effective_run_id,
             "task_count": len(task_artifacts),
+            "difficulty": difficulty,
             "succeeded_task_count": sum(1 for artifact in task_artifacts if artifact.succeeded),
             "max_workers": effective_workers,
             "tasks": [artifact.to_dict() for artifact in task_artifacts],

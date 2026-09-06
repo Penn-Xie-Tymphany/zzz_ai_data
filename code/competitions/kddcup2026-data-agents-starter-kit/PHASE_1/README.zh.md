@@ -128,6 +128,9 @@ uv run dabench <command> --config PATH [options]
 
 `run-benchmark` 还支持 `--limit N`，用于限制任务数量。
 
+> **本快照本地补丁：难度过滤。** 加 `--difficulty easy|medium|hard|extreme` 可只跑某一难度
+> （如 `--difficulty hard` 只跑 11 道 hard 题），不传则跑全量；`summary.json` 会记录该字段。
+
 > **本快照本地补丁：自动评分。** `run-benchmark` 跑完后会自动把产出的每个
 > `prediction.csv` 与本仓 demo gold 按官方口径（见仓库内 `code/competitions/evaluation/`）
 > 打分：控制台打印聚合结果，逐题明细写入
