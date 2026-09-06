@@ -26,6 +26,8 @@
 
 仓库级协作规则（提交规范、敏感信息检查、不纳入管理的文件）见 [AGENTS.md](AGENTS.md)。
 
+
+
 ## 目录结构
 
 ```
@@ -46,6 +48,7 @@ zzz_ai_data/
 1. 先读本文件与 [AGENTS.md](AGENTS.md)（尤其其中的身份识别规则）；
 2. 确认当前使用者是谁，进入其专属目录（`learning/<用户名>/`、`code/solutions/<用户名>/`）工作；
 3. 涉及共享内容的改动（根 README、`AGENTS.md`、`.gitignore` 等）先与协作者确认。
+
 
 ### 快速开始（跑官方 baseline）
 
