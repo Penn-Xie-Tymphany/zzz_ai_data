@@ -31,16 +31,20 @@
 | 09-06 | 用历史 run 交叉验证：`evaluate` 与独立 `scoring.py` 同参数结果完全一致（submitted 6 题 mean 0.6667、perfect 4） | 链路闭环验证通过 |
 | 09-06 | **接入阿里云 `qwen3.6-flash` 打 hard**：配置 `configs/qwen36_flash.yaml`，实测 120K prompt tokens 受理（本地小模型爆上下文的痛点解除） | task_330 首跑 11 步出答案，submitted mean 0.70 |
 | 09-06 | 本地补丁 P9：`run-benchmark --difficulty`（可只跑 hard/medium/…），`summary.json` 记录难度 | [补丁记录.md](baseline/补丁记录.md) |
+| 09-06 | **首个全量 50 题基线：overall 0.5967 / submitted 0.6938 / perfect 29**（qwen3.6-flash，10m52s） | [全量跑分复盘.md](baseline/全量跑分复盘.md) |
+| 09-06 | 跑分归因：失分大头是 **11 道"提交但全错"**（非未提交）；**列数与 gold 一致→mean 0.806/perfect 29，多给列 0.167、少给列 0.056** | 同上（G2 达成，瓶颈重新定位） |
 
 ## 二、还需要做什么（按优先级）
 
-### 近期（本周）— 把 baseline 的底摸清
+### 近期（本周）— 基线已摸清，转向针对性修复
 
 - [x] **官方同口径本地评分闭环**（评分器 + `run-benchmark` 自动出分 + `dabench evaluate` 复盘）——已具备，跑分随时可出报告
-- [ ] **hard 专项跑分**：`run-benchmark --difficulty hard`（11 题，qwen3.6-flash），确认不再爆上下文、看 hard 分层得分
-- [ ] **小批量验证**：`run-benchmark --limit 5`（easy 题），确认链路稳定、观察通过率（跑完即自动出分）
-- [ ] **全量 50 题跑分**：得到我们环境下的 baseline 基线分（micro/macro/perfect 数），报告自动落在 run 目录 `evaluation_report.json`
-- [ ] **失败 case 归因**：按难度分层统计，每题记录"挂在哪一步"（解析？工具？推理？步数？）
+- [x] **全量 50 题跑分**：**overall 0.5967 / submitted 0.6938 / perfect 29/50**（qwen3.6-flash，max_steps=16，10m52s）
+- [ ] **P0-1：`max_steps` 改回 40 重跑**——本次 6 道题因 16 步用完而 0 分，属人为丢分
+- [ ] **P0-2：列形状守卫**——已提交题中「列数一致 mean 0.806 / 多给列 0.167 / 少给列 0.056」，列粒度即胜负（task_330 答对 `1-1` 却因合成一列归零）
+- [ ] **P1：413 请求体超限修复**（task_257）：超长 observation 截断/摘要
+- [ ] **P2：easy 题稳定性专项**（task_25/80/89 均为 easy 却全错，easy mean 仅 0.650）
+- [x] **失败 case 归因**：已完成首轮（7 未提交 / 11 全错 / 3 部分正确）——详见 [全量跑分复盘.md](baseline/全量跑分复盘.md)
 - [ ] 精读笔记查漏补缺（架构层已梳理完，细节随用随补）
 
 ### 中期（1~2 周）— 自研 agent 迭代
@@ -72,6 +76,7 @@
 | 参照 | 成绩 | 来源 |
 | --- | --- | --- |
 | 官方裸 baseline（ReAct，强模型后端） | demo 上 micro ≈ **0.376**；有参赛者实测 perfect 率仅 ~16% | BrightLiao/xyma2003 复盘仓库 |
+| **我们（2026-09-06 实测）** | demo 50 题 overall **0.5967** / perfect **29/50（58%）** | 本仓 run `20260906T151516Z` |
 | **Phase 1 冠军**（Team KOBUSHI） | A-board **0.5965** / B-board(hidden) **0.6812** / Final **0.6685**，1/700+ 队 | kekshibata 开源仓库 |
 | Phase 1 第 9 名 | Mamba Agent（ReAct 改造版） | Kosthi 开源仓库 |
 | 冠军关键架构 | **PLAN→EXPLORE→ANSWER→VERIFY 四阶段** + 确定性阶段门控 + 按阶段裁剪工具可见性 + fail-closed 输出守卫 | 同上 |
@@ -79,12 +84,18 @@
 > 冠军队细节值得深挖：他们用被指定的 Qwen3.5-35B-A3B（非顶级闭源模型）+ 16 CPU 无 GPU，
 > 说明**架构和工程比模型 brute-force 更重要**——这正是本比赛的学习价值所在。
 
+> ⚠️ **口径警告（2026-09-06）**：我们的 0.5967 是 **demo 50 题**（公开调试子集）上的分，
+> 冠军 0.5965 是 **官方评测集**。两者数据集不同，**数字接近纯属巧合，不可跨集比较**。
+> 我们比官方裸 baseline 0.376 高，主因是**模型换代**（qwen3.6-flash 是 2026 年新模型），
+> 而非架构改进——架构零改动、max_steps=16 也是官方默认值（λ 实测不敏感：0→1 仅差 0.027）。
+> 详见 [全量跑分复盘.md](baseline/全量跑分复盘.md) §5。
+
 ### 我们的目标阶梯
 
 | 阶段 | 目标 | 验收标准 |
 | --- | --- | --- |
 | G1 ✅ | 跑通单题 | task_11 全对（已达成） |
-| G2 | 摸清基线 | 50 题全量跑分，得到自己环境的 baseline 分数曲线 |
+| G2 ✅ | 摸清基线 | **已达成**：50 题 overall 0.5967 / perfect 29（qwen3.6-flash + 官方原版代码） |
 | G3 | 不低于官方 baseline | 自研 v0.x 在 demo 上 ≥ 官方裸 baseline（≈0.376 或实测值） |
 | G4 | 进入优秀区间 | demo ≥ **0.55~0.60**（相当于 Phase 1 冠军 A-board 水平） |
 | G5 | 极限挑战 | hidden-set 思维：抗干扰文档、fail-closed 设计（视频模态不做——Phase 2 不在范围） |
@@ -92,11 +103,14 @@
 ### 优化方向的优先级判断（基于评分公式）
 
 1. **减少 Extra Columns 罚分** > 提升 Recall：输出守卫（列数/形状校验）是性价比最高的改动；
+   > ✅ **已被 09-06 全量数据证实**：已提交题中列数一致 mean 0.806（perfect 29/36），
+   > 多给列 0.167、少给列 0.056——**列形状几乎决定对错**，自研 v0.2 应最先做这个。
 2. easy→medium→hard 逐层攻克：easy 是纯代码生成，medium 加 Text-to-SQL，hard 考长文档——先保证低难度题零失误；
 3. 步数预算与上下文管理是工程瓶颈（observation 回灌线性膨胀，17 步已 15K tokens）。
 
 ## 四、相关资源索引
 
 - 高分开源方案（学习材料）：[basics/参考资源收藏.md](basics/参考资源收藏.md)
+- **跑分结果与归因**：`baseline/全量跑分复盘.md`（基线数字、失败归因、列形状结论）
 - 环境与跑法：`baseline/运维实操.md`；DeepSeek 补丁：`baseline/补丁记录.md`
 - 本地评分器（官方同口径，对比排行榜/基线用）：`code/competitions/evaluation/`；已融合 `run-benchmark` 自动出分
