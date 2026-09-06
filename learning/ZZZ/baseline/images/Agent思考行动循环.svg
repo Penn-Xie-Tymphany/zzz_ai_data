@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1580" viewBox="0 0 1520 1580" font-family="'Microsoft YaHei','SimHei',sans-serif">
+  <defs>
+    <marker id="aB" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#6c8ebf"/></marker>
+    <marker id="aR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#b85450"/></marker>
+    <marker id="aG" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#82b366"/></marker>
+  </defs>
+  <rect width="1520" height="1580" fill="#ffffff"/>
+  <text x="760" y="22" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">Agent 内部『思考-行动』循环（ReAct，src/data_agent_baseline/agents/react.py）</text>
+
+  <!-- 起点 -->
+  <g>
+    <rect x="560" y="30" width="380" height="85" rx="10" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+    <text x="750" y="56" text-anchor="middle" font-size="14" fill="#1a1a1a">Agent.run(task)</text>
+    <text x="750" y="78" text-anchor="middle" font-size="12" fill="#333">新建空状态 state</text>
+    <text x="750" y="98" text-anchor="middle" font-size="12" fill="#333">steps=[]   answer=None</text>
+  </g>
+  <line x1="750" y1="115" x2="750" y2="176" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+
+  <!-- d1 菱形：还有步数 -->
+  <polygon points="750,180 910,240 750,300 590,240" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="750" y="236" text-anchor="middle" font-size="14" fill="#1a1a1a">还有步数?</text>
+  <text x="750" y="256" text-anchor="middle" font-size="12" fill="#333">step=1..max_steps(16)</text>
+
+  <!-- fail 右侧顶部 -->
+  <g>
+    <rect x="1080" y="190" width="360" height="100" rx="8" fill="#f8cecc" stroke="#b85450" stroke-width="1.5"/>
+    <text x="1260" y="220" text-anchor="middle" font-size="13" fill="#1a1a1a">16 轮还没交卷</text>
+    <text x="1260" y="242" text-anchor="middle" font-size="13" fill="#1a1a1a">→ 记 failure_reason</text>
+    <text x="1260" y="264" text-anchor="middle" font-size="13" fill="#1a1a1a">→ 任务失败 ✘</text>
+  </g>
+  <line x1="908" y1="240" x2="1076" y2="240" stroke="#b85450" stroke-width="2" marker-end="url(#aR)"/>
+  <text x="995" y="230" text-anchor="middle" font-size="12" fill="#b85450">否：步数用完</text>
+
+  <line x1="750" y1="300" x2="750" y2="356" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+  <text x="760" y="332" font-size="12" fill="#6c8ebf">是</text>
+
+  <!-- n02 -->
+  <g>
+    <rect x="560" y="360" width="380" height="100" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="750" y="386" text-anchor="middle" font-size="14" fill="#1a1a1a">① _build_messages() 拼试卷</text>
+    <text x="750" y="410" text-anchor="middle" font-size="12" fill="#333">[系统规则+工具说明书] + [题目]</text>
+    <text x="750" y="432" text-anchor="middle" font-size="12" fill="#333">+ [第1步 ~ 第n-1步全部历史]</text>
+    <text x="750" y="452" text-anchor="middle" font-size="11" fill="#666">（模型无记忆 → 每轮全量重发）</text>
+  </g>
+  <line x1="750" y1="460" x2="750" y2="516" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+
+  <!-- n03 -->
+  <g>
+    <rect x="560" y="520" width="380" height="75" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="750" y="548" text-anchor="middle" font-size="14" fill="#1a1a1a">② model.complete(messages)</text>
+    <text x="750" y="572" text-anchor="middle" font-size="12" fill="#333">调用大模型 → 返回一段文字</text>
+  </g>
+  <line x1="750" y1="595" x2="750" y2="651" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+
+  <!-- n04 -->
+  <g>
+    <rect x="560" y="655" width="380" height="95" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="750" y="682" text-anchor="middle" font-size="14" fill="#1a1a1a">③ parse_model_step()</text>
+    <text x="750" y="705" text-anchor="middle" font-size="12" fill="#333">剥 json 围栏 → 只允许唯一 JSON 对象</text>
+    <text x="750" y="727" text-anchor="middle" font-size="12" fill="#333">→ {thought, action, action_input}</text>
+  </g>
+  <line x1="750" y1="750" x2="750" y2="806" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+  <!-- n05 执行工具 -->
+  <g>
+    <rect x="560" y="810" width="380" height="85" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="750" y="840" text-anchor="middle" font-size="14" fill="#1a1a1a">④ tools.execute() 执行工具</text>
+    <text x="750" y="864" text-anchor="middle" font-size="12" fill="#333">→ ToolExecutionResult</text>
+    <text x="750" y="884" text-anchor="middle" font-size="12" fill="#333">{ok, content, is_terminal}</text>
+  </g>
+  <line x1="750" y1="895" x2="750" y2="911" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+
+  <!-- d2 出错判定 -->
+  <polygon points="750,915 910,980 750,1045 590,980" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="750" y="976" text-anchor="middle" font-size="13" fill="#1a1a1a">工具调用</text>
+  <text x="750" y="994" text-anchor="middle" font-size="13" fill="#1a1a1a">出错?</text>
+
+  <!-- n06 记录 -->
+  <g>
+    <rect x="560" y="1105" width="380" height="80" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="750" y="1133" text-anchor="middle" font-size="14" fill="#1a1a1a">⑤ 记录 StepRecord</text>
+    <text x="750" y="1157" text-anchor="middle" font-size="12" fill="#333">thought/action/输入/模型原话/observation</text>
+  </g>
+  <line x1="750" y1="1045" x2="750" y2="1101" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+  <text x="760" y="1078" font-size="12" fill="#6c8ebf">否</text>
+
+  <!-- d3 answer判定 -->
+  <polygon points="750,1225 910,1290 750,1355 590,1290" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="750" y="1286" text-anchor="middle" font-size="13" fill="#1a1a1a">是 answer?</text>
+  <text x="750" y="1304" text-anchor="middle" font-size="11" fill="#333">(is_terminal 终止动作)</text>
+  <line x1="750" y1="1185" x2="750" y2="1221" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+
+  <!-- 成功结束 -->
+  <g>
+    <rect x="560" y="1420" width="380" height="100" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+    <text x="750" y="1448" text-anchor="middle" font-size="14" fill="#1a1a1a">⑥ 收下 AnswerTable → break</text>
+    <text x="750" y="1472" text-anchor="middle" font-size="12" fill="#333">→ runner 写 prediction.csv</text>
+    <text x="750" y="1494" text-anchor="middle" font-size="13" fill="#333">任务成功 ✔</text>
+  </g>
+  <line x1="750" y1="1355" x2="750" y2="1416" stroke="#82b366" stroke-width="2" marker-end="url(#aG)"/>
+  <text x="760" y="1390" font-size="12" fill="#82b366">是：交卷</text>
+  <!-- errObs 出错分支 -->
+  <g>
+    <rect x="1080" y="930" width="360" height="115" rx="8" fill="#f8cecc" stroke="#b85450" stroke-width="1.5"/>
+    <text x="1260" y="958" text-anchor="middle" font-size="13" fill="#1a1a1a">⑤' 出错分支：把错误当 Observation</text>
+    <text x="1260" y="982" text-anchor="middle" font-size="12" fill="#333">{ok:false, error:...} 追加进历史</text>
+    <text x="1260" y="1004" text-anchor="middle" font-size="12" fill="#333">(模型下一轮会自己改错)</text>
+    <text x="1260" y="1026" text-anchor="middle" font-size="11" fill="#666">JSON解析失败 / 工具报错 / 参数非法</text>
+  </g>
+  <line x1="910" y1="980" x2="1076" y2="980" stroke="#b85450" stroke-width="2" marker-end="url(#aR)"/>
+  <text x="995" y="970" text-anchor="middle" font-size="12" fill="#b85450">是</text>
+
+  <!-- obsAppend 追加历史 -->
+  <g>
+    <rect x="1080" y="1250" width="360" height="100" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="1260" y="1280" text-anchor="middle" font-size="13" fill="#1a1a1a">⑦ 把 Observation 追加进历史</text>
+    <text x="1260" y="1304" text-anchor="middle" font-size="12" fill="#333">（携带本轮结果，进入下一轮）</text>
+  </g>
+  <line x1="910" y1="1290" x2="1076" y2="1290" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+  <text x="995" y="1280" text-anchor="middle" font-size="12" fill="#6c8ebf">否：继续</text>
+
+  <!-- 回环连线：回到 d1 -->
+  <path d="M1440,987 L1468,987 L1468,240 L914,240" fill="none" stroke="#b85450" stroke-width="2" marker-end="url(#aR)"/>
+  <path d="M1440,1300 L1468,1300 L1468,240 L914,240" fill="none" stroke="#6c8ebf" stroke-width="2" marker-end="url(#aB)"/>
+  <text x="1502" y="780" text-anchor="middle" font-size="12" fill="#6c8ebf" transform="rotate(-90 1502 780)">回到下一轮（携带 Observation）</text>
+</svg>
+
+
