@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1330" viewBox="0 0 1300 1330" font-family="'Microsoft YaHei','SimHei',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#6c8ebf"/></marker>
+    <marker id="arrO" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#d79b00"/></marker>
+    <marker id="arrP" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#9673a6"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#82b366"/></marker>
+  </defs>
+  <rect width="1300" height="1330" fill="#ffffff"/>
+  <text x="650" y="22" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">PHASE_1 Baseline 整体架构总览</text>
+
+  <!-- n01 命令入口 -->
+  <g>
+    <rect x="470" y="40" width="380" height="55" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="62" text-anchor="middle" font-size="14" fill="#1a1a1a">uv run dabench run-benchmark</text>
+    <text x="660" y="82" text-anchor="middle" font-size="12" fill="#333">--config ...yaml（pyproject → cli.py:main）</text>
+  </g>
+  <line x1="660" y1="95" x2="660" y2="133" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n02 cli -->
+  <g>
+    <rect x="470" y="135" width="380" height="60" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="160" text-anchor="middle" font-size="14" fill="#1a1a1a">cli.py 入口（4 个命令）</text>
+    <text x="660" y="181" text-anchor="middle" font-size="12" fill="#333">status / inspect-task / run-task / run-benchmark</text>
+  </g>
+  <line x1="660" y1="195" x2="660" y2="233" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n03 config -->
+  <g>
+    <rect x="470" y="235" width="380" height="80" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="260" text-anchor="middle" font-size="14" fill="#1a1a1a">config.py：读 YAML → AppConfig</text>
+    <text x="660" y="282" text-anchor="middle" font-size="12" fill="#333">模型/API密钥 · max_steps=16 · temperature=0.0</text>
+    <text x="660" y="302" text-anchor="middle" font-size="12" fill="#333">并发 max_workers · 超时 task_timeout_seconds=600</text>
+  </g>
+  <line x1="660" y1="315" x2="660" y2="353" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n04 dataset -->
+  <g>
+    <rect x="470" y="355" width="380" height="75" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="380" text-anchor="middle" font-size="14" fill="#1a1a1a">benchmark/dataset.py</text>
+    <text x="660" y="402" text-anchor="middle" font-size="12" fill="#333">扫描 data/public/input → 50 个 PublicTask</text>
+    <text x="660" y="422" text-anchor="middle" font-size="12" fill="#333">（每个 = task.json + context/ 数据）</text>
+  </g>
+  <line x1="660" y1="430" x2="660" y2="468" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- n05 runner -->
+  <g>
+    <rect x="470" y="470" width="380" height="80" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="495" text-anchor="middle" font-size="14" fill="#1a1a1a">run/runner.py · run_benchmark</text>
+    <text x="660" y="517" text-anchor="middle" font-size="12" fill="#333">逐题调度：多线程并行 + 每题独立子进程</text>
+    <text x="660" y="537" text-anchor="middle" font-size="12" fill="#333">每题墙钟超时 600s，超时强杀并记失败</text>
+  </g>
+  <line x1="660" y1="550" x2="660" y2="588" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n06 subprocess -->
+  <g>
+    <rect x="470" y="590" width="380" height="55" rx="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+    <text x="660" y="615" text-anchor="middle" font-size="14" fill="#1a1a1a">run_single_task(task_x)</text>
+    <text x="660" y="635" text-anchor="middle" font-size="12" fill="#333">（在独立子进程内执行）</text>
+  </g>
+  <line x1="660" y1="645" x2="660" y2="683" stroke="#6c8ebf" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n07 agent -->
+  <g>
+    <rect x="470" y="685" width="380" height="95" rx="8" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+    <text x="660" y="710" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">ReActAgent(task_x)  ★ 核心</text>
+    <text x="660" y="734" text-anchor="middle" font-size="12" fill="#333">全新实例 + 空状态</text>
+    <text x="660" y="754" text-anchor="middle" font-size="12" fill="#333">『思考-行动循环』（见 Agent循环图）</text>
+  </g>
+
+  <!-- n08 model -->
+  <g>
+    <rect x="80" y="850" width="320" height="95" rx="8" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.5"/>
+    <text x="240" y="878" text-anchor="middle" font-size="14" fill="#1a1a1a">agents/model.py</text>
+    <text x="240" y="902" text-anchor="middle" font-size="12" fill="#333">OpenAI 兼容接口</text>
+    <text x="240" y="922" text-anchor="middle" font-size="12" fill="#333">ScriptedModelAdapter（测试/离线）</text>
+  </g>
+
+  <!-- n09 tools -->
+  <g>
+    <rect x="900" y="850" width="340" height="110" rx="8" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.5"/>
+    <text x="1070" y="878" text-anchor="middle" font-size="14" fill="#1a1a1a">tools/registry.py + 8 个工具</text>
+    <text x="1070" y="900" text-anchor="middle" font-size="11" fill="#333">list_context / read_csv / read_json / read_doc</text>
+    <text x="1070" y="918" text-anchor="middle" font-size="11" fill="#333">inspect_sqlite_schema / SQL / execute_python / answer</text>
+    <text x="1070" y="944" text-anchor="middle" font-size="11" fill="#333">3 道安全锁：路径锁 / 只读SQL / Python沙箱</text>
+  </g>
+
+  <!-- 连线：agent -> model / tools -->
+  <line x1="470" y1="740" x2="402" y2="740" stroke="#9673a6" stroke-width="2" marker-end="url(#arrP)"/>
+  <text x="436" y="730" text-anchor="middle" font-size="11" fill="#9673a6">循环内调用</text>
+  <line x1="850" y1="740" x2="898" y2="740" stroke="#d79b00" stroke-width="2" marker-end="url(#arrO)"/>
+  <text x="874" y="730" text-anchor="middle" font-size="11" fill="#d79b00">循环内调用（含answer交卷）</text>
+
+  <line x1="660" y1="780" x2="660" y2="1018" stroke="#82b366" stroke-width="2" marker-end="url(#arrG)"/>
+  <text x="672" y="900" font-size="12" fill="#82b366">循环结束（answer 或失败）→ 写产物</text>
+  <!-- n10 写输出 -->
+  <g>
+    <rect x="470" y="1020" width="380" height="70" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+    <text x="660" y="1048" text-anchor="middle" font-size="14" fill="#1a1a1a">runner._write_task_outputs</text>
+    <text x="660" y="1072" text-anchor="middle" font-size="12" fill="#333">answer 的 columns + rows → prediction.csv</text>
+  </g>
+  <line x1="660" y1="1090" x2="660" y2="1128" stroke="#82b366" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- n11 每任务产物 -->
+  <g>
+    <rect x="470" y="1130" width="380" height="65" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+    <text x="660" y="1158" text-anchor="middle" font-size="13" fill="#1a1a1a">artifacts/runs/&lt;run_id&gt;/task_x/</text>
+    <text x="660" y="1180" text-anchor="middle" font-size="12" fill="#333">prediction.csv（答卷）+ trace.json（全程录像）</text>
+  </g>
+  <line x1="660" y1="1195" x2="660" y2="1233" stroke="#82b366" stroke-width="2" marker-end="url(#arrG)"/>
+
+  <!-- n12 summary -->
+  <g>
+    <rect x="470" y="1235" width="380" height="60" rx="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+    <text x="660" y="1262" text-anchor="middle" font-size="14" fill="#1a1a1a">全部完成后：summary.json</text>
+    <text x="660" y="1283" text-anchor="middle" font-size="12" fill="#333">（成功 / 失败任务统计）</text>
+  </g>
+</svg>
+
+
